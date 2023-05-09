@@ -3,7 +3,7 @@
 #' @returns a shiny app
 #' @import shiny
 #' @noRd
-app_ui <- fluidPage( title = "searchterms",
+app_ui <- fluidPage( title = "SearchBuildeR",
                      theme = bs_theme(bootswatch = "sandstone"),
 
   shinyFeedback::useShinyFeedback(),

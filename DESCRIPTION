@@ -1,4 +1,4 @@
-Package: searchterms
+Package: searchbuilder
 Title: Identify Search Terms in Evidence Synthesis 
 Version: 0.0.0.9000
 Authors@R: 

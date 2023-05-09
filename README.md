@@ -3,14 +3,14 @@
 
 # Proof of concept version
 
-# searchterms
+# searchbuilder
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of searchterms is to identify overrepresented terms in a set of
-relevant references for a systematic review, which can then be applied
-in a boolean search in a bibliograpic database.
+The goal of searchbuilder is to identify overrepresented terms in a set
+of relevant references for a systematic review, which can then be
+applied in a boolean search in a bibliograpic database.
 
 ## Installation
 
@@ -23,8 +23,8 @@ This is a basic example which shows you how to solve a common problem,
 the package was designed for:
 
 ``` r
-library(searchterms)
-path <- system.file("extdata", "example_ris.txt", package= "searchterms", mustWork = T)
+library(searchbuilder)
+path <- system.file("extdata", "example_ris.txt", package= "searchbuilder", mustWork = T)
 data <- z_scores(path)
 head(print_z_scores(data, terms = "freetext") )
 #>      Wort Wortfrequenz Anzahl Referenzen Erwartete Frequenz   Z-Score
