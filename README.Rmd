@@ -1,0 +1,36 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# Proof of concept version
+# searchterms
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of searchterms is to identify overrepresented terms in a set of relevant references for a systematic review, which can then be applied in a boolean search in a bibliograpic database.
+
+## Installation
+Instructions for installation will follow with the official release of the package. 
+
+## Example
+
+This is a basic example which shows you how to solve a common problem, the package was designed for:
+
+```{r example}
+library(searchterms)
+path <- system.file("extdata", "example_ris.txt", package= "searchterms", mustWork = T)
+data <- z_scores(path)
+head(print_z_scores(data, terms = "freetext") )
+head(print_z_scores(data, terms = "MeSH"))
+```
