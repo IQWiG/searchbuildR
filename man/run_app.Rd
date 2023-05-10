@@ -13,7 +13,9 @@ a shiny app
 Run App
 }
 \examples{
-# run_app()
-# see vignette
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
 
+run_app()
+#see vignette
+\dontshow{\}) # examplesIf}
 }

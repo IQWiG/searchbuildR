@@ -1,11 +1,16 @@
 #' Run App  server logic
 #'
+#' @param input input from server
+#' @param output output to UI
+#' @param session session ID
+#'
 #' @returns a shiny app
 #' @import shiny
-#' @examples
-#' shinyApp(ui = app_ui, server = app_server)
-#'
 #' @export
+#' @examplesIf interactive()
+#' library(shiny)
+#' shinyApp(ui = app_ui, server = app_server)
+
 app_server <- function(input, output, session) {
   #reactive data
 

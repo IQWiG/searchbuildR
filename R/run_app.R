@@ -4,9 +4,10 @@
 #' @import shiny
 #' @export
 #'
-#' @examples
-#' # run_app()
-#' # see vignette
+#'@examplesIf interactive()
+#'
+#'run_app()
+#'#see vignette
 #'
 run_app <- function(){
   shinyApp(ui = app_ui, server = app_server)}

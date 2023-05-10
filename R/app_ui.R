@@ -2,10 +2,12 @@
 #'
 #' @returns a shiny app
 #' @import shiny
-#' @examples
+#' @export
+#' @examplesIf interactive()
+#' library(shiny)
 #' shinyApp(ui = app_ui, server = app_server)
 #'
-#' @export
+
 app_ui <- fluidPage( title = "SearchBuildeR",
                      theme = bs_theme(bootswatch = "sandstone"),
 

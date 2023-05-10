@@ -15,3 +15,16 @@ popset a list of objects
 \description{
 Process raw Endnote ris file with PubMed data into population norm set
 }
+\examples{
+ris <- c("TY  - JOUR",
+         "AU  - Kapp",
+         "TI  - Titles",
+         "PY  - 2023",
+         "JOUR  - IQWiG Journal",
+         "KW  - Systematic Reviews as Topic",
+         "ER  -")
+
+tmp <- tempfile(fileext = ".txt")
+writeLines(ris, tmp)
+create_popset(tmp)
+}

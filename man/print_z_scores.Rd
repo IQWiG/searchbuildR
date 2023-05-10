@@ -29,4 +29,5 @@ ris <- c("TY  - JOUR",
 tmp <- tempfile(fileext = ".txt")
 writeLines(ris, tmp)
 data <- z_scores(tmp)
+print_z_scores(data, terms = "freetext")
 }

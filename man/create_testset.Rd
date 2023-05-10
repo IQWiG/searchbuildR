@@ -25,20 +25,20 @@ testset
 ...$reference.list
 ...$text_corpus
 if (dev_set = TRUE) ...$seed
-
-#' @examples
+}
+\description{
+Title
+}
+\examples{
 ris <- c("TY  - JOUR",
-"AU  - Kapp",
-"TI  - Titles",
-"PY  - 2023",
-"JOUR  - IQWiG Journal",
-"KW  - Systematic Reviews as Topic",
-"ER  -")
+        "AU  - Kapp",
+        "TI  - Titles",
+        "PY  - 2023",
+        "JOUR  - IQWiG Journal",
+        "KW  - Systematic Reviews as Topic",
+        "ER  -")
 
 tmp <- tempfile(fileext = ".txt")
 writeLines(ris, tmp)
 create_testset(tmp)
-}
-\description{
-Title
 }

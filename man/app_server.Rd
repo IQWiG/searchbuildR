@@ -6,6 +6,13 @@
 \usage{
 app_server(input, output, session)
 }
+\arguments{
+\item{input}{input from server}
+
+\item{output}{output to UI}
+
+\item{session}{session ID}
+}
 \value{
 a shiny app
 }
@@ -13,6 +20,8 @@ a shiny app
 Run App  server logic
 }
 \examples{
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+library(shiny)
 shinyApp(ui = app_ui, server = app_server)
-
+\dontshow{\}) # examplesIf}
 }

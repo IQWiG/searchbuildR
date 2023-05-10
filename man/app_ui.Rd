@@ -17,7 +17,9 @@ a shiny app
 Run App UI logic
 }
 \examples{
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+library(shiny)
 shinyApp(ui = app_ui, server = app_server)
-
+\dontshow{\}) # examplesIf}
 }
 \keyword{datasets}
