@@ -1,8 +1,11 @@
-#' Run App
+#' Run App UI logic
 #'
 #' @returns a shiny app
 #' @import shiny
-#' @noRd
+#' @examples
+#' shinyApp(ui = app_ui, server = app_server)
+#'
+#' @export
 app_ui <- fluidPage( title = "SearchBuildeR",
                      theme = bs_theme(bootswatch = "sandstone"),
 

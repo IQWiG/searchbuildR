@@ -8,6 +8,21 @@
 #' @importFrom dplyr rename
 #' @importFrom dplyr select
 #' @importFrom rlang set_names
+#'
+#' #'#' @examples
+#' ris <- c("TY  - JOUR",
+#'          "AU  - Kapp",
+#'          "TI  - Titles",
+#'          "PY  - 2023",
+#'          "JOUR  - IQWiG Journal",
+#'          "KW  - Systematic Reviews as Topic",
+#'          "ER  -")
+#'
+#' tmp <- tempfile(fileext = ".txt")
+#' writeLines(ris, tmp)
+#' create_popset(tmp)
+#'
+#'@export
 
 create_popset <- function(risfile){
   popset_ref <- read_bibliography(risfile, return_df = F)

@@ -1,8 +1,11 @@
-#' Run App
+#' Run App  server logic
 #'
 #' @returns a shiny app
 #' @import shiny
-#' @noRd
+#' @examples
+#' shinyApp(ui = app_ui, server = app_server)
+#'
+#' @export
 app_server <- function(input, output, session) {
   #reactive data
 

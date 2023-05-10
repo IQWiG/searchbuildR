@@ -15,7 +15,20 @@
 #' ...$text_corpus
 #' if (dev_set = TRUE) ...$seed
 #'
-#' @noRd
+#'#' @examples
+#' ris <- c("TY  - JOUR",
+#'          "AU  - Kapp",
+#'          "TI  - Titles",
+#'          "PY  - 2023",
+#'          "JOUR  - IQWiG Journal",
+#'          "KW  - Systematic Reviews as Topic",
+#'          "ER  -")
+#'
+#' tmp <- tempfile(fileext = ".txt")
+#' writeLines(ris, tmp)
+#' create_testset(tmp)
+#'
+#' @export
 create_testset <- function(risfile, dev_set = FALSE, project_name = TRUE, seed = NULL) {
  all_ref <- read_bibliography(risfile, return_df = F)
 
