@@ -1,3 +1,23 @@
+#' import a ris file as class bibliography
+#'
+#' @param filename a risfile to import
+#' @param return_df should a dataframe be returned, if FALSE returns a list
+#'
+#' @return an object of class bibliography from the revtools package
+#' @export
+#'
+#' @examples
+#' ris <- c("TY  - JOUR",
+#'         "AU  - Kapp",
+#'         "TI  - Titles",
+#'         "PY  - 2023",
+#'         "JOUR  - IQWiG Journal",
+#'         "KW  - Systematic Reviews as Topic",
+#'         "ER  -")
+#'
+#'tmp <- tempfile(fileext = ".txt")
+#'writeLines(ris, tmp)
+#'read_bibliography(tmp)
 read_bibliography<- function (filename, return_df = TRUE)
 {
   z <- tryCatch({
