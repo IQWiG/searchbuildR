@@ -21,7 +21,7 @@ The goal of searchbuilder is to identify overrepresented terms in a set of relev
 
 ## Installation
 You can install searchbuilder from GitHub. The package is currently not released on CRAN, but will be in the future.
-```{r installation}
+```{r installation, eval = FALSE}
 library(remotes)
 remotes::install_github("https://github.com/IQWiG/searchbuilder")
 

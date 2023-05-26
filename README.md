@@ -1,21 +1,25 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Proof of concept version
-
 # searchbuilder
 
 <!-- badges: start -->
 <!-- badges: end -->
 
 The goal of searchbuilder is to identify overrepresented terms in a set
-of relevant references for a systematic review, which can then be
-applied in a boolean search in a bibliograpic database.
+of relevant references for a systematic review or evidence synthesis in
+general, which can then be applied in a boolean search in a bibliograpic
+database (e.g. PubMed).
 
 ## Installation
 
-Instructions for installation will follow with the official release of
-the package.
+You can install searchbuilder from GitHub. The package is currently not
+released on CRAN, but will be in the future.
+
+``` r
+library(remotes)
+remotes::install_github("https://github.com/IQWiG/searchbuilder")
+```
 
 ## Example
 
