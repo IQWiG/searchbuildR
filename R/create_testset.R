@@ -1,9 +1,9 @@
-#' Title
+#' Preparing a risfile for text analysis
 #'
-#' @param risfile a ri-format file to be imported
-#' @param dev_set should a random development set (2/3 imported references) be created
-#' @param project_name should the project name be guessed from the file name
-#' @param seed option to set a random seed, if dev_set = TRUE
+#' @param risfile a ris-format file to be imported
+#' @param dev_set logical, if TRUE a random development set (2/3 imported references) will be created
+#' @param project_name logical, if TRUE the project name will be guessed from the file name
+#' @param seed option to set a random seed, only works with dev_set = TRUE
 #'
 #' @returns a list in the format
 #'

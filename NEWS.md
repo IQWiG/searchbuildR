@@ -1,3 +1,6 @@
+# searchbuilder 0.0.6
+update documentation in DESCRIPTION,
+
 # searchbuilder 0.0.1
 add exported functions create_testset(), create_popset(), print_z_scores(), app_ui, app_server()
 

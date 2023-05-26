@@ -1,7 +1,7 @@
 #' import a ris file as class bibliography
 #'
 #' @param filename a risfile to import
-#' @param return_df should a dataframe be returned, if FALSE returns a list
+#' @param return_df if TRUE a dataframe will be returned, if FALSE a list will be returned
 #'
 #' @return an object of class bibliography from the revtools package
 #' @export

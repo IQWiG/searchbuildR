@@ -1,4 +1,4 @@
-#' Run App
+#' Runs the shiny app of the package
 #'
 #' @returns a shiny app
 #' @import shiny

@@ -2,7 +2,7 @@
 % Please edit documentation in R/app_server.R
 \name{app_server}
 \alias{app_server}
-\title{Run App  server logic}
+\title{server logic for function run_app()}
 \usage{
 app_server(input, output, session)
 }
@@ -14,10 +14,10 @@ app_server(input, output, session)
 \item{session}{session ID}
 }
 \value{
-a shiny app
+the function for the server logic
 }
 \description{
-Run App  server logic
+server logic for function run_app()
 }
 \examples{
 \dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}

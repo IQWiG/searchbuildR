@@ -1,11 +1,9 @@
-#' Z score tables
+#' Create z-scores for every token in the testset provided
 #'
-#' @param risfile a ris file containing a testset
+#' @inheritParams create_testset
 #' @param references an object created with create_testset() to be used fo analysis instead of a raw ris file
-#' @param risfile_population a dataframe containing a population set
+#' @param risfile_population a risfile from Endnote containing a population set
 #' @param load_popset logical, should internal population set be applied (default) or should a customized population set be calculated
-#' @param dev_set logical, if testset should be randomly divided into a development and validation set select TRUE?
-#' @param seed should be included, to reproduce a created development set from a previous session
 #'
 #' @returns a list
 #' @export

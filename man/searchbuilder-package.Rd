@@ -6,7 +6,7 @@
 \alias{searchbuilder-package}
 \title{searchbuilder: Identify Search Terms in Evidence Synthesis}
 \description{
-Currently in development: R Package to identify search terms in evidence synthesis with quantitative textual analysis.
+R Package to identify search terms in evidence synthesis with quantitative textual analysis.
 }
 \author{
 \strong{Maintainer}: Claudia Kapp \email{claudia.kapp@iqwig.de} (\href{https://orcid.org/0000-0002-7111-1897}{ORCID})

@@ -1,10 +1,10 @@
-#' Run App  server logic
+#' server logic for function run_app()
 #'
 #' @param input input from server
 #' @param output output to UI
 #' @param session session ID
 #'
-#' @returns a shiny app
+#' @returns the function for the server logic
 #' @import shiny
 #' @export
 #' @examplesIf interactive()

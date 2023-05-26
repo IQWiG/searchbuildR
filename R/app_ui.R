@@ -1,6 +1,6 @@
-#' Run App UI logic
+#' UI logic for run_app()
 #'
-#' @returns a shiny app
+#' @returns the UI for a shiny app
 #' @import shiny
 #' @export
 #' @examplesIf interactive()

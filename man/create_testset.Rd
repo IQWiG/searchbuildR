@@ -2,18 +2,18 @@
 % Please edit documentation in R/create_testset.R
 \name{create_testset}
 \alias{create_testset}
-\title{Title}
+\title{Preparing a risfile for text analysis}
 \usage{
 create_testset(risfile, dev_set = FALSE, project_name = TRUE, seed = NULL)
 }
 \arguments{
-\item{risfile}{a ri-format file to be imported}
+\item{risfile}{a ris-format file to be imported}
 
-\item{dev_set}{should a random development set (2/3 imported references) be created}
+\item{dev_set}{logical, if TRUE a random development set (2/3 imported references) will be created}
 
-\item{project_name}{should the project name be guessed from the file name}
+\item{project_name}{logical, if TRUE the project name will be guessed from the file name}
 
-\item{seed}{option to set a random seed, if dev_set = TRUE}
+\item{seed}{option to set a random seed, only works with dev_set = TRUE}
 }
 \value{
 a list in the format
@@ -27,7 +27,7 @@ testset
 if (dev_set = TRUE) ...$seed
 }
 \description{
-Title
+Preparing a risfile for text analysis
 }
 \examples{
 ris <- c("TY  - JOUR",

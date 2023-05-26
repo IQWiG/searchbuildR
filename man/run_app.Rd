@@ -2,7 +2,7 @@
 % Please edit documentation in R/run_app.R
 \name{run_app}
 \alias{run_app}
-\title{Run App}
+\title{Runs the shiny app of the package}
 \usage{
 run_app()
 }
@@ -10,7 +10,7 @@ run_app()
 a shiny app
 }
 \description{
-Run App
+Runs the shiny app of the package
 }
 \examples{
 \dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}

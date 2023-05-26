@@ -9,7 +9,7 @@ read_bibliography(filename, return_df = TRUE)
 \arguments{
 \item{filename}{a risfile to import}
 
-\item{return_df}{should a dataframe be returned, if FALSE returns a list}
+\item{return_df}{if TRUE a dataframe will be returned, if FALSE a list will be returned}
 }
 \value{
 an object of class bibliography from the revtools package
