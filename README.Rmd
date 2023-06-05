@@ -38,3 +38,6 @@ data <- z_scores(path)
 head(print_z_scores(data, terms = "freetext") )
 head(print_z_scores(data, terms = "MeSH"))
 ```
+
+### Questions, suggestions and bugs
+Ideas and suggestions for new functionalities or hints towards any bugs are welcome. Simply open an issue at https://github.com/IQWiG/searchbuilder.
