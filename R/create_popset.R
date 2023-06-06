@@ -33,7 +33,7 @@ create_popset <- function(risfile){
   popset_df <- create_corpus(popset_ref)
   popset_df <- prepare_freq_table(popset_df)
   popset_df <- popset_df %>%
-    select(!(.data$group)) %>%
+    select(!("group")) %>%
     rename(Norm.frequency = "frequency",
            Norm.docfreq = "docfreq",
            Norm.rank = "rank",
