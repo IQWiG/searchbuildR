@@ -3,7 +3,7 @@
 \docType{data}
 \name{app_ui}
 \alias{app_ui}
-\title{Run App UI logic}
+\title{UI logic for run_app()}
 \format{
 An object of class \code{shiny.tag.list} (inherits from \code{list}) of length 5.
 }
@@ -11,10 +11,10 @@ An object of class \code{shiny.tag.list} (inherits from \code{list}) of length 5
 app_ui
 }
 \value{
-a shiny app
+the UI for a shiny app
 }
 \description{
-Run App UI logic
+UI logic for run_app()
 }
 \examples{
 \dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}

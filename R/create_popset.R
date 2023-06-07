@@ -1,14 +1,17 @@
 #' Process raw Endnote ris file with PubMed data into population norm set
 #'
-#' @param risfile a RIS file produced with Endnote
+#' @inheritParams create_testset
 #'
 #' @returns popset a list of objects
+#' popset
+#' ...$freetext
+#' ...$MeSH.terms
+#' ...$qualifier
 #'
 #' @importFrom dplyr mutate
 #' @importFrom dplyr rename
 #' @importFrom dplyr select
 #' @importFrom rlang set_names
-#'
 #'
 #' @export
 #' @examples
@@ -30,7 +33,7 @@ create_popset <- function(risfile){
   popset_df <- create_corpus(popset_ref)
   popset_df <- prepare_freq_table(popset_df)
   popset_df <- popset_df %>%
-    select(!(.data$group)) %>%
+    select(!("group")) %>%
     rename(Norm.frequency = "frequency",
            Norm.docfreq = "docfreq",
            Norm.rank = "rank",

@@ -2,7 +2,7 @@
 % Please edit documentation in R/z_scores.R
 \name{z_scores}
 \alias{z_scores}
-\title{Z score tables}
+\title{Create z-scores for every token in the testset provided}
 \usage{
 z_scores(
   risfile = NULL,
@@ -14,23 +14,23 @@ z_scores(
 )
 }
 \arguments{
-\item{risfile}{a ris file containing a testset}
+\item{risfile}{a ris-format file to be imported}
 
 \item{references}{an object created with create_testset() to be used fo analysis instead of a raw ris file}
 
-\item{risfile_population}{a dataframe containing a population set}
+\item{risfile_population}{a risfile from Endnote containing a population set}
 
 \item{load_popset}{logical, should internal population set be applied (default) or should a customized population set be calculated}
 
-\item{dev_set}{logical, if testset should be randomly divided into a development and validation set select TRUE?}
+\item{dev_set}{logical, if TRUE a random development set (2/3 imported references) will be created}
 
-\item{seed}{should be included, to reproduce a created development set from a previous session}
+\item{seed}{option to set a random seed, only works with dev_set = TRUE}
 }
 \value{
 a list
 }
 \description{
-Z score tables
+Create z-scores for every token in the testset provided
 }
 \examples{
 ris <- c("TY  - JOUR",

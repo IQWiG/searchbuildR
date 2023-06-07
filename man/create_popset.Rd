@@ -7,10 +7,14 @@
 create_popset(risfile)
 }
 \arguments{
-\item{risfile}{a RIS file produced with Endnote}
+\item{risfile}{a ris-format file to be imported}
 }
 \value{
 popset a list of objects
+popset
+...$freetext
+...$MeSH.terms
+...$qualifier
 }
 \description{
 Process raw Endnote ris file with PubMed data into population norm set

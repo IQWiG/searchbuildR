@@ -34,8 +34,8 @@ head(testset$qualifier)
 ```
 
 
-
-a more concise table with German column names:
+Step 2 (optional)
+Create a more concise table with German column names:
 ```{r}
 print_z_scores(testset, terms = "freetext")
 ```

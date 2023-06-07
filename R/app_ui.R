@@ -1,6 +1,6 @@
-#' Run App UI logic
+#' UI logic for run_app()
 #'
-#' @returns a shiny app
+#' @returns the UI for a shiny app
 #' @import shiny
 #' @export
 #' @examplesIf interactive()
@@ -96,23 +96,23 @@ app_ui <- fluidPage( title = "SearchBuildeR",
                      fluidRow(
                        column(12,
                               align = "center",
-                              downloadButton("downloadFreetext", "Download")
+                              downloadButton("downloadFreetext", "Download all freetext terms")
                        )
                      ),
                      fluidRow(
                      column(12,
-                            "The table shows all candidate terms in the chosen test set.
-                              The z-ccore of a binomial test against a random representative set of PubMed references is calculated.
-                              A positive z-score indicates, that the candidate term occurs more often in the test set,
-                              than would be expected based on the representative sample of Pubmed references.
+                            HTML("<p>The table shows all freetext terms in the chosen test set.
+                            <br> Freetext terms are defined as all words in the title and abstract.</p>
+                            <p> Details:
+                            <br> All numbers, Unicode symbols and unicode punctuation hase been removed. Hyphenated words have been separated (i.e. 'self-aware' is analyzed as 'self' and 'aware').
+                            <br> The z-ccore of a binomial test against a random representative set of PubMed references is calculated.
+                              A positive z-score indicates, that the freetext term occurs more often in the test set,
+                              than would be expected based on the representative sample of PubMed references.
                               A z-score of 10000 is given to all candidate terms,
-                              which did not occurr in the representative sample of Pubmed references."
-                            )
-                     ),fluidRow(
-                       column(12,
-                              "*Rare terms are defined as occurring in less than 2 or less than 10% of references"
-                       )
+                              which did not occurr in the representative sample of PubMed references.</p>
+                            *Rare terms are defined as occurring in less than 2 or less than 10% of references")
                      )
+                   )
                    ),
                    mainPanel(
                      fluidRow(
@@ -145,17 +145,17 @@ app_ui <- fluidPage( title = "SearchBuildeR",
                                 fluidRow(
                                   column(12,
                                          align = "center",
-                                         downloadButton("downloadMeSH", "Download")
+                                         downloadButton("downloadMeSH", "Download all MeSH terms")
                                          )
                                   ),
                                 fluidRow(
                                   column(12,
-                                         "The table shows all candidate MeSH terms in the chosen test set.
+                                         "The table shows all MeSH terms in the chosen test set.
                                          The z-ccore of a binomial test against a random representative set of PubMed references is calculated.
-                                         A positive z-score indicates, that the candidate MeSH term occurs more often in the test set,
-                                         than would be expected based on the representative sample of Pubmed references.
-                                         A z-score of 10000 is given to all candidate MeSH terms,
-                                         which did not occurr in the representative sample of Pubmed references."
+                                         A positive z-score indicates, that the MeSH term occurs more often in the test set,
+                                         than would be expected based on the representative sample of PubMed references.
+                                         A z-score of 10000 is given to all MeSH terms,
+                                         which did not occurr in the representative sample of PubMed references."
                                          )
                                   )
                                 ),
@@ -178,17 +178,17 @@ app_ui <- fluidPage( title = "SearchBuildeR",
                  fluidRow(
                    column(12,
                           align = "center",
-                          downloadButton("downloadQualifier", "Download")
+                          downloadButton("downloadQualifier", "Download all MeSH qualifier")
                           )
                    ),
                  fluidRow(
                    column(12,
-                          "The table shows all candidate qualifier terms in the chosen test set.
+                          "The table shows all MeSH qualifier terms in the chosen test set.
                           The z-ccore of a binomial test against a random representative set of PubMed references is calculated.
-                          A positive z-score indicates, that the candidate qualifier term occurs more often in the test set,
-                          than would be expected based on the representative sample of Pubmed references.
-                          A z-score of 10000 is given to all candidate qualifier terms,
-                          which did not occurr in the representative sample of Pubmed references."
+                          A positive z-score indicates, that the MeSH qualifier term occurs more often in the test set,
+                          than would be expected based on the representative sample of PubMed references.
+                          A z-score of 10000 is given to all qualifier terms,
+                          which did not occurr in the representative sample of PubMed references."
                    )
                  )
                  ),
@@ -210,7 +210,7 @@ app_ui <- fluidPage( title = "SearchBuildeR",
                sidebarPanel(
                  fluidRow(
                    column(12,
-                          "In this table all imported keywords and their frequency are listed.
+                          "In this table all imported keywords and their frequencies are listed.
                           All MeSH/qualifier combinations are listed separately.
                           If non-MeSH keywords were imported, they are included in this table only.")
                )
@@ -223,15 +223,15 @@ app_ui <- fluidPage( title = "SearchBuildeR",
              )
       )
     ),
-    tabPanel("Candidate terms in context",
+    tabPanel("Freetext terms in context",
              fluidPage(
                sidebarLayout(
                  sidebarPanel(width = 5,
                    fluidRow(
                      column(6,
-                            "Enter a candidate term to see, in what contexts it occurs.
+                            "Enter a freetext term to see, in what contexts it occurs.
                             Select a specific reference from the list to see the full title and abstract.
-                            The candidate term entered is displayed in all uploaded references and not only in the development set."
+                            The freetext term entered is displayed in all uploaded references and not only in the development set."
                             ),
                      column(6,
                             textInput("kwicInput", "Enter term"),
@@ -256,12 +256,21 @@ app_ui <- fluidPage( title = "SearchBuildeR",
                  fluidRow(
                    column(12,
                           align = "center",
-                          sliderInput("phraseSlider", "Select maximum distance in words:", 0, 4, 1)
+                          sliderInput("phraseSlider", "Select maximum number of words between 2-word combinations:", 0, 4, 1)
                    )
                  ),
                  fluidRow(
                    column(12,
-                          htmlOutput("infoPhrases")
+                          HTML("<p>The table analyzes all 2-word combinations that occur in the uploaded references.
+                          The frequency of a 2-word combination is calculated for the selected n-grams.
+                          <br>Example: 'benign lung tumour' appear in the table as 2-gram 'benign lung' and 2-gram 'lung tumour' and as 3-gram 'benign tumour' </p>
+                          <p>Details:<br>
+                          The word entered is analyzed in all uploaded references and not only in the development set.<br>
+                          English stopwords are not analyzed as 2-word combinations; i.e. the phrase 'quality of life' would appear as 'quality life' and as 3-gram in the table.<br>
+                          The filter function applies automatic right-handside truncation.</p>
+                          <p>Definition:<br>
+                          An n-gram is a phrase consisting of a specific number of words.
+                          A 2-gram contains 2 words (e.g. 'clinical trial'), a 3-gram contains 3 words (e.g. 'quality of life') etc.</p>")
                    )
                  )
                  ),

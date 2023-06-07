@@ -1,10 +1,10 @@
-#' Run App  server logic
+#' server logic for function run_app()
 #'
 #' @param input input from server
 #' @param output output to UI
 #' @param session session ID
 #'
-#' @returns a shiny app
+#' @returns the function for the server logic
 #' @import shiny
 #' @export
 #' @examplesIf interactive()
@@ -461,19 +461,6 @@ app_server <- function(input, output, session) {
       })
 
   # Tab 7 Phrases
-  ## Phrases überarbeiten
-    output$infoPhrases <- renderText({
-    "<p>The table displays all 2-word-phrases that occur in the uploaded references.
-    The phrases can be filtered (automatic righ-handside truncation is applied).
-    The frequency of a phrase is calculated for all displayed n-grams*.</p>
-    <p>Note:<br>
-    The candidate term entered is displayed in all uploaded references and not only in the development set.<br>
-    2-word-phrases with English stopwords are not displayed.</p>
-    <p>Example:<br>
-    'quality of life' would be counted as 'quality life' and as 3-gram in the table<br>
-    'benign lung tumour' would counted as 2-gram 'benign lung' and 2-gram 'lung tumour' and as 3-gram 'benign tumour</p>
-    <p>*n-gram is a sequence of terms. E.g. a 2-gram contains 2 terms, a 3-gram contains 3 terms etc.</p>"
-    })
 
   output$phraseTable <- renderReactable({
     req(input$upload)
