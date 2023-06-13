@@ -12,7 +12,7 @@ Adult
 Human
 Library Automation
 PY  - 2023
-TI  - searchbuilder: Version 1.0 of a text analysis package
+TI  - searchbuildR:a text analysis package
 VL  - 1
 ID  - 1
 ER  -

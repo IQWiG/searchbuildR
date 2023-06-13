@@ -12,18 +12,18 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
-# searchbuilder
+# searchbuildR
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of searchbuilder is to identify overrepresented terms in a set of relevant references for a systematic review or evidence synthesis in general, which can then be applied in a boolean search in a bibliograpic database (e.g. PubMed).
+The goal of searchbuildR is to identify overrepresented terms in a set of relevant references for a systematic review or evidence synthesis in general, which can then be applied in a boolean search in a bibliograpic database (e.g. PubMed).
 
 ## Installation
-You can install searchbuilder from GitHub. The package is currently not released on CRAN, but will be in the future.
+You can install searchbuildR from GitHub. The package is currently not released on CRAN, but will be in the future.
 ```{r installation, eval = FALSE}
 library(remotes)
-remotes::install_github("https://github.com/IQWiG/searchbuilder")
+remotes::install_github("https://github.com/IQWiG/searchbuildR")
 
 ```
 
@@ -32,12 +32,12 @@ remotes::install_github("https://github.com/IQWiG/searchbuilder")
 This is a basic example which shows you how to solve a common problem, the package was designed for:
 
 ```{r example}
-library(searchbuilder)
-path <- system.file("extdata", "example_ris.txt", package= "searchbuilder", mustWork = T)
+library(searchbuildR)
+path <- system.file("extdata", "example_ris.txt", package= "searchbuildR", mustWork = T)
 data <- z_scores(path)
 head(print_z_scores(data, terms = "freetext") )
 head(print_z_scores(data, terms = "MeSH"))
 ```
 
 ### Questions, suggestions and bugs
-Ideas and suggestions for new functionalities or hints towards any bugs are welcome. Simply open an issue at https://github.com/IQWiG/searchbuilder.
+Ideas and suggestions for new functionalities or hints towards any bugs are welcome. Simply open an issue at https://github.com/IQWiG/searchbuildR.

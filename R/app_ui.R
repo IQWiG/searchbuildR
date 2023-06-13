@@ -8,7 +8,7 @@
 #' shinyApp(ui = app_ui, server = app_server)
 #'
 
-app_ui <- fluidPage( title = "SearchBuildeR",
+app_ui <- fluidPage( title = "searchbuildR",
                      theme = bs_theme(bootswatch = "sandstone"),
 
   shinyFeedback::useShinyFeedback(),

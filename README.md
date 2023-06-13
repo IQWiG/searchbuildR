@@ -1,24 +1,24 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# searchbuilder
+# searchbuildR
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of searchbuilder is to identify overrepresented terms in a set
+The goal of searchbuildR is to identify overrepresented terms in a set
 of relevant references for a systematic review or evidence synthesis in
 general, which can then be applied in a boolean search in a bibliograpic
 database (e.g. PubMed).
 
 ## Installation
 
-You can install searchbuilder from GitHub. The package is currently not
+You can install searchbuildR from GitHub. The package is currently not
 released on CRAN, but will be in the future.
 
 ``` r
 library(remotes)
-remotes::install_github("https://github.com/IQWiG/searchbuilder")
+remotes::install_github("https://github.com/IQWiG/searchbuildR")
 ```
 
 ## Example
@@ -27,17 +27,17 @@ This is a basic example which shows you how to solve a common problem,
 the package was designed for:
 
 ``` r
-library(searchbuilder)
-path <- system.file("extdata", "example_ris.txt", package= "searchbuilder", mustWork = T)
+library(searchbuildR)
+path <- system.file("extdata", "example_ris.txt", package= "searchbuildR", mustWork = T)
 data <- z_scores(path)
 head(print_z_scores(data, terms = "freetext") )
 #>      Wort Wortfrequenz Anzahl Referenzen Erwartete Frequenz   Z-Score
-#> 1     ris            2                 1       7.853101e-05 225.68006
-#> 2    file            2                 1       1.927579e-04 144.04032
-#> 3 package            1                 1       2.498714e-04  63.24641
-#> 4    text            1                 1       7.638926e-04  36.15433
-#> 5 version            1                 1       1.249357e-03  28.25708
-#> 6 typical            1                 1       1.613455e-03  24.85637
+#> 1     ris            2                 1       7.067791e-05 237.88861
+#> 2    file            2                 1       1.734821e-04 151.83330
+#> 3 package            1                 1       2.248843e-04  66.66924
+#> 4    text            1                 1       6.875033e-04  38.11292
+#> 5 typical            1                 1       1.452110e-03  26.20515
+#> 6    here            1                 1       6.791505e-03  12.05423
 #>   Approximationskriterium zutreffend?
 #> 1                               FALSE
 #> 2                               FALSE
@@ -54,3 +54,9 @@ head(print_z_scores(data, terms = "MeSH"))
 #> 3 Library Automation                 1           NA          10000    NA        
 #> # … with abbreviated variable name ¹​`Approximationskriterium zutreffend?`
 ```
+
+### Questions, suggestions and bugs
+
+Ideas and suggestions for new functionalities or hints towards any bugs
+are welcome. Simply open an issue at
+<https://github.com/IQWiG/searchbuildR>.
