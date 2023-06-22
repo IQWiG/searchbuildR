@@ -118,7 +118,7 @@ app_server <- function(input, output, session) {
     rclipboard::rclipButton(
       inputId = "clibBtnVal",
       label = "Copy",
-      clipText = paste0("(",PMIDS_syntax()$testset, ").ui"),
+      clipText = paste0("(",PMIDS_syntax()$validation_set, ").ui"),
       icon = icon ("clipboard")
     )
   })
