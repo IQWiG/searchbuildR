@@ -24,11 +24,12 @@ app_server <- function(input, output, session) {
   })
 
   observeEvent(input$choose_references,{
-               updateTabsetPanel(inputId = "seedPanel", selected = chosenSeed())
+    updateTabsetPanel(inputId = "seedPanel", selected = chosenSeed())
                })
 
   observeEvent(input$analyzeButton,{
     updateTabsetPanel(inputId = "afterAnalysis", selected = "contentPanel")
+    updateTabsetPanel(inputId = "showPMIDS", selected = showingPMIDS())
     updateTabsetPanel(inputId = "SidepanelInfos", selected = "afterAnalysisPanel")
     updateTabsetPanel(inputId = "FreetextTab", selected = "FreetextContent")
     updateTabsetPanel(inputId = "MeSHTab", selected = "MeSHContent")
@@ -72,6 +73,14 @@ app_server <- function(input, output, session) {
            "devset" = "systemSeed",
            "seedset" = "userSeed")
     })
+
+  showingPMIDS <- reactive({
+    req(input$upload)
+    switch(input$choose_references,
+           "testset" = "hideDevsetPanel",
+           "devset" = "devsetPanel",
+           "seedset" = "devsetPanel")
+  })
 
   PMIDS_syntax <- reactive({
     map(zScoreData()$testset$PMIDS, paste, collapse = " OR ")

@@ -63,6 +63,11 @@ app_ui <- fluidPage( title = "searchbuildR",
                                       column(1,uiOutput("clipPMIDS")),
                                       column(11,htmlOutput("outputPMIDS"))
                                     ),
+                                    tabsetPanel(
+                                      id ="showPMIDS",
+                                      type = "hidden",
+                                    tabPanelBody("hideDevsetPanel", ""),
+                                      tabPanelBody("devsetPanel",
                                     fluidRow(
                                       column(6,
                                              fluidRow(
@@ -78,7 +83,8 @@ app_ui <- fluidPage( title = "searchbuildR",
                                     fluidRow(
                                       column(6,downloadButton("downloadDevSet", "Download Development Set")),
                                       column(6,downloadButton("downloadValSet", "Download Validation Set"))
-                                      )
+                                      ))
+                                    )
                                     ),
                      ),
                      reactableOutput("allRefs")
