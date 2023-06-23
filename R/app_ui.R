@@ -21,11 +21,11 @@ app_ui <- fluidPage( title = "searchbuildR",
                    sidebarPanel(width = 3,
                                 style = "background-color :white;",
                                 wellPanel(
-                                  fileInput("upload", "Choose testset"),
-                                  radioButtons("choose_references", "Choose references for analysis:",
-                                               choices = c("All references" = "testset",
-                                                           "Random development set" = "devset",
-                                                           "Development set with the following seed: " = "seedset")),
+                                  fileInput("upload", "Upload a testset"),
+                                  radioButtons("choose_references", "Choose which references should be analyzed:",
+                                               choices = c("Analyze complete testset" = "testset",
+                                                           "Create and analyze a random development set" = "devset",
+                                                           "Create and analyze a development set with the following seed: " = "seedset")),
                                   tabsetPanel(
                                     id = "seedPanel",
                                     type = "hidden",
@@ -63,6 +63,11 @@ app_ui <- fluidPage( title = "searchbuildR",
                                       column(1,uiOutput("clipPMIDS")),
                                       column(11,htmlOutput("outputPMIDS"))
                                     ),
+                                    tabsetPanel(
+                                      id ="showPMIDS",
+                                      type = "hidden",
+                                    tabPanelBody("hideDevsetPanel", ""),
+                                      tabPanelBody("devsetPanel",
                                     fluidRow(
                                       column(6,
                                              fluidRow(
@@ -78,7 +83,8 @@ app_ui <- fluidPage( title = "searchbuildR",
                                     fluidRow(
                                       column(6,downloadButton("downloadDevSet", "Download Development Set")),
                                       column(6,downloadButton("downloadValSet", "Download Validation Set"))
-                                      )
+                                      ))
+                                    )
                                     ),
                      ),
                      reactableOutput("allRefs")
@@ -217,6 +223,9 @@ app_ui <- fluidPage( title = "searchbuildR",
                ),
                mainPanel(
                  style = "overflow-y:scroll;position:relative;max-height:800px",
+                 fluidRow(column(4,""),
+                          column(4, "Enter search for qualifier terms here:"),
+                          column(4, "")),
                  reactableOutput("frequencyKeywords")
                  )
                )
@@ -229,7 +238,7 @@ app_ui <- fluidPage( title = "searchbuildR",
                  sidebarPanel(width = 5,
                    fluidRow(
                      column(6,
-                            "Enter a freetext term to see, in what contexts it occurs.
+                            "Enter a freetext term (single word or phrase) to see, in what contexts it occurs.
                             Select a specific reference from the list to see the full title and abstract.
                             The freetext term entered is displayed in all uploaded references and not only in the development set."
                             ),
@@ -245,6 +254,8 @@ app_ui <- fluidPage( title = "searchbuildR",
                    ),
                  mainPanel(width = 7,
                    style = "overflow-y:scroll;position:relative;max-height:800px",
+                   fluidRow(htmlOutput("infoTotalDocumentFreq")),
+                   fluidRow(htmlOutput("infoContext")),
                    reactableOutput("kwicTable")
                    )
                )

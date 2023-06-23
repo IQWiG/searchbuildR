@@ -24,11 +24,12 @@ app_server <- function(input, output, session) {
   })
 
   observeEvent(input$choose_references,{
-               updateTabsetPanel(inputId = "seedPanel", selected = chosenSeed())
+    updateTabsetPanel(inputId = "seedPanel", selected = chosenSeed())
                })
 
   observeEvent(input$analyzeButton,{
     updateTabsetPanel(inputId = "afterAnalysis", selected = "contentPanel")
+    updateTabsetPanel(inputId = "showPMIDS", selected = showingPMIDS())
     updateTabsetPanel(inputId = "SidepanelInfos", selected = "afterAnalysisPanel")
     updateTabsetPanel(inputId = "FreetextTab", selected = "FreetextContent")
     updateTabsetPanel(inputId = "MeSHTab", selected = "MeSHContent")
@@ -72,6 +73,14 @@ app_server <- function(input, output, session) {
            "devset" = "systemSeed",
            "seedset" = "userSeed")
     })
+
+  showingPMIDS <- reactive({
+    req(input$upload)
+    switch(input$choose_references,
+           "testset" = "hideDevsetPanel",
+           "devset" = "devsetPanel",
+           "seedset" = "devsetPanel")
+  })
 
   PMIDS_syntax <- reactive({
     map(zScoreData()$testset$PMIDS, paste, collapse = " OR ")
@@ -118,7 +127,7 @@ app_server <- function(input, output, session) {
     rclipboard::rclipButton(
       inputId = "clibBtnVal",
       label = "Copy",
-      clipText = paste0("(",PMIDS_syntax()$testset, ").ui"),
+      clipText = paste0("(",PMIDS_syntax()$validation_set, ").ui"),
       icon = icon ("clipboard")
     )
   })
@@ -381,6 +390,7 @@ app_server <- function(input, output, session) {
                                                  format = colFormat(suffix = " %",
                                                                     digits = 2)),
                              "frequency" = colDef(name = "Keyword Frequency")),
+              searchable = TRUE,
               showSortable = TRUE,
               striped = TRUE,
               compact = TRUE,
@@ -398,12 +408,14 @@ app_server <- function(input, output, session) {
   # Tab 6 Keywords-in-context
   # raw data or development set?
 
+  # extract tokens from text data
   kwicTokens <- reactive({
     req(input$upload)
     rawdata()$text_corpus %>%
     tokens()
   })
 
+  # mark term of interest
   kwicTokensMarked <- reactive({
     selected_reference <- kwicTokens()[[selection()]]
     index <- which(tolower(selected_reference) == tolower(input$kwicInput))
@@ -411,10 +423,11 @@ app_server <- function(input, output, session) {
     return(selected_reference)
   })
 
+  #create the raw "keywords-in-context" table
   kwicRawTable <- reactive({
     req(input$kwicInput)
       result <- kwicTokens()  %>%
-        kwic(input$kwicInput,
+        kwic(phrase(input$kwicInput),
              case_insensitive = TRUE,
              window = input$kwicSlider)
       if(nrow(result) == 0){
@@ -423,11 +436,39 @@ app_server <- function(input, output, session) {
       return(result)
     })
 
+
+  # calculate number of occurrences and number of documents
+  context_docfreq <- reactive({
+    req(input$kwicInput)
+    length(
+      attr(
+        attr(kwicRawTable(),
+             "ntoken"),
+        "names")
+      )
+  })
+
+  context_freq <- reactive({
+    req(input$kwicInput)
+    nrow(kwicRawTable())
+  })
+  output$infoTotalDocumentFreq <- renderText({
+    paste("Number of documents analyzed:",length(rawdata()$reference.list))
+  })
+
+  output$infoContext <- renderText({
+    if(!is.null(input$kwicInput)){
+      paste("The term occurs",context_freq(),"times in <b>", context_docfreq(), "</b> documents")
+    }
+  })
+
+  # catch user selection of the interactive table
     selection <-  reactive({
       req(getReactableState("kwicTable", "selected"))
       kwicRawTable()[[getReactableState("kwicTable", "selected"),"docname"]]
     })
 
+  #define UI output
     output$kwicTable <- renderReactable({
       reactable( kwicRawTable() %>%
                    as.data.frame() %>%
@@ -467,13 +508,7 @@ app_server <- function(input, output, session) {
     reactable(summarise_adjacency(rawdata()$text_corpus, ngrams = input$phraseSlider+2),
               columns = list( "feature" = colDef(name = "N-grams",
                                                  minWidth = 150,
-                                                 filterable = TRUE,
-                                                 filterMethod = JS("function(rows, columnId, filterValue) {
-                                                 const pattern = new RegExp(filterValue, 'i')
-                                                 return rows.filter(function(row) {
-                                                 return pattern.test(row.values[columnId])
-                                                 })
-                                                                   }")
+                                                 filterable = TRUE
               ),
               "frequency" = colDef(name = "Frequency",
                                    format = colFormat(digits = 0))
