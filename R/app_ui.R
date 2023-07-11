@@ -16,7 +16,6 @@ app_ui <- fluidPage( title = "searchbuildR",
 
       tabsetPanel(
         tabPanel("Data import",
-                 h4("Proof of concept version"),
                  sidebarLayout(
                    sidebarPanel(width = 3,
                                 style = "background-color :white;",

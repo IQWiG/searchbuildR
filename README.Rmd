@@ -29,15 +29,16 @@ remotes::install_github("https://github.com/IQWiG/searchbuildR")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem, the package was designed for:
+After installing the package you can launch the Shiny App locally in R:
 
-```{r example}
+```{r example, eval = FALSE}
 library(searchbuildR)
-path <- system.file("extdata", "example_ris.txt", package= "searchbuildR", mustWork = T)
-data <- z_scores(path)
-head(print_z_scores(data, terms = "freetext") )
-head(print_z_scores(data, terms = "MeSH"))
+run_app()
 ```
+
+The interface looks roughly like this (version 0.0.11):
+
+<img src="inst/extdata/screenshot_searchbuildR.png"/>
 
 ### Questions, suggestions and bugs
 Ideas and suggestions for new functionalities or hints towards any bugs are welcome. Simply open an issue at https://github.com/IQWiG/searchbuildR.
