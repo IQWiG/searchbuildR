@@ -376,13 +376,7 @@ app_server <- function(input, output, session) {
     reactable(zScoreData()$z_score_tables$all_keywords,
               columns = list("MeSH_qualifier" = colDef(name = "All Keywords",
                                                        minWidth = 250,
-                                                       filterable = TRUE,
-                                                       filterMethod = JS("function(rows, columnId, filterValue) {
-                                                       const pattern = new RegExp('^' + filterValue, 'i')
-                                                       return rows.filter(function(row) {
-                                                       return pattern.test(row.values[columnId])
-                                                       })
-                                                                         }")),
+                                                       filterable = TRUE),
                              "docfreq" = colDef(name = "Documents",
                                                 minWidth = 120),
                              "coverage" = colDef(name = "Documents in %",
@@ -390,7 +384,6 @@ app_server <- function(input, output, session) {
                                                  format = colFormat(suffix = " %",
                                                                     digits = 2)),
                              "frequency" = colDef(name = "Keyword Frequency")),
-              searchable = TRUE,
               showSortable = TRUE,
               striped = TRUE,
               compact = TRUE,
