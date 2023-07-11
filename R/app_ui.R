@@ -223,9 +223,6 @@ app_ui <- fluidPage( title = "searchbuildR",
                ),
                mainPanel(
                  style = "overflow-y:scroll;position:relative;max-height:800px",
-                 fluidRow(column(4,""),
-                          column(4, "Enter search for qualifier terms here:"),
-                          column(4, "")),
                  reactableOutput("frequencyKeywords")
                  )
                )
