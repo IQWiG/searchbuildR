@@ -445,6 +445,18 @@ app_server <- function(input, output, session) {
     req(input$kwicInput)
     nrow(kwicRawTable())
   })
+
+  output$freetextTable <- renderReactable({
+    reactable(zScoreData()$z_score_tables$freetext %>%
+                filter(.data$z >=20 & .data$docfreq >=2 & .data$coverage >= 10) %>%
+                select("feature"),
+                                    columns = list("feature" = colDef(name = "Frequent Terms with Z-score > 20")),
+              defaultSorted = "feature",
+              defaultSortOrder = "asc",
+              showSortable = TRUE,
+              pagination = FALSE)
+  })
+
   output$infoTotalDocumentFreq <- renderText({
     paste("Number of documents analyzed:",length(rawdata()$reference.list))
   })
