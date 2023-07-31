@@ -232,33 +232,28 @@ app_ui <- fluidPage( title = "searchbuildR",
              fluidPage(
                sidebarLayout(
                  sidebarPanel(width = 5,
-                              fluidRow(
-                                column(3,reactableOutput("freetextTable")),
-                                column(8,
-                                       fluidRow(
-                                         column(6,
-                                                "Enter a freetext term (single word or phrase) to see, in what contexts it occurs.
-                                                Select a specific reference from the list to see the full title and abstract.
-                                                The freetext term entered is displayed in all uploaded references and not only in the development set."
-                                                ),
-                                        column(6,
-                                               textInput("kwicInput", "Enter term"),
-                                               sliderInput("kwicSlider", "Select window to display:", 1, 10, 5)
-                                               )
-                                        ),
-                                       wellPanel(
-                                         style = "background-color :white;",
-                                         htmlOutput("kwicSelectedRef")
-                                         )
-                                       )
-                                )
-                              ),
+                   fluidRow(
+                     column(6,
+                            "Enter a freetext term (single word or phrase) to see, in what contexts it occurs.
+                            Select a specific reference from the list to see the full title and abstract.
+                            The freetext term entered is displayed in all uploaded references and not only in the development set."
+                            ),
+                     column(6,
+                            textInput("kwicInput", "Enter term"),
+                            sliderInput("kwicSlider", "Select window to display:", 1, 10, 5)
+                            )
+                   ),
+                   wellPanel(
+                     style = "background-color :white;",
+                     htmlOutput("kwicSelectedRef")
+                   )
+                   ),
                  mainPanel(width = 7,
-                           style = "overflow-y:scroll;position:relative;max-height:800px",
-                           fluidRow(htmlOutput("infoTotalDocumentFreq")),
-                           fluidRow(htmlOutput("infoContext")),
-                           reactableOutput("kwicTable")
-                 )
+                   style = "overflow-y:scroll;position:relative;max-height:800px",
+                   fluidRow(htmlOutput("infoTotalDocumentFreq")),
+                   fluidRow(htmlOutput("infoContext")),
+                   reactableOutput("kwicTable")
+                   )
                )
              )
              ),
