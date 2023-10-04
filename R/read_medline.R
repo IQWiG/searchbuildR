@@ -31,7 +31,7 @@ read_medline <- function (x)
     return(result)
   })
   names(x_final) <- unlist(lapply(x_final, function(a) {
-    a$pubmed_id
+    a$accession
   }))
   class(x_final) <- "bibliography"
   return(x_final)
