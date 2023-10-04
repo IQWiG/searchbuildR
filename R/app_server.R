@@ -168,16 +168,14 @@ app_server <- function(input, output, session) {
   )
 
   output$allRefs <- renderReactable({
-     reactable(as.data.frame(rawdata()$reference.list)[c("accession",
-                                             "year",
-                                             "title",
-                                             "author")],
-              columns = list ("accession" = colDef(name = "PMID",
-                                                   maxWidth = 100),
-                            "author" = colDef(name ="Author"),
-                            "year" = colDef(name = "Year",
-                                            maxWidth = 100),
-                            "title"= colDef(name = "Title")),
+     reactable(as.data.frame(rawdata()$reference.list) %>%
+                 select(any_of(c("PMID" = "accession", "Year" = "year","Title" = "title", "Author" = "author"))),
+           #   columns = list ("accession" = colDef(name = "PMID",
+           #                                        maxWidth = 100),
+           #                 "author" = colDef(name ="Author"),
+           #                 "year" = colDef(name = "Year",
+           #                                 maxWidth = 100),
+           #                 "title"= colDef(name = "Title")),
               filterable = TRUE,
               showSortable = TRUE,
               striped = TRUE,
@@ -247,11 +245,11 @@ app_server <- function(input, output, session) {
         mutate(across(where(is.double), ~ round(.x, digits = 2))) %>%
         arrange(desc(.data$z)) %>%
         rename(`Candidate Terms` = "feature",
-               `Absolute Document Frequency` = "docfreq",
-               `% Document Frequency` = "coverage",
+               `Documents` = "docfreq",
+               `Documents in %` = "coverage",
                `Term frequency` = "frequency",
                `Z-Score` = "z",
-               `Absolute Norm Set Document Frequency` = "Norm.docfreq")
+               `Population set documents` = "Norm.docfreq")
       write.csv2(output,
                  file = file, row.names = FALSE,
                  )
@@ -304,10 +302,10 @@ app_server <- function(input, output, session) {
         mutate(across(where(is.double), ~ round(.x, digits = 2))) %>%
         arrange(desc(.data$z)) %>%
         rename(`MeSH Heading` = "MeSH",
-               `Absolute Document Frequency` = "docfreq",
-               `% Document Frequency` = "coverage",
+               `Documents` = "docfreq",
+               `Documents in %` = "coverage",
                `Z-Score` = "z",
-               `Absolute Norm Set Document Frequency` = "Norm.docfreq")
+               `Population set documents` = "Norm.docfreq")
        write.csv2(output,
                  file = file, row.names = FALSE)
     }
@@ -360,11 +358,11 @@ app_server <- function(input, output, session) {
         mutate(across(where(is.double), ~ round(.x, digits = 2))) %>%
         arrange(desc(.data$z)) %>%
         rename(`Candidate Terms` = "MeSH",
-               `Absolute Document Frequency` = "docfreq",
-               `% Document Frequency` = "coverage",
-               `Absolute Qualifier Frequency` = "frequency",
+               `Documents` = "docfreq",
+               `Documents in %` = "coverage",
+               `Qualifier frequency` = "frequency",
                `Z-Score` = "z",
-               `Absolute Norm Set Document Frequency` = "Norm.docfreq")
+               `Population set documents` = "Norm.docfreq")
       write.csv2(output,
                  file = file, row.names = FALSE,
       )
@@ -402,32 +400,35 @@ app_server <- function(input, output, session) {
   # raw data or development set?
 
   # extract tokens from text data
-  kwicTokens <- reactive({
+  kwicCorpus <- reactive({
     req(input$upload)
-    rawdata()$text_corpus %>%
-    tokens()
+    rawdata()$text_corpus
   })
 
   # mark term of interest
   kwicTokensMarked <- reactive({
-    selected_reference <- kwicTokens()[[selection()]]
-    index <- which(tolower(selected_reference) == tolower(input$kwicInput))
-    selected_reference[index] <- paste0("<mark>", selected_reference[index], "</mark>")
-    return(selected_reference)
+    selected_reference <-  gsub(pattern = paste0("(\\W)", input$kwicInput, "(\\W)"),
+                               replacement = paste0("<mark>", "\\1", input$kwicInput, "\\2", "</mark>"),
+                               x = kwicCorpus()[[selection()]])
   })
 
   #create the raw "keywords-in-context" table
   kwicRawTable <- reactive({
     req(input$kwicInput)
-      result <- kwicTokens()  %>%
-        kwic(phrase(input$kwicInput),
-             case_insensitive = TRUE,
-             window = input$kwicSlider)
-      if(nrow(result) == 0){
-        validate("Please select a term listed in table `Freetext`")
-      }
-      return(result)
-    })
+    if(grepl("(\\.)|(\\*)", input$kwicInput)){
+      validate("* and . cannot be used in search term entered.")
+    }
+    result <- gsub(kwicCorpus(), pattern = "(?<=\\w)-(?=\\w)", replacement = " ", perl = TRUE) %>%
+      tokens()%>%
+      kwic(phrase(input$kwicInput),
+           case_insensitive = TRUE,
+           window = input$kwicSlider)
+    if(nrow(result) == 0){
+      validate("Please select a term listed in tab `Freetext`")
+    }
+
+    return(result)
+  })
 
 
   # calculate number of occurrences and number of documents
@@ -491,7 +492,7 @@ app_server <- function(input, output, session) {
             )})
 
     output$kwicSelectedRef <- renderText({
-      paste(kwicTokensMarked(), collapse = " ")
+      kwicTokensMarked()
       })
 
   # Tab 7 Phrases
