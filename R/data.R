@@ -13,8 +13,8 @@
 
 #' PubMed random population set
 #'
-#' A random sample of PubMed references drawn from random PMIDs (range 1000 - 36000000),
-#' search date: April 1st 2022.
+#' A random sample of 19383 PubMed references drawn from random PMIDs (range 1000 - 36000000),
+#' search date: April 1st 2022. Source: National Library of Medicine.
 #'
 #'
 #' @format ## `popset`
