@@ -407,9 +407,15 @@ app_server <- function(input, output, session) {
 
   # mark term of interest
   kwicTokensMarked <- reactive({
+    kwicInput_hyphen <- gsub(" ", "-", input$kwicInput)
     selected_reference <-  gsub(pattern = paste0("(\\W)", input$kwicInput, "(\\W)"),
                                replacement = paste0("<mark>", "\\1", input$kwicInput, "\\2", "</mark>"),
-                               x = kwicCorpus()[[selection()]])
+                               x = kwicCorpus()[[selection()]],
+                               ignore.case = TRUE)
+    selected_reference <-  gsub(pattern = paste0("(\\W)", kwicInput_hyphen, "(\\W)"),
+                                replacement = paste0("<mark>", "\\1", kwicInput_hyphen, "\\2", "</mark>"),
+                                x = selected_reference,
+                                ignore.case = TRUE)
   })
 
   #create the raw "keywords-in-context" table
@@ -418,15 +424,24 @@ app_server <- function(input, output, session) {
     if(grepl("(\\.)|(\\*)", input$kwicInput)){
       validate("* and . cannot be used in search term entered.")
     }
-    result <- gsub(kwicCorpus(), pattern = "(?<=\\w)-(?=\\w)", replacement = " ", perl = TRUE) %>%
-      tokens()%>%
-      kwic(phrase(input$kwicInput),
-           case_insensitive = TRUE,
-           window = input$kwicSlider)
+    if(grepl("-", input$kwicInput)) {
+      kwicInput_hyphen <- gsub("-", " - ", input$kwicInput)
+      result <- kwicCorpus() %>%
+        tokens(split_hyphens = TRUE) %>%
+        kwic(phrase(kwicInput_hyphen),
+             case_insensitive = TRUE,
+             window = input$kwicSlider)
+    } else {
+      result <- kwicCorpus() %>%
+        tokens(split_hyphens = TRUE, remove_punct = TRUE) %>%
+        kwic(phrase(input$kwicInput),
+             case_insensitive = TRUE,
+             window = input$kwicSlider)
+    }
+
     if(nrow(result) == 0){
       validate("Please select a term listed in tab `Freetext`")
     }
-
     return(result)
   })
 

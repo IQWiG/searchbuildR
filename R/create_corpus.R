@@ -5,7 +5,7 @@ create_corpus <- function(reference_set){
 
   # Remove empty titles and abstracts (previously "NA" was interpreted as string by quanteda) and special characters
   references <-references %>%
-    tidyr::replace_na(list(title = "Kein_Title", abstract = "Kein_Abstract"))
+    tidyr::replace_na(list(title = "NO_TITLE", abstract = "NO_ABSTRACT"))
 
   references$text <- paste(references$title, references$abstract, sep = "\n ")
 

@@ -1,6 +1,6 @@
 adjacency <- function(corpus_data, skip = 0) {
   corpus_data %>%
-    quanteda::tokens(remove_punct = T, remove_symbols = T,padding = F) %>%
+    quanteda::tokens(split_hyphens = TRUE, remove_punct = T, remove_symbols = T,padding = F) %>%
     quanteda::tokens_remove(quanteda::stopwords("en"), padding = T) %>%
     quanteda::tokens_ngrams(n = 2, skip = skip, concatenator = " ") %>%
     dfm %>%
