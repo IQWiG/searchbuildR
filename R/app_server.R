@@ -45,8 +45,19 @@ app_server <- function(input, output, session) {
     switch(ext,
            txt = create_testset(input$upload$datapath),
            ris = create_testset(input$upload$datapath),
-           validate("Invalid file: Please upload a risfile exported from Endnote")
+           validate("Invalid file: Please upload a risfile exported from Endnote or PubMed")
     )
+  })
+  allRefsTable <- reactive({
+    columns <- c("accession", "author", "year", "title")
+    table <- purrr::set_names(rep(list(NA_real_),length(columns)), columns) %>% as.data.frame()
+    result <- rawdata()$reference.list %>%
+      as.data.frame() %>%
+      tibble::add_column(table[setdiff(columns, names(.data))])
+
+    result$first_author <- stringr::str_split_i(result$author, " and ", 1)  #only choose first author
+    result <- result %>% select("accession", "first_author", "year", "title")
+    return(result)
   })
     zScoreData <- bindEvent(reactive({
     req(input$upload)
@@ -168,14 +179,14 @@ app_server <- function(input, output, session) {
   )
 
   output$allRefs <- renderReactable({
-     reactable(as.data.frame(rawdata()$reference.list) %>%
-                 select(any_of(c("PMID" = "accession", "Year" = "year","Title" = "title", "Author" = "author"))),
-           #   columns = list ("accession" = colDef(name = "PMID",
-           #                                        maxWidth = 100),
-           #                 "author" = colDef(name ="Author"),
-           #                 "year" = colDef(name = "Year",
-           #                                 maxWidth = 100),
-           #                 "title"= colDef(name = "Title")),
+     reactable(allRefsTable(),
+              columns = list ("accession" = colDef(name = "PMID",
+                                              maxWidth = 100),
+                            "first_author" = colDef(name ="First Author",
+                                                    maxWidth = 150),
+                            "year" = colDef(name = "Year",
+                                            maxWidth = 100),
+                            "title"= colDef(name = "Title")),
               filterable = TRUE,
               showSortable = TRUE,
               striped = TRUE,
@@ -237,7 +248,7 @@ app_server <- function(input, output, session) {
   })
   output$downloadFreetext <- downloadHandler(
     filename = function(){
-      paste0(input$upload,"-freetext.csv")
+      paste0(tools::file_path_sans_ext(input$upload),"-freetext.csv")
     },
     content = function(file) {
       output <- zScoreData()$z_score_tables$freetext %>%
@@ -294,7 +305,7 @@ app_server <- function(input, output, session) {
   })
   output$downloadMeSH <- downloadHandler(
     filename = function(){
-      paste0(input$upload,"-MeSH.csv")
+      paste0(tools::file_path_sans_ext(input$upload),"-MeSH.csv")
     },
     content = function(file) {
       output <- zScoreData()$z_score_tables$MeSH %>%
@@ -350,7 +361,7 @@ app_server <- function(input, output, session) {
 
   output$downloadQualifier <- downloadHandler(
     filename = function(){
-      paste0(input$upload,"-qualifier.csv")
+      paste0(tools::file_path_sans_ext(input$upload),"-qualifier.csv")
     },
     content = function(file) {
       output <- zScoreData()$z_score_tables$qualifier %>%
@@ -408,14 +419,7 @@ app_server <- function(input, output, session) {
   # mark term of interest
   kwicTokensMarked <- reactive({
     kwicInput_hyphen <- gsub(" ", "-", input$kwicInput)
-    selected_reference <-  gsub(pattern = paste0("(\\W)", input$kwicInput, "(\\W)"),
-                               replacement = paste0("<mark>", "\\1", input$kwicInput, "\\2", "</mark>"),
-                               x = kwicCorpus()[[selection()]],
-                               ignore.case = TRUE)
-    selected_reference <-  gsub(pattern = paste0("(\\W)", kwicInput_hyphen, "(\\W)"),
-                                replacement = paste0("<mark>", "\\1", kwicInput_hyphen, "\\2", "</mark>"),
-                                x = selected_reference,
-                                ignore.case = TRUE)
+    stringr::str_replace_all(kwicCorpus()[[selection()]], stringr::regex(paste0("(\\b)(",input$kwicInput,"|",kwicInput_hyphen,")(\\b)"), ignore_case = T), paste0("<mark>\\2</mark>"))
   })
 
   #create the raw "keywords-in-context" table
