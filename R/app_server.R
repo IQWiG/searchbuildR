@@ -418,7 +418,7 @@ app_server <- function(input, output, session) {
 
   # mark term of interest
   kwicTokensMarked <- reactive({
-    kwicInput_hyphen <- gsub(" ", "-", input$kwicInput)
+    kwicInput_hyphen <-  stringr::str_replace_all(input$kwicInput," ", "-")
     stringr::str_replace_all(kwicCorpus()[[selection()]], stringr::regex(paste0("(\\b)(",input$kwicInput,"|",kwicInput_hyphen,")(\\b)"), ignore_case = T), paste0("<mark>\\2</mark>"))
   })
 
@@ -519,14 +519,23 @@ app_server <- function(input, output, session) {
   output$phraseTable <- renderReactable({
     req(input$upload)
     reactable(summarise_adjacency(rawdata()$text_corpus, ngrams = input$phraseSlider+2),
-              columns = list( "feature" = colDef(name = "N-grams",
+              columns = list( "feature" = colDef(name = "Skip-Grams",
                                                  minWidth = 150,
-                                                 filterable = TRUE
+                                                 filterable = TRUE),
+                              "frequency" = colDef(name = "Overall frequency",
+                                                   format = colFormat(digits = 0))
               ),
-              "frequency" = colDef(name = "Frequency",
-                                   format = colFormat(digits = 0))
-              ),
-              )
+              showSortable = TRUE,
+              sortable = TRUE,
+              striped = TRUE,
+              compact = TRUE,
+              highlight = TRUE,
+              resizable = TRUE,
+              fullWidth = FALSE,
+              paginationType= "jump",
+              defaultPageSize = 10,
+              showPageSizeOptions = TRUE, pageSizeOptions = c(10, 20, 50, 100)
+    )
   })
 }
 
