@@ -33,15 +33,3 @@ summarise_adjacency <- function(corpus, ngrams = 4){
   return(result)
 }
 
-# summarise_adjacency(testset$text_corpus, ngrams = 4)
-
-#  full_join(df30, by = "feature", suffix = c("_2", "_3")) %>%
-  #  full_join(df40, by = "feature") %>%
-  #  full_join(df50, by = "feature", suffix = c("_4", "_5")) %>%
-  #  mutate(frequency = rowSums(dplyr::across(c(frequency_2,frequency_3,frequency_4,frequency_5)), na.rm = T),
-  #         ngram = paste(ngram_2,ngram_3,ngram_4, ngram_5),
-  #         ngram = str_replace_all(ngram, pattern = "NA",replacement ="-")) %>%
-  #  select(feature, frequency, ngram) %>%
-  #  arrange(desc(frequency))
-  #
-
