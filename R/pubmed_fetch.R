@@ -34,7 +34,7 @@ resp <- httr2::request("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcg
                          db = "pubmed",
                          id = paste(format(uid, scientific = FALSE, trim = TRUE), collapse = ","),
                          rettype = "medline") %>%
-    httr2::req_perform()
+      httr2::req_perform()
 if (length(resp$body) == 0){
   return("The request retrieved no results.")
 } else {
