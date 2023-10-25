@@ -1,12 +1,12 @@
 adjacency <- function(corpus_data, skip = 0) {
   corpus_data %>%
-    quanteda::tokens(remove_punct = T, remove_symbols = T,padding = F) %>%
+    quanteda::tokens(split_hyphens = TRUE, remove_punct = T, remove_symbols = T, remove_numbers = T, padding = F) %>%
     quanteda::tokens_remove(quanteda::stopwords("en"), padding = T) %>%
     quanteda::tokens_ngrams(n = 2, skip = skip, concatenator = " ") %>%
     dfm %>%
     textstat_frequency()%>%
     select("feature", "frequency") %>%
-    mutate(ngram = skip + 2)
+    mutate(gram = skip + 2)
 #  return(skip)
 }
 
@@ -20,13 +20,13 @@ summarise_adjacency <- function(corpus, ngrams = 4){
   result <- result_loop %>%
     bind_rows %>%
     group_by(.data$feature) %>%
-    summarise(frequency = sum(.data$frequency),
-              ngram = .data$ngram,
-              .groups = "drop") %>% # avoid dplyr message about group tibble
-    arrange(.data$ngram) %>%
-    tidyr::pivot_wider(names_from = "ngram",
-                       names_prefix = "ngram_",
-                       values_from = "ngram",
+    dplyr::reframe(skip_gram_frequency = .data$frequency,
+            skip = .data$gram - 2,
+            frequency = sum(.data$frequency)) %>% # avoid dplyr message about group tibble
+    arrange(.data$skip) %>%
+    tidyr::pivot_wider(names_from = "skip",
+                       names_prefix = "Skip-",
+                       values_from = "skip_gram_frequency",
                        values_fn = as.character, # otherwise values_fill throws an error
                        values_fill = "-") %>%
     arrange(desc(frequency))

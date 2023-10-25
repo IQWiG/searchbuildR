@@ -22,7 +22,7 @@ app_ui <- fluidPage( title = "searchbuildR",
                                 wellPanel(
                                   fileInput("upload", "Upload a testset"),
                                   radioButtons("choose_references", "Choose which references should be analyzed:",
-                                               choices = c("Analyze complete testset" = "testset",
+                                               choices = c("Analyze all uploaded references" = "testset",
                                                            "Create and analyze a random development set" = "devset",
                                                            "Create and analyze a development set with the following seed: " = "seedset")),
                                   tabsetPanel(
@@ -106,12 +106,12 @@ app_ui <- fluidPage( title = "searchbuildR",
                      ),
                      fluidRow(
                      column(12,
-                            HTML("<p>The table shows all freetext terms in the chosen test set.
+                            HTML("<p>The table shows all freetext terms in the chosen analysis set (either all uploaded or random development set).
                             <br> Freetext terms are defined as all words in the title and abstract.</p>
                             <p> Details:
-                            <br> All numbers, Unicode symbols and unicode punctuation hase been removed. Hyphenated words have been separated (i.e. 'self-aware' is analyzed as 'self' and 'aware').
+                            <br> All numbers, Unicode symbols and Unicode punctuation hase been removed. Hyphenated words have been separated (i.e. 'self-aware' is analyzed as 'self' and 'aware').
                             <br> The z-ccore of a binomial test against a random representative set of PubMed references is calculated.
-                              A positive z-score indicates, that the freetext term occurs more often in the test set,
+                              A positive z-score indicates, that the freetext term occurs more often in the analysis set,
                               than would be expected based on the representative sample of PubMed references.
                               A z-score of 10000 is given to all candidate terms,
                               which did not occurr in the representative sample of PubMed references.</p>

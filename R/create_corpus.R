@@ -5,11 +5,9 @@ create_corpus <- function(reference_set){
 
   # Remove empty titles and abstracts (previously "NA" was interpreted as string by quanteda) and special characters
   references <-references %>%
-    tidyr::replace_na(list(title = "Kein_Title", abstract = "Kein_Abstract"))
+    tidyr::replace_na(list(title = "NO_TITLE", abstract = "NO_ABSTRACT"))
 
   references$text <- paste(references$title, references$abstract, sep = "\n ")
-
-  references$text <- stringr::str_replace_all(references$text, "\\d+|[\\[\\].#@'_:]|Kein_Title|Kein_Abstract", " ")
 
   # name documents with algorithm "author_year"
   if (any(names(references) == "author")) {
@@ -23,7 +21,7 @@ create_corpus <- function(reference_set){
 
   authors <- strsplit(references$author, split = ",")
   first_authors <- lapply(authors,"[[",1)
-  Docnames <- make.unique(paste(first_authors,references$year,  sep="_"))
+  Docnames <- make.unique(paste(first_authors, references$year, sep = "_"))
   quanteda::docnames(references) <- Docnames
 
   return(references)

@@ -1,0 +1,1422 @@
+PMID- 25251484
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20150909
+LR  - 20220408
+IS  - 1545-2085 (Electronic)
+IS  - 0066-4308 (Linking)
+VI  - 66
+DP  - 2015 Jan 3
+TI  - Emotion and decision making.
+PG  - 799-823
+LID - 10.1146/annurev-psych-010213-115043 [doi]
+AB  - A revolution in the science of emotion has emerged in recent decades, with the 
+      potential to create a paradigm shift in decision theories. The research reveals 
+      that emotions constitute potent, pervasive, predictable, sometimes harmful and 
+      sometimes beneficial drivers of decision making. Across different domains, 
+      important regularities appear in the mechanisms through which emotions influence 
+      judgments and choices. We organize and analyze what has been learned from the 
+      past 35 years of work on emotion and decision making. In so doing, we propose the 
+      emotion-imbued choice model, which accounts for inputs from traditional rational 
+      choice theory and from newer emotion research, synthesizing scientific models.
+FAU - Lerner, Jennifer S
+AU  - Lerner JS
+AD  - Harvard Kennedy School, Harvard University, Cambridge, Massachusetts 02138; 
+      email: jennifer_lerner@harvard.edu.
+FAU - Li, Ye
+AU  - Li Y
+FAU - Valdesolo, Piercarlo
+AU  - Valdesolo P
+FAU - Kassam, Karim S
+AU  - Kassam KS
+LA  - eng
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+PT  - Research Support, U.S. Gov't, Non-P.H.S.
+PT  - Review
+DEP - 20140922
+PL  - United States
+TA  - Annu Rev Psychol
+JT  - Annual review of psychology
+JID - 0372374
+SB  - IM
+MH  - Decision Making/*physiology
+MH  - Emotions/*physiology
+MH  - Humans
+MH  - *Models, Psychological
+OTO - NOTNLM
+OT  - affect
+OT  - appraisal tendency
+OT  - behavioral economics
+OT  - choice
+OT  - judgment
+OT  - mood
+EDAT- 2014/09/25 06:00
+MHDA- 2015/09/10 06:00
+CRDT- 2014/09/25 06:00
+PHST- 2014/09/25 06:00 [entrez]
+PHST- 2014/09/25 06:00 [pubmed]
+PHST- 2015/09/10 06:00 [medline]
+AID - 10.1146/annurev-psych-010213-115043 [doi]
+PST - ppublish
+SO  - Annu Rev Psychol. 2015 Jan 3;66:799-823. doi: 
+      10.1146/annurev-psych-010213-115043. Epub 2014 Sep 22.
+
+PMID- 33259335
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20210112
+LR  - 20210112
+IS  - 1046-7890 (Print)
+IS  - 1046-7890 (Linking)
+VI  - 31
+IP  - 4
+DP  - 2020 Winter
+TI  - Beyond Shared Decision Making.
+PG  - 293-302
+LID - 2020314293 [pii]
+AB  - Shared decision making (SDM) is the state of the art for clinicians' 
+      communication with patients and surrogate decision makers. SDM involves give and 
+      take, in which all parties interact to maximize the autonomy of patients. In this 
+      article I summarize the core steps of SDM and explore ways to use it to benefit 
+      patients to the greatest extent. I review three articles included in this issue 
+      of The Journal of Clinical Ethics that highlight additional approaches we can use 
+      to help patients and parents to see what may be in their own or their child's 
+      best interest. I describe how these approaches can be used in most other medical 
+      fields. I explore ways to share information with patients that are outside the 
+      usual scope of SDM. Finally, I discuss how we might look, together with patients, 
+      at what all parties are feeling before we begin the process of SDM.
+CI  - Copyright 2020 The Journal of Clinical Ethics. All rights reserved.
+FAU - Hower, Edmund G
+AU  - Hower EG
+AD  - Programs in Medical Ethics, Uniformed Services University of the Health Sciences, 
+      4301 Jones Bridge Road, Bethesda, Maryland 20814 USA. edmund.howe@uhuhs.edu.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+PL  - United States
+TA  - J Clin Ethics
+JT  - The Journal of clinical ethics
+JID - 9114645
+SB  - IM
+MH  - Child, Preschool
+MH  - *Communication
+MH  - Decision Making/*ethics
+MH  - *Decision Making, Shared
+MH  - Humans
+MH  - Parents
+MH  - *Patient Participation
+MH  - Patient-Centered Care/*ethics
+MH  - Physician-Patient Relations
+EDAT- 2020/12/02 06:00
+MHDA- 2021/01/13 06:00
+CRDT- 2020/12/01 17:09
+PHST- 2020/12/01 17:09 [entrez]
+PHST- 2020/12/02 06:00 [pubmed]
+PHST- 2021/01/13 06:00 [medline]
+AID - 2020314293 [pii]
+PST - ppublish
+SO  - J Clin Ethics. 2020 Winter;31(4):293-302.
+
+PMID- 31337275
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20201026
+LR  - 20201026
+IS  - 1545-2085 (Electronic)
+IS  - 0066-4308 (Linking)
+VI  - 71
+DP  - 2020 Jan 4
+TI  - Judgment and Decision Making.
+PG  - 331-355
+LID - 10.1146/annurev-psych-010419-050747 [doi]
+AB  - The science of judgment and decision making involves three interrelated forms of 
+      research: analysis of the decisions people face, description of their natural 
+      responses, and interventions meant to help them do better. After briefly 
+      introducing the field's intellectual foundations, we review recent basic research 
+      into the three core elements of decision making: judgment, or how people predict 
+      the outcomes that will follow possible choices; preference, or how people weigh 
+      those outcomes; and choice, or how people combine judgments and preferences to 
+      reach a decision. We then review research into two potential sources of 
+      behavioral heterogeneity: individual differences in decision-making competence 
+      and developmental changes across the life span. Next, we illustrate applications 
+      intended to improve individual and organizational decision making in health, 
+      public policy, intelligence analysis, and risk management. We emphasize the 
+      potential value of coupling analytical and behavioral research and having basic 
+      and applied research inform one another.
+FAU - Fischhoff, Baruch
+AU  - Fischhoff B
+AD  - Department of Engineering and Public Policy, and Institute for Politics and 
+      Strategy, Carnegie Mellon University, Pittsburgh, Pennsylvania 15213, USA; email: 
+      baruch@cmu.edu.
+FAU - Broomell, Stephen B
+AU  - Broomell SB
+AD  - Department of Social and Decision Sciences, Carnegie Mellon University, 
+      Pittsburgh, Pennsylvania 15213, USA; email: broomell@cmu.edu.
+LA  - eng
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+PT  - Review
+DEP - 20190723
+PL  - United States
+TA  - Annu Rev Psychol
+JT  - Annual review of psychology
+JID - 0372374
+SB  - IM
+MH  - Decision Making/*physiology
+MH  - Human Development/*physiology
+MH  - Humans
+MH  - *Individuality
+MH  - Judgment/*physiology
+OTO - NOTNLM
+OT  - decision making
+OT  - history
+OT  - judgment
+OT  - preference
+OT  - risk
+OT  - uncertainty
+EDAT- 2019/07/25 06:00
+MHDA- 2020/10/27 06:00
+CRDT- 2019/07/25 06:00
+PHST- 2019/07/25 06:00 [pubmed]
+PHST- 2020/10/27 06:00 [medline]
+PHST- 2019/07/25 06:00 [entrez]
+AID - 10.1146/annurev-psych-010419-050747 [doi]
+PST - ppublish
+SO  - Annu Rev Psychol. 2020 Jan 4;71:331-355. doi: 
+      10.1146/annurev-psych-010419-050747. Epub 2019 Jul 23.
+
+PMID- 35063699
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20220412
+LR  - 20220412
+IS  - 1809-9246 (Electronic)
+IS  - 1413-3555 (Print)
+IS  - 1413-3555 (Linking)
+VI  - 26
+IP  - 1
+DP  - 2022 Jan-Feb
+TI  - Shared decision making and physical therapy: What, when, how, and why?
+PG  - 100382
+LID - S1413-3555(21)00116-7 [pii]
+LID - 10.1016/j.bjpt.2021.100382 [doi]
+LID - 100382
+AB  - BACKGROUND: Shared decision making is a means of translating evidence into 
+      practice and facilitating patient-centred care by helping patients to become more 
+      active in the decision-making process. Shared decision making is a collaborative 
+      process that involves patients and clinicians making health-related decisions 
+      after discussing the available options; the benefits and harms of each option; 
+      and considering the patient's values, preferences, and personal circumstances. 
+      METHODS: This paper describes what shared decision making is, why it is 
+      important, when it is appropriate, and key elements. We report on physical 
+      therapists' current use of and attitudes to shared decision making and explore 
+      factors that influence its uptake. Lastly, we examine what is needed to promote 
+      greater use of this approach. RESULTS: Key elements in the shared decision making 
+      process are: identifying the problem that requires a decision; providing an 
+      explanation of the health problem, including, where appropriate, the natural 
+      history of the condition; discussing the available options and the potential 
+      benefits and harms of each option; eliciting the patient's values, preferences, 
+      and expectations; and assisting the patient to weigh up the options to reach an 
+      informed decision. When applied in practice, shared decision making has been 
+      found to improve patient-clinician communication; improve patients' accuracy of 
+      their expectations of intervention benefits and harms, involvement in 
+      decision-making, and feeling of being informed; and increase both patients' and 
+      clinicians' satisfaction with care. CONCLUSION: Despite physical therapists' 
+      enthusiasm for shared decision making, uptake of this approach has been slow. 
+      Multi-level strategies and behaviour change are required to encourage and support 
+      the sustainable incorporation of shared decision making in practice.
+CI  - Copyright © 2021 Associação Brasileira de Pesquisa e Pós-Graduação em 
+      Fisioterapia. Publicado por Elsevier España, S.L.U. All rights reserved.
+FAU - Hoffmann, Tammy
+AU  - Hoffmann T
+AD  - Institute for Evidence-Based Healthcare, Bond University, Gold Coast, Australia. 
+      Electronic address: thoffman@bond.edu.au.
+FAU - Bakhit, Mina
+AU  - Bakhit M
+AD  - Institute for Evidence-Based Healthcare, Bond University, Gold Coast, Australia.
+FAU - Michaleff, Zoe
+AU  - Michaleff Z
+AD  - Institute for Evidence-Based Healthcare, Bond University, Gold Coast, Australia.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+DEP - 20220101
+PL  - Brazil
+TA  - Braz J Phys Ther
+JT  - Brazilian journal of physical therapy
+JID - 101615124
+SB  - IM
+MH  - Decision Making
+MH  - *Decision Making, Shared
+MH  - Humans
+MH  - *Patient Participation
+MH  - Patient-Centered Care
+MH  - Physical Therapy Modalities
+PMC - PMC8784295
+OTO - NOTNLM
+OT  - Patient satisfaction
+OT  - Patient-centred care
+OT  - Physical therapy
+OT  - Shared decision making
+COIS- Conflicts of interest The authors declare no conflicts of interest.
+EDAT- 2022/01/23 06:00
+MHDA- 2022/04/13 06:00
+CRDT- 2022/01/22 05:37
+PHST- 2021/07/05 00:00 [received]
+PHST- 2021/12/07 00:00 [revised]
+PHST- 2021/12/17 00:00 [accepted]
+PHST- 2022/01/23 06:00 [pubmed]
+PHST- 2022/04/13 06:00 [medline]
+PHST- 2022/01/22 05:37 [entrez]
+AID - S1413-3555(21)00116-7 [pii]
+AID - 100382 [pii]
+AID - 10.1016/j.bjpt.2021.100382 [doi]
+PST - ppublish
+SO  - Braz J Phys Ther. 2022 Jan-Feb;26(1):100382. doi: 10.1016/j.bjpt.2021.100382. 
+      Epub 2022 Jan 1.
+
+PMID- 33353840
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20210624
+LR  - 20210624
+IS  - 1873-5134 (Electronic)
+IS  - 0738-3991 (Linking)
+VI  - 104
+IP  - 7
+DP  - 2021 Jul
+TI  - Shared decision making: What is the work?
+PG  - 1591-1595
+LID - S0738-3991(20)30656-X [pii]
+LID - 10.1016/j.pec.2020.11.032 [doi]
+AB  - Cooperation has emerged as a fundamental characteristic of human society, and 
+      many argue that this ability is the basis for the phenomenal development in our 
+      capability as a species. When we focus our attention to the interactions that 
+      occur in healthcare, we inevitably notice power asymmetry due to unequal 
+      knowledge, experience, and status. However, as many have argued since the 1970s, 
+      there is an ethical imperative to respect the agency of individuals, offer 
+      information, collaborate, and support deliberation when difficult decisions 
+      arise. This process is particularly important when reasonable alternative courses 
+      of action exist and where the priorities and preferences of individuals would be 
+      expected to sway such decisions. This position article argues that this process, 
+      commonly described as shared decision making, involves work that is cognitive, 
+      emotional, and relational, and, particularly if people are ill, should have the 
+      underpinning goal of restoring autonomy. It covers the origin of the term and 
+      describes the core components; it describes how to do the cognitive, emotional, 
+      and relational work that is required, and offers a model to guide the process.
+CI  - Copyright © 2020 Elsevier B.V. All rights reserved.
+FAU - Elwyn, Glyn
+AU  - Elwyn G
+AD  - The Dartmouth Institute for Health Policy and Clinical Practice, Level 5 
+      Williamson Translational Research Building, One Medical Center Drive, Lebanon, NH 
+      03756, USA. Electronic address: glynelwyn@gmail.com.
+LA  - eng
+PT  - Journal Article
+DEP - 20201201
+PL  - Ireland
+TA  - Patient Educ Couns
+JT  - Patient education and counseling
+JID - 8406280
+MH  - *Communication
+MH  - Decision Making
+MH  - *Decision Making, Shared
+MH  - Emotions
+MH  - Humans
+OTO - NOTNLM
+OT  - Patient centered care
+OT  - Shared decision making
+COIS- Declaration of Competing Interest Glyn Elwyn has edited and published books that 
+      provide royalties on sales by the publishers: the books include Shared Decision 
+      Making (Oxford University Press) and Groups (Radcliffe Press). Glyn Elwyn’s 
+      academic interests are focused on shared decision making and coproduction. He 
+      owns copyright in measures of shared decision making and care integration, namely 
+      collaboRATE, integRATE (measure of care integration, consideRATE (patient 
+      experience of care in serious illness), coopeRATE (measure of goal setting), 
+      toleRATE (clinician attitude to shared decision making, Observer OPTION-5 and 
+      Observer OPTION-12 (observer measures of shared decision making). He has in the 
+      past provided consultancy for organizations, including: 1) Emmi Solutions LLC who 
+      developed patient decision support tools; 2) National Quality Forum on the 
+      certification of decision support tools; 3) Washington State Health Department on 
+      the certification of decision support tools; 4) SciMentum LLC, Amsterdam 
+      (workshops for shared decision making). He is the Founder and Director of &think 
+      LLC which owns the registered trademark for Option Grids™ patient decision aids; 
+      Founder and Director of SHARPNETWORK LLC, a provider of training for shared 
+      decision making. He provides advice in the domain of shared decision making and 
+      patient decision aids to: 1) Access Community Health Network, Chicago (Adviser to 
+      Federally Qualified Medical Centers); 2) EBSCO Health for Option Grids ™ patient 
+      decision aids (Consultant); 3) Bind On Demand Health Insurance (Consultant), 4) 
+      PatientWisdom Inc (Adviser); 5) abridge AI Inc (Chief Clinical Research 
+      Scientist).
+EDAT- 2020/12/24 06:00
+MHDA- 2021/06/25 06:00
+CRDT- 2020/12/23 05:37
+PHST- 2020/03/17 00:00 [received]
+PHST- 2020/11/13 00:00 [revised]
+PHST- 2020/11/25 00:00 [accepted]
+PHST- 2020/12/24 06:00 [pubmed]
+PHST- 2021/06/25 06:00 [medline]
+PHST- 2020/12/23 05:37 [entrez]
+AID - S0738-3991(20)30656-X [pii]
+AID - 10.1016/j.pec.2020.11.032 [doi]
+PST - ppublish
+SO  - Patient Educ Couns. 2021 Jul;104(7):1591-1595. doi: 10.1016/j.pec.2020.11.032. 
+      Epub 2020 Dec 1.
+
+PMID- 15649356
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20050516
+LR  - 20170225
+IS  - 0960-9822 (Print)
+IS  - 0960-9822 (Linking)
+VI  - 15
+IP  - 1
+DP  - 2005 Jan 11
+TI  - Decision making.
+PG  - R9-R11
+FAU - Schall, Jeffrey D
+AU  - Schall JD
+AD  - Center for Integrative & Cognitive Neuroscience, Vanderbilt Vision Research 
+      Center, Vanderbilt University, Nashville, TN 37203, USA.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+PL  - England
+TA  - Curr Biol
+JT  - Current biology : CB
+JID - 9107782
+SB  - IM
+MH  - Choice Behavior/*physiology
+MH  - Decision Making/*physiology
+MH  - Humans
+MH  - *Intention
+MH  - *Models, Psychological
+MH  - Neurophysiology/trends
+RF  - 33
+EDAT- 2005/01/15 09:00
+MHDA- 2005/05/17 09:00
+CRDT- 2005/01/15 09:00
+PHST- 2005/01/15 09:00 [pubmed]
+PHST- 2005/05/17 09:00 [medline]
+PHST- 2005/01/15 09:00 [entrez]
+AID - S0960-9822(04)00972-8 [pii]
+AID - 10.1016/j.cub.2004.12.009 [doi]
+PST - ppublish
+SO  - Curr Biol. 2005 Jan 11;15(1):R9-R11. doi: 10.1016/j.cub.2004.12.009.
+
+PMID- 32761783
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20201208
+LR  - 20210110
+IS  - 1742-7924 (Electronic)
+IS  - 1742-7932 (Print)
+IS  - 1742-7924 (Linking)
+VI  - 17
+IP  - 4
+DP  - 2020 Oct
+TI  - Shared decision making for adults with severe mental illness: A concept analysis.
+PG  - e12365
+LID - 10.1111/jjns.12365 [doi]
+LID - e12365
+AB  - AIM: Shared decision making for adults with severe mental illness has 
+      increasingly attracted attention. However, this concept has not been 
+      comprehensively clarified. This review aimed to clarify a concept of shared 
+      decision making for adults with severe mental illness such as schizophrenia, 
+      depression, and bipolar disorder, and propose an adequate definition. METHODS: 
+      Rodgers' evolutionary concept analysis was used. MEDLINE, PsychINFO, and CINAHL 
+      were searched for articles written in English and published between 2010 and 
+      November 2019. The search terms were "psychiatr*" or "mental" or "schizophren*" 
+      or "depression" or "bipolar disorder", combined with "shared decision making". In 
+      total, 70 articles met the inclusion criteria. An inductive approach was used to 
+      identify themes and sub-themes related to shared decision making for adults with 
+      severe mental illness. Surrogate terms and a definition of the concept were also 
+      described. RESULTS: Four key attributes were identified: user-professional 
+      relationship, communication process, user-friendly visualization, and broader 
+      stakeholder approach. Communication process was the densest attribute, which 
+      consisted of five phases: goal sharing, information sharing, deliberation, mutual 
+      agreement, and follow-up. The antecedents as prominent predisposing factors were 
+      long-term complex illness, power imbalance, global trend, users' desire, 
+      concerns, and stigma. The consequences included decision-related outcomes, users' 
+      changes, professionals' changes, and enhanced relationship. CONCLUSIONS: Shared 
+      decision making for adults with severe mental illness is a communication process, 
+      involving both user-friendly visualization techniques and broader stakeholders. 
+      The process may overcome traditional power imbalance and encourage changes among 
+      both users and professionals that could enhance the dyadic relationship.
+CI  - © 2020 The Author. Japan Journal of Nursing Science published by John Wiley & 
+      Sons Australia, Ltd on behalf of Japan Academy of Nursing Science.
+FAU - Aoki, Yumi
+AU  - Aoki Y
+AUID- ORCID: 0000-0002-2674-0707
+AD  - Psychiatric & Mental Health Nursing, Graduate School of Nursing, St. Luke's 
+      International University, Tokyo, Japan.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+DEP - 20200805
+PL  - Japan
+TA  - Jpn J Nurs Sci
+JT  - Japan journal of nursing science : JJNS
+JID - 101227890
+SB  - IM
+MH  - Adult
+MH  - Communication
+MH  - Decision Making
+MH  - *Decision Making, Shared
+MH  - Humans
+MH  - *Schizophrenia
+PMC - PMC7590107
+OTO - NOTNLM
+OT  - bipolar disorder
+OT  - depression
+OT  - review
+OT  - schizophrenia
+OT  - shared decision making
+COIS- Y.A. has received the Japan Society for the Promotion of Science‐in‐Aid for 
+      Scientific Research and lecture fees from MSD.
+EDAT- 2020/08/08 06:00
+MHDA- 2020/12/15 06:00
+CRDT- 2020/08/08 06:00
+PHST- 2020/02/05 00:00 [received]
+PHST- 2020/05/08 00:00 [revised]
+PHST- 2020/06/27 00:00 [accepted]
+PHST- 2020/08/08 06:00 [pubmed]
+PHST- 2020/12/15 06:00 [medline]
+PHST- 2020/08/08 06:00 [entrez]
+AID - JJNS12365 [pii]
+AID - 10.1111/jjns.12365 [doi]
+PST - ppublish
+SO  - Jpn J Nurs Sci. 2020 Oct;17(4):e12365. doi: 10.1111/jjns.12365. Epub 2020 Aug 5.
+
+PMID- 31991192
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20210326
+LR  - 20220129
+IS  - 1873-7528 (Electronic)
+IS  - 0149-7634 (Linking)
+VI  - 112
+DP  - 2020 May
+TI  - Animal affect and decision-making.
+PG  - 144-163
+LID - S0149-7634(19)30520-2 [pii]
+LID - 10.1016/j.neubiorev.2020.01.025 [doi]
+AB  - The scientific study of animal affect (emotion) is an area of growing interest. 
+      Whilst research on mechanism and causation has predominated, the study of 
+      function is less advanced. This is not due to a lack of hypotheses; in both 
+      humans and animals, affective states are frequently proposed to play a pivotal 
+      role in coordinating adaptive responses and decisions. However, exactly how they 
+      might do this (what processes might implement this function) is often left rather 
+      vague. Here we propose a framework for integrating animal affect and 
+      decision-making that is couched in modern decision theory and employs an 
+      operational definition that aligns with dimensional concepts of core affect and 
+      renders animal affect empirically tractable. We develop a model of how core 
+      affect, including short-term (emotion-like) and longer-term (mood-like) states, 
+      influence decision-making via processes that we label affective options, 
+      affective predictions, and affective outcomes and which correspond to similar 
+      concepts in schema of the links between human emotion and decision-making. Our 
+      framework is generalisable across species and generates questions for future 
+      research.
+CI  - Copyright © 2020 The Authors. Published by Elsevier Ltd.. All rights reserved.
+FAU - Mendl, Michael
+AU  - Mendl M
+AD  - Centre for Behavioural Biology, Bristol Veterinary School, University of Bristol, 
+      UK. Electronic address: mike.mendl@bris.ac.uk.
+FAU - Paul, Elizabeth S
+AU  - Paul ES
+AD  - Centre for Behavioural Biology, Bristol Veterinary School, University of Bristol, 
+      UK.
+LA  - eng
+GR  - NC/K00008X/1/NC3RS_/National Centre for the Replacement, Refinement and Reduction 
+      of Animals in Research/United Kingdom
+GR  - BB/T002654/1/BB_/Biotechnology and Biological Sciences Research Council/United 
+      Kingdom
+GR  - BB/P019218/1/BB_/Biotechnology and Biological Sciences Research Council/United 
+      Kingdom
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+PT  - Review
+DEP - 20200125
+PL  - United States
+TA  - Neurosci Biobehav Rev
+JT  - Neuroscience and biobehavioral reviews
+JID - 7806090
+SB  - IM
+MH  - Affect/*physiology
+MH  - Animals
+MH  - Behavior, Animal/*physiology
+MH  - Decision Making/*physiology
+MH  - *Models, Biological
+OTO - NOTNLM
+OT  - Affect
+OT  - Cognition
+OT  - Cognitive bias
+OT  - Core affect
+OT  - Decision-making
+OT  - Emotion
+OT  - Judgement bias
+OT  - Mood
+OT  - Reinforcement learning
+EDAT- 2020/01/29 06:00
+MHDA- 2021/03/27 06:00
+CRDT- 2020/01/29 06:00
+PHST- 2019/06/14 00:00 [received]
+PHST- 2019/12/11 00:00 [revised]
+PHST- 2020/01/20 00:00 [accepted]
+PHST- 2020/01/29 06:00 [pubmed]
+PHST- 2021/03/27 06:00 [medline]
+PHST- 2020/01/29 06:00 [entrez]
+AID - S0149-7634(19)30520-2 [pii]
+AID - 10.1016/j.neubiorev.2020.01.025 [doi]
+PST - ppublish
+SO  - Neurosci Biobehav Rev. 2020 May;112:144-163. doi: 
+      10.1016/j.neubiorev.2020.01.025. Epub 2020 Jan 25.
+
+PMID- 36164734
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20220928
+LR  - 20221004
+IS  - 0040-5930 (Print)
+IS  - 0040-5930 (Linking)
+VI  - 79
+IP  - 8
+DP  - 2022
+TI  - [Shared Decision-Making in Preventive Activities].
+PG  - 377-386
+LID - 10.1024/0040-5930/a001378 [doi]
+AB  - Shared Decision-Making in Preventive Activities Abstract. Shared Decision-Making 
+      (SDM) is particularly useful in conditions where decisions are 
+      preference-sensitive, i.e., where preferences and values of patients are crucial 
+      for the further proceeding. This typically applies to conditions where the 
+      potential benefit and the potential harm are similar. Preventive activities are 
+      characterized by the fact that there is no current burden of disease and the 
+      benefit to expect is far in the future. Therefore, it is preference-sensitive if 
+      the current effort really pays off. The procedure of SDM in (preventive) 
+      counselling can be classified into three steps: Team Talk, Option Talk and 
+      Decision Talk. For every step, we present examples of how to talk. After an 
+      overview of the current evidence, we present four examples of how to apply SDM in 
+      preventive conditions: quit-smoking counselling, lifestyle coaching, vaccination 
+      counselling and screening for cancer. Finally, we focus on the role of activated 
+      patients and point out the opportunity for SDM during check-up examinations. For 
+      all these implementation issues useful tools and links are presented. In summary, 
+      important elements of SDM, such as patient centeredness, clarifying needs/goals 
+      and shared responsibility, are crucial for the entire spectre of caring for 
+      patients, not only for prevention.
+FAU - Neuner-Jehle, Stefan
+AU  - Neuner-Jehle S
+AD  - Institut für Hausarztmedizin, Universität und Universitätsspital Zürich, Schweiz.
+LA  - ger
+PT  - Journal Article
+PT  - Review
+TT  - Shared Decision-Making in der Prävention.
+PL  - Switzerland
+TA  - Ther Umsch
+JT  - Therapeutische Umschau. Revue therapeutique
+JID - 0407224
+SB  - IM
+MH  - Decision Making
+MH  - *Decision Making, Shared
+MH  - Humans
+MH  - *Patient Participation
+EDAT- 2022/09/28 06:00
+MHDA- 2022/10/05 06:00
+CRDT- 2022/09/27 02:52
+PHST- 2022/09/27 02:52 [entrez]
+PHST- 2022/09/28 06:00 [pubmed]
+PHST- 2022/10/05 06:00 [medline]
+AID - 10.1024/0040-5930/a001378 [doi]
+PST - ppublish
+SO  - Ther Umsch. 2022;79(8):377-386. doi: 10.1024/0040-5930/a001378.
+
+PMID- 27859780
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20180201
+LR  - 20181202
+IS  - 1460-9568 (Electronic)
+IS  - 0953-816X (Linking)
+VI  - 45
+IP  - 1
+DP  - 2017 Jan
+TI  - Decision-making in chronic ecstasy users: a systematic review.
+PG  - 34-44
+LID - 10.1111/ejn.13480 [doi]
+AB  - Different cognitive impairments have been reported as a result of long-term 
+      MDMA/ecstasy use. Increased impulsivity and altered decision-making have been 
+      shown to be associated with the development and maintenance of addictive 
+      disorders pointing toward the necessity to understand a potential impairment of 
+      decision-making due to MDMA use. Thus, assessing the long-term effects of MDMA is 
+      crucial in order to evaluate its controversially discussed therapeutic use. The 
+      aim of this systematic review was to summarize the scientific literature on 
+      potential effects of chronic MDMA use on higher order decision-making processes 
+      in humans. Therefore, a systematic search for controlled trials relevant to the 
+      topic has been performed. Only studies using specific tasks on decision-making 
+      were included that involved subjects in the drug-free interval with drug-naïve, 
+      and/or polydrug control groups. A total of 12 studies could be identified that 
+      met the inclusion criteria, all of which were cross-sectional studies. The 
+      findings on decision-making disturbances in MDMA users were heterogeneous. Seven 
+      studies reported increased risky decisions, whereas five studies did not find 
+      MDMA-specific influences on decision-making. Increased impulsivity was observed 
+      both in MDMA groups and in (poly)drug control groups in almost all studies. Thus, 
+      the current state of research does not allow for the conclusion that long-term 
+      use of MDMA affects decision-making behavior in general. More detailed 
+      specifications as well as further investigations of the relevant processes are 
+      needed. Significant tendencies toward risky decision-making among long-term MDMA 
+      use have been observed, but need to be confirmed by studies using a longitudinal 
+      design.
+CI  - © 2016 Federation of European Neuroscience Societies and John Wiley & Sons Ltd.
+FAU - Betzler, Felix
+AU  - Betzler F
+AUID- ORCID: 0000-0002-1389-4870
+AD  - Department of Psychiatry and Psychotherapy, Charité Campus Mitte, Charité - 
+      Universitätsmedizin Berlin, Charitéplatz 1, 10117, Berlin, Germany.
+FAU - Viohl, Leonard
+AU  - Viohl L
+AD  - Department of Psychiatry and Psychotherapy, Charité Campus Mitte, Charité - 
+      Universitätsmedizin Berlin, Charitéplatz 1, 10117, Berlin, Germany.
+FAU - Romanczuk-Seiferth, Nina
+AU  - Romanczuk-Seiferth N
+AD  - Department of Psychiatry and Psychotherapy, Charité Campus Mitte, Charité - 
+      Universitätsmedizin Berlin, Charitéplatz 1, 10117, Berlin, Germany.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+PT  - Systematic Review
+DEP - 20161215
+PL  - France
+TA  - Eur J Neurosci
+JT  - The European journal of neuroscience
+JID - 8918110
+RN  - KE1SEN21RM (N-Methyl-3,4-methylenedioxyamphetamine)
+SB  - IM
+MH  - Animals
+MH  - Cognition Disorders/*physiopathology
+MH  - Decision Making/drug effects/*physiology
+MH  - Humans
+MH  - Memory Disorders/*physiopathology
+MH  - N-Methyl-3,4-methylenedioxyamphetamine/administration & dosage/*adverse effects
+MH  - Neuropsychological Tests
+MH  - Time
+OTO - NOTNLM
+OT  - MDMA
+OT  - amphetamines
+OT  - cognitive functions
+OT  - drugs
+OT  - executive functions
+EDAT- 2016/11/20 06:00
+MHDA- 2018/02/02 06:00
+CRDT- 2016/11/19 06:00
+PHST- 2016/05/31 00:00 [received]
+PHST- 2016/11/09 00:00 [revised]
+PHST- 2016/11/10 00:00 [accepted]
+PHST- 2016/11/20 06:00 [pubmed]
+PHST- 2018/02/02 06:00 [medline]
+PHST- 2016/11/19 06:00 [entrez]
+AID - 10.1111/ejn.13480 [doi]
+PST - ppublish
+SO  - Eur J Neurosci. 2017 Jan;45(1):34-44. doi: 10.1111/ejn.13480. Epub 2016 Dec 15.
+
+PMID- 35122259
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20220519
+LR  - 20220630
+IS  - 1749-6632 (Electronic)
+IS  - 0077-8923 (Linking)
+VI  - 1511
+IP  - 1
+DP  - 2022 May
+TI  - Group decision making under uncertain preferences: powered by AI, empowered by 
+      AI.
+PG  - 22-39
+LID - 10.1111/nyas.14734 [doi]
+AB  - Group decision making is an important, long-standing, and ubiquitous problem in 
+      all societies, where collective decisions must be made by a group of agents 
+      despite individual conflicting preferences. This has been a classical and active 
+      topic for research in many disciplines, including economics, political science, 
+      cognitive and behavioral sciences, statistics, mathematics, and computer science. 
+      In this article, I survey some recent progress in theoretical, algorithmic, and 
+      engineering work toward building AI-powered intelligent systems to help agents 
+      make group decisions based on uncertain preferences; these systems leverage 
+      principles, ideas, and methodologies from multiple disciplines. Empowered by AI, 
+      group decision making can handle a broader range of situations at relatively 
+      large scales.
+CI  - © 2022 New York Academy of Sciences.
+FAU - Xia, Lirong
+AU  - Xia L
+AD  - Rensselaer Polytechnic Institute, Troy, New York.
+LA  - eng
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+PT  - Research Support, U.S. Gov't, Non-P.H.S.
+PT  - Review
+DEP - 20220204
+PL  - United States
+TA  - Ann N Y Acad Sci
+JT  - Annals of the New York Academy of Sciences
+JID - 7506858
+SB  - IM
+MH  - *Artificial Intelligence
+MH  - *Decision Making
+MH  - Humans
+MH  - Uncertainty
+OTO - NOTNLM
+OT  - artificial intelligence
+OT  - group decision making
+OT  - preference learning
+OT  - social choice
+OT  - uncertainty
+EDAT- 2022/02/06 06:00
+MHDA- 2022/05/20 06:00
+CRDT- 2022/02/05 05:51
+PHST- 2022/02/06 06:00 [pubmed]
+PHST- 2022/05/20 06:00 [medline]
+PHST- 2022/02/05 05:51 [entrez]
+AID - 10.1111/nyas.14734 [doi]
+PST - ppublish
+SO  - Ann N Y Acad Sci. 2022 May;1511(1):22-39. doi: 10.1111/nyas.14734. Epub 2022 Feb 
+      4.
+
+PMID- 33247803
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20211231
+LR  - 20211231
+IS  - 1869-1889 (Electronic)
+IS  - 1674-7305 (Linking)
+VI  - 64
+IP  - 6
+DP  - 2021 Jun
+TI  - Neural mechanisms of social learning and decision-making.
+PG  - 897-910
+LID - 10.1007/s11427-020-1833-8 [doi]
+AB  - One of the hallmarks of human society is the ubiquitous interactions among 
+      individuals. Indeed, a significant portion of human daily routine decision making 
+      is socially related. Normative economic theory, namely game theory, has 
+      prescribed the canonical decision strategy when "rational" social agents have 
+      full information about the decision environment. In reality, however, social 
+      decision is often influenced by the trait and state parameters of selves and 
+      others. Therefore, understanding the cognitive and neural processes of inferring 
+      the decision parameters is pivotal for social decision making. Recently, both 
+      correlational and causal non-invasive neuroimaging studies have started to reveal 
+      the critical neural computations underlying social learning and decision-making, 
+      and highlighted the unique roles of "social" brain structures such as 
+      temporal-parietal junction (TPJ) and dorsomedial prefrontal cortex (dmPFC). Here 
+      we review recent advances in social decision neuroscience and maintain the focus 
+      on how the inference about others is dynamically acquired during social learning, 
+      as well as how the prosocial (altruistic) behavior results from orchestrated 
+      interactions of different brain regions specified under the social utility 
+      framework. We conclude by emphasizing the importance of combining computational 
+      decision theory with the identification of neural mechanisms that represent, 
+      evaluate and integrate value related social information and generate decision 
+      variables guiding behavioral output in the complex social environment.
+FAU - Ni, Yinmei
+AU  - Ni Y
+AD  - School of Psychological and Cognitive Sciences and Beijing Key Laboratory of 
+      Behavior and Mental Health, Peking University, Beijing, 100871, China. 
+      niyinmei@pku.edu.cn.
+FAU - Li, Jian
+AU  - Li J
+AD  - School of Psychological and Cognitive Sciences and Beijing Key Laboratory of 
+      Behavior and Mental Health, Peking University, Beijing, 100871, China. 
+      li.jian@pku.edu.cn.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+DEP - 20201123
+PL  - China
+TA  - Sci China Life Sci
+JT  - Science China. Life sciences
+JID - 101529880
+SB  - IM
+MH  - Brain/*physiology
+MH  - Decision Making/*physiology
+MH  - Humans
+MH  - Social Learning/*physiology
+OTO - NOTNLM
+OT  - altruism
+OT  - decision-making
+OT  - reinforcement learning
+OT  - social cognition
+OT  - value
+EDAT- 2020/11/29 06:00
+MHDA- 2022/01/01 06:00
+CRDT- 2020/11/28 12:04
+PHST- 2020/08/01 00:00 [received]
+PHST- 2020/10/09 00:00 [accepted]
+PHST- 2020/11/29 06:00 [pubmed]
+PHST- 2022/01/01 06:00 [medline]
+PHST- 2020/11/28 12:04 [entrez]
+AID - 10.1007/s11427-020-1833-8 [pii]
+AID - 10.1007/s11427-020-1833-8 [doi]
+PST - ppublish
+SO  - Sci China Life Sci. 2021 Jun;64(6):897-910. doi: 10.1007/s11427-020-1833-8. Epub 
+      2020 Nov 23.
+
+PMID- 36480119
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20230112
+LR  - 20230411
+IS  - 1748-3743 (Electronic)
+IS  - 1748-3735 (Print)
+IS  - 1748-3735 (Linking)
+VI  - 18
+IP  - 1
+DP  - 2023 Jan
+TI  - Shared decision-making with adults transitioning to long-term care: A scoping 
+      review.
+PG  - e12518
+LID - 10.1111/opn.12518 [doi]
+LID - e12518
+AB  - BACKGROUND: Transitions to long-term care are challenging for individuals and 
+      often associated with a loss of autonomy. Positive experiences are noted, 
+      especially when decisions involve the individual in a person-centred way which 
+      are respectful of the person's human rights. One approach which facilitates 
+      self-determination during a transitional period is shared decision-making, but 
+      there is a lack of clarity on the nature and extent of research evidence in this 
+      area. OBJECTIVE: The purpose of this scoping review is to identify and document 
+      research related to shared decision-making and transitioning to long-term care. 
+      METHODS: A comprehensive search in CINAHL, Medline and Psych-info identified 
+      papers which included evidence of shared decision-making during transitions to a 
+      long-term care setting. The review following the JBI and PAGER framework for 
+      scoping reviews. Data were extracted, charted and analysed according to patterns, 
+      advances, gaps, research recommendations and evidence for practice. RESULTS: 
+      Eighteen papers met the inclusion criteria. A body of knowledge was identified 
+      encompassing the pattern advancements in shared decision-making during 
+      transitions to long-term care, representing developments in both the evidence 
+      base and methodological approaches. Further patterns offer evidence of the 
+      facilitators and barriers experienced by the person, their families and the 
+      professional's involved. CONCLUSIONS: The evidence identified the complexity of 
+      such decision-making with efforts to engage in shared decision-making often 
+      constrained by the availability of resources, the skills of professionals and 
+      time. The findings recognise the need for partnership and person-centred 
+      approaches to optimise transitions. The review demonstrates evidence of 
+      approaches that can inform future practice and research to support all adult 
+      populations who may be faced with a transitional decision to actively participate 
+      in decision-making.
+CI  - © 2022 The Authors. International Journal of Older People Nursing published by 
+      John Wiley & Sons Ltd.
+FAU - Egan, Caroline
+AU  - Egan C
+AUID- ORCID: 0000-0002-2594-0440
+AD  - School of Nursing and Midwifery, University College Cork, Cork, Ireland.
+FAU - Naughton, Corina
+AU  - Naughton C
+AUID- ORCID: 0000-0001-8360-064X
+AD  - School of Nursing and Midwifery, University College Cork, Cork, Ireland.
+FAU - Caples, Maria
+AU  - Caples M
+AD  - School of Nursing and Midwifery, University College Cork, Cork, Ireland.
+FAU - Mulcahy, Helen
+AU  - Mulcahy H
+AUID- ORCID: 0000-0002-8470-8625
+AD  - School of Nursing and Midwifery, University College Cork, Cork, Ireland.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+DEP - 20221208
+PL  - England
+TA  - Int J Older People Nurs
+JT  - International journal of older people nursing
+JID - 101267281
+SB  - IM
+MH  - Humans
+MH  - *Long-Term Care
+MH  - *Decision Making, Shared
+MH  - Decision Making
+PMC - PMC10078233
+OTO - NOTNLM
+OT  - caregivers
+OT  - long-term care
+OT  - older adults
+OT  - scoping review
+OT  - shared decision-making
+OT  - transitions
+COIS- The author(s) declare none.
+EDAT- 2022/12/09 06:00
+MHDA- 2023/01/13 06:00
+CRDT- 2022/12/08 14:45
+PHST- 2022/10/06 00:00 [revised]
+PHST- 2022/05/13 00:00 [received]
+PHST- 2022/10/29 00:00 [accepted]
+PHST- 2022/12/09 06:00 [pubmed]
+PHST- 2023/01/13 06:00 [medline]
+PHST- 2022/12/08 14:45 [entrez]
+AID - OPN12518 [pii]
+AID - 10.1111/opn.12518 [doi]
+PST - ppublish
+SO  - Int J Older People Nurs. 2023 Jan;18(1):e12518. doi: 10.1111/opn.12518. Epub 2022 
+      Dec 8.
+
+PMID- 37270221
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20230605
+LR  - 20230605
+IS  - 1878-8769 (Electronic)
+IS  - 1878-8750 (Linking)
+VI  - 174
+DP  - 2023 Jun
+TI  - Paternalism versus Shared Decision Making.
+PG  - x
+LID - S1878-8750(23)00541-7 [pii]
+LID - 10.1016/j.wneu.2023.04.056 [doi]
+FAU - Benzel, Ed
+AU  - Benzel E
+LA  - eng
+PT  - Editorial
+PL  - United States
+TA  - World Neurosurg
+JT  - World neurosurgery
+JID - 101528275
+SB  - IM
+MH  - Humans
+MH  - *Decision Making, Shared
+MH  - Paternalism
+MH  - *Decision Making
+MH  - Patient Participation
+MH  - Physician-Patient Relations
+EDAT- 2023/06/04 01:08
+MHDA- 2023/06/05 06:42
+CRDT- 2023/06/03 20:59
+PHST- 2023/06/05 06:42 [medline]
+PHST- 2023/06/04 01:08 [pubmed]
+PHST- 2023/06/03 20:59 [entrez]
+AID - S1878-8750(23)00541-7 [pii]
+AID - 10.1016/j.wneu.2023.04.056 [doi]
+PST - ppublish
+SO  - World Neurosurg. 2023 Jun;174:x. doi: 10.1016/j.wneu.2023.04.056.
+
+PMID- 18957243
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20081219
+LR  - 20211001
+IS  - 0960-9822 (Print)
+IS  - 0960-9822 (Linking)
+VI  - 18
+IP  - 19
+DP  - 2008 Oct 14
+TI  - Neuronal decision-making circuits.
+PG  - R928-32
+LID - 10.1016/j.cub.2008.07.081 [doi]
+AB  - Studying the neural basis of decision-making has largely taken one of two paths: 
+      one has involved cell-by-cell characterization of neuronal circuits in 
+      invertebrates; and the other, single-unit studies of monkeys performing cognitive 
+      tasks. Here I shall attempt to bring these two disparate approaches together.
+FAU - Kristan, William B
+AU  - Kristan WB
+AD  - Section of Neurobiology, Division of Biological Sciences, University of 
+      California, San Diego, La Jolla, California 92093-0357, USA. wkristan@ucsd.edu
+LA  - eng
+PT  - Journal Article
+PT  - Review
+PL  - England
+TA  - Curr Biol
+JT  - Current biology : CB
+JID - 9107782
+SB  - IM
+MH  - Animals
+MH  - Decision Making/*physiology
+MH  - Neurons/*physiology
+RF  - 36
+EDAT- 2008/10/30 09:00
+MHDA- 2008/12/20 09:00
+CRDT- 2008/10/30 09:00
+PHST- 2008/10/30 09:00 [pubmed]
+PHST- 2008/12/20 09:00 [medline]
+PHST- 2008/10/30 09:00 [entrez]
+AID - S0960-9822(08)01026-9 [pii]
+AID - 10.1016/j.cub.2008.07.081 [doi]
+PST - ppublish
+SO  - Curr Biol. 2008 Oct 14;18(19):R928-32. doi: 10.1016/j.cub.2008.07.081.
+
+PMID- 34628018
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20220408
+LR  - 20220408
+IS  - 1878-5921 (Electronic)
+IS  - 0895-4356 (Linking)
+VI  - 141
+DP  - 2022 Jan
+TI  - More work needed on decision analysis for shared decision-making: A scoping 
+      review.
+PG  - 106-120
+LID - S0895-4356(21)00317-6 [pii]
+LID - 10.1016/j.jclinepi.2021.10.001 [doi]
+AB  - OBJECTIVE: To explore and characterize published evidence on the ways decision 
+      analysis has been used to inform shared decision-making. STUDY DESIGN AND 
+      SETTING: For this scoping review, we searched five bibliographic databases (from 
+      inception until February 2021), reference lists of included studies, trial 
+      registries, a thesis database and websites of relevant interest groups. Studies 
+      were eligible if they evaluated the application of decision analysis in a shared 
+      decision-making encounter. Pairs of reviewers independently screened and selected 
+      studies for inclusion, extracted study information using a data extraction form 
+      developed by the research team and assessed risk of bias for all studies with an 
+      experimental or quasi-experimental design. Data were narratively synthesized. 
+      RESULTS: We identified 27 studies that varied greatly with regard to their 
+      patient population, design, content and delivery. A range of outcomes were 
+      evaluated to explore the effectiveness and acceptability of decision analytic 
+      interventions, with little information about the implementation process. Most 
+      studies found that decision analysis was broadly beneficial. CONCLUSION: Despite 
+      the compelling rationale on the potential for decision analysis to support shared 
+      decision-making, rigorous randomized controlled trials are needed to confirm 
+      these interventions' effectiveness, while qualitative studies should seek to 
+      understand their potential implementation.
+CI  - Copyright © 2021 Elsevier Inc. All rights reserved.
+FAU - Humphries, Brittany
+AU  - Humphries B
+AD  - Department of Health Research Methods, Evidence, and Impact, McMaster University, 
+      Hamilton, Canada.
+FAU - León-García, Montserrat
+AU  - León-García M
+AD  - Iberoamerican Cochrane Center, Biomedical Research Institute Sant Pau (IIB Sant 
+      Pau), Barcelona, Spain; Department of Pediatrics, Obstetrics, Gynaecology and 
+      Preventive Medicine, Universidad Autónoma de Barcelona, Barcelona, Spain.
+FAU - Quispe, Ena Niño de Guzman
+AU  - Quispe ENG
+AD  - Iberoamerican Cochrane Center, Biomedical Research Institute Sant Pau (IIB Sant 
+      Pau), Barcelona, Spain; Department of Pediatrics, Obstetrics, Gynaecology and 
+      Preventive Medicine, Universidad Autónoma de Barcelona, Barcelona, Spain.
+FAU - Canelo-Aybar, Carlos
+AU  - Canelo-Aybar C
+AD  - Iberoamerican Cochrane Center, Biomedical Research Institute Sant Pau (IIB Sant 
+      Pau), Barcelona, Spain; Department of Pediatrics, Obstetrics, Gynaecology and 
+      Preventive Medicine, Universidad Autónoma de Barcelona, Barcelona, Spain; CIBER 
+      de Epidemiología y Salud Pública (CIBERESP), Barcelona, Spain.
+FAU - Valli, Claudia
+AU  - Valli C
+AD  - Iberoamerican Cochrane Center, Biomedical Research Institute Sant Pau (IIB Sant 
+      Pau), Barcelona, Spain; Department of Pediatrics, Obstetrics, Gynaecology and 
+      Preventive Medicine, Universidad Autónoma de Barcelona, Barcelona, Spain.
+FAU - Pacheco-Barrios, Kevin
+AU  - Pacheco-Barrios K
+AD  - Neuromodulation Center and Center for Clinical Research Learning, Spaulding 
+      Rehabilitation Hospital and Massachusetts General Hospital, Harvard Medical 
+      School, Boston, USA; Universidad San Ignacio de Loyola, Vicerrectorado de 
+      Investigación, Unidad de Investigación para la Generación y Síntesis de 
+      Evidencias en Salud. Lima, Peru.
+FAU - Agarwal, Arnav
+AU  - Agarwal A
+AD  - Department of Health Research Methods, Evidence, and Impact, McMaster University, 
+      Hamilton, Canada; Department of Medicine, University of Toronto, Toronto, 
+      Ontario, Canada.
+FAU - Mirabi, Susan
+AU  - Mirabi S
+AD  - School of Public Health and Health Systems, University of Waterloo, Waterloo, 
+      Canada.
+FAU - Eckman, Mark H
+AU  - Eckman MH
+AD  - Division of General Internal Medicine and Center for Clinical Effectiveness, 
+      University of Cincinnati, Cincinnati, USA.
+FAU - Guyatt, Gordon
+AU  - Guyatt G
+AD  - Department of Health Research Methods, Evidence, and Impact, McMaster University, 
+      Hamilton, Canada; Department of Medicine, McMaster University, Hamilton, Canada.
+FAU - Bates, Shannon M
+AU  - Bates SM
+AD  - Department of Medicine, McMaster University, Hamilton, Canada.
+FAU - Alonso-Coello, Pablo
+AU  - Alonso-Coello P
+AD  - Iberoamerican Cochrane Center, Biomedical Research Institute Sant Pau (IIB Sant 
+      Pau), Barcelona, Spain; CIBER de Epidemiología y Salud Pública (CIBERESP), 
+      Barcelona, Spain. Electronic address: palonso@santpau.cat.
+FAU - Xie, Feng
+AU  - Xie F
+AD  - Department of Health Research Methods, Evidence, and Impact, McMaster University, 
+      Hamilton, Canada; Center for Health Economics and Policy Analysis, McMaster 
+      University, Hamilton, Canada. Electronic address: fengxie@mcmaster.ca.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+DEP - 20211008
+PL  - United States
+TA  - J Clin Epidemiol
+JT  - Journal of clinical epidemiology
+JID - 8801383
+SB  - IM
+MH  - *Decision Making
+MH  - *Decision Making, Shared
+MH  - Decision Support Techniques
+MH  - Humans
+OTO - NOTNLM
+OT  - Shared decision-making
+OT  - clinical decision-making
+OT  - decision analysis
+OT  - patient preferences
+OT  - review article
+OT  - scoping review
+EDAT- 2021/10/11 06:00
+MHDA- 2022/04/09 06:00
+CRDT- 2021/10/10 20:51
+PHST- 2021/05/14 00:00 [received]
+PHST- 2021/09/21 00:00 [revised]
+PHST- 2021/10/03 00:00 [accepted]
+PHST- 2021/10/11 06:00 [pubmed]
+PHST- 2022/04/09 06:00 [medline]
+PHST- 2021/10/10 20:51 [entrez]
+AID - S0895-4356(21)00317-6 [pii]
+AID - 10.1016/j.jclinepi.2021.10.001 [doi]
+PST - ppublish
+SO  - J Clin Epidemiol. 2022 Jan;141:106-120. doi: 10.1016/j.jclinepi.2021.10.001. Epub 
+      2021 Oct 8.
+
+PMID- 33423626
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20211012
+LR  - 20211012
+IS  - 1471-2970 (Electronic)
+IS  - 0962-8436 (Print)
+IS  - 0962-8436 (Linking)
+VI  - 376
+IP  - 1819
+DP  - 2021 Mar
+TI  - The description-experience gap: a challenge for the neuroeconomics of 
+      decision-making under uncertainty.
+PG  - 20190665
+LID - 10.1098/rstb.2019.0665 [doi]
+LID - 20190665
+AB  - The experimental investigation of decision-making in humans relies on two 
+      distinct types of paradigms, involving either description- or experience-based 
+      choices. In description-based paradigms, decision variables (i.e. payoffs and 
+      probabilities) are explicitly communicated by means of symbols. In 
+      experience-based paradigms decision variables are learnt from trial-by-trial 
+      feedback. In the decision-making literature, 'description-experience gap' refers 
+      to the fact that different biases are observed in the two experimental paradigms. 
+      Remarkably, well-documented biases of description-based choices, such as 
+      under-weighting of rare events and loss aversion, do not apply to 
+      experience-based decisions. Here, we argue that the description-experience gap 
+      represents a major challenge, not only to current decision theories, but also to 
+      the neuroeconomics research framework, which relies heavily on the translation of 
+      neurophysiological findings between human and non-human primate research. In 
+      fact, most non-human primate neurophysiological research relies on behavioural 
+      designs that share features of both description- and experience-based choices. As 
+      a consequence, it is unclear whether the neural mechanisms built from non-human 
+      primate electrophysiology should be linked to description-based or 
+      experience-based decision-making processes. The picture is further complicated by 
+      additional methodological gaps between human and non-human primate neuroscience 
+      research. After analysing these methodological challenges, we conclude proposing 
+      new lines of research to address them. This article is part of the theme issue 
+      'Existence and prevalence of economic behaviours among non-human primates'.
+FAU - Garcia, Basile
+AU  - Garcia B
+AD  - Laboratoire de Neurosciences Cognitives et Computationnelles, Ecole Normale 
+      Supérieure, Institut National de la Santé et Recherche Médicale, Université de 
+      Recherche Paris Sciences et Lettres, Paris, France.
+FAU - Cerrotti, Fabien
+AU  - Cerrotti F
+AD  - Laboratoire de Neurosciences Cognitives et Computationnelles, Ecole Normale 
+      Supérieure, Institut National de la Santé et Recherche Médicale, Université de 
+      Recherche Paris Sciences et Lettres, Paris, France.
+FAU - Palminteri, Stefano
+AU  - Palminteri S
+AD  - Laboratoire de Neurosciences Cognitives et Computationnelles, Ecole Normale 
+      Supérieure, Institut National de la Santé et Recherche Médicale, Université de 
+      Recherche Paris Sciences et Lettres, Paris, France.
+LA  - eng
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+PT  - Review
+DEP - 20210111
+PL  - England
+TA  - Philos Trans R Soc Lond B Biol Sci
+JT  - Philosophical transactions of the Royal Society of London. Series B, Biological 
+      sciences
+JID - 7503623
+SB  - IM
+MH  - Animals
+MH  - Choice Behavior
+MH  - *Decision Making
+MH  - Primates/*psychology
+MH  - *Uncertainty
+PMC - PMC7815421
+OTO - NOTNLM
+OT  - decision-making
+OT  - description–experience gap
+OT  - macaque
+OT  - neuroeconomics
+OT  - reinforcement learning
+OT  - risk
+COIS- We declare we have no competing interests.
+EDAT- 2021/01/12 06:00
+MHDA- 2021/10/13 06:00
+CRDT- 2021/01/11 05:23
+PHST- 2021/01/11 05:23 [entrez]
+PHST- 2021/01/12 06:00 [pubmed]
+PHST- 2021/10/13 06:00 [medline]
+AID - rstb20190665 [pii]
+AID - 10.1098/rstb.2019.0665 [doi]
+PST - ppublish
+SO  - Philos Trans R Soc Lond B Biol Sci. 2021 Mar;376(1819):20190665. doi: 
+      10.1098/rstb.2019.0665. Epub 2021 Jan 11.
+
+PMID- 34355856
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20211028
+LR  - 20211028
+IS  - 1755-6686 (Electronic)
+IS  - 1755-6678 (Linking)
+VI  - 47
+IP  - 3
+DP  - 2021 Sep
+TI  - Shared decision making-The cornerstone in person-centred care.
+PG  - 144-145
+LID - 10.1111/jorc.12392 [doi]
+FAU - Finderup, Jeanette
+AU  - Finderup J
+AUID- ORCID: 0000-0003-2646-0227
+AD  - Department of Renal Medicine, Aarhus University Hospital, Aarhus, Denmark.
+AD  - Department of Clinical Medicine, Aarhus University, Aarhus, Denmark.
+AD  - Research Centre for Patient Involvement, Aarhus University & The Central Denmark, 
+      Region, Aarhus N, Denmark.
+LA  - eng
+PT  - Editorial
+PL  - United States
+TA  - J Ren Care
+JT  - Journal of renal care
+JID - 101392167
+MH  - Decision Making
+MH  - *Decision Making, Shared
+MH  - Humans
+MH  - *Patient-Centered Care
+EDAT- 2021/08/07 06:00
+MHDA- 2021/10/29 06:00
+CRDT- 2021/08/06 08:54
+PHST- 2021/08/06 08:54 [entrez]
+PHST- 2021/08/07 06:00 [pubmed]
+PHST- 2021/10/29 06:00 [medline]
+AID - 10.1111/jorc.12392 [doi]
+PST - ppublish
+SO  - J Ren Care. 2021 Sep;47(3):144-145. doi: 10.1111/jorc.12392.
+
+PMID- 28548893
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20180412
+LR  - 20180617
+IS  - 1547-8181 (Electronic)
+IS  - 0018-7208 (Linking)
+VI  - 59
+IP  - 5
+DP  - 2017 Aug
+TI  - Dynamic Decision Making: Learning Processes and New Research Directions.
+PG  - 713-721
+LID - 10.1177/0018720817710347 [doi]
+AB  - OBJECTIVE: The aim of this manuscript is to provide a review of contemporary 
+      research and applications on dynamic decision making (DDM). BACKGROUND: Since 
+      early DDM studies, there has been little systematic progress in understanding 
+      decision making in complex, dynamic systems. Our review contributes to better 
+      understanding of decision making processes in dynamic tasks. METHOD: We discuss 
+      new research directions in DDM to highlight the value of simplification in the 
+      study of complex decision processes, divided into experimental and 
+      theoretical/computational approaches, and focus on problems involving control 
+      tasks and search-and-choice tasks. In computational modeling, we discuss recent 
+      developments in instance-based learning and reinforcement learning that advance 
+      modeling the processes of dynamic decisions. RESULTS: Results from DDM research 
+      reflect a trend to scale down the complexity of DDM tasks to facilitate the study 
+      of the process of decision making. Recent research focuses on the dynamic 
+      complexity emerging from the interactions of actions and outcomes over time even 
+      in simple dynamic tasks. CONCLUSION: The study of DDM in theory and practice 
+      continues to be a priority area of research. New research directions can help the 
+      human factors community to understand the effects of experience, knowledge, and 
+      adaption processes in DDM tasks, but research challenges remain to be addressed, 
+      and the recent perspectives discussed can help advance a systematic DDM research 
+      program. APPLICATION: Classical domains, such as automated pilot systems, 
+      fighting fires, and medical emergencies, continue to be central applications of 
+      basic DDM research, but new domains, such as cybersecurity, climate change, and 
+      forensic science, are emerging as other important applications.
+FAU - Gonzalez, Cleotilde
+AU  - Gonzalez C
+AD  - Carnegie Mellon University, Pittsburgh, Pennsylvania.
+FAU - Fakhari, Pegah
+AU  - Fakhari P
+FAU - Busemeyer, Jerome
+AU  - Busemeyer J
+AD  - Indiana University, Bloomington.
+LA  - eng
+PT  - Journal Article
+PT  - Research Support, U.S. Gov't, Non-P.H.S.
+PT  - Review
+DEP - 20170526
+PL  - United States
+TA  - Hum Factors
+JT  - Human factors
+JID - 0374660
+SB  - IM
+MH  - Decision Making/*physiology
+MH  - Humans
+MH  - Learning/*physiology
+MH  - *Models, Theoretical
+OTO - NOTNLM
+OT  - cognitive models
+OT  - decisions from experience
+OT  - dynamic decision making
+OT  - instance-based learning
+OT  - reinforcement learning
+EDAT- 2017/05/27 06:00
+MHDA- 2018/04/13 06:00
+CRDT- 2017/05/27 06:00
+PHST- 2017/05/27 06:00 [pubmed]
+PHST- 2018/04/13 06:00 [medline]
+PHST- 2017/05/27 06:00 [entrez]
+AID - 10.1177/0018720817710347 [doi]
+PST - ppublish
+SO  - Hum Factors. 2017 Aug;59(5):713-721. doi: 10.1177/0018720817710347. Epub 2017 May 
+      26.
+
+PMID- 34172143
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20210804
+LR  - 20220716
+IS  - 1879-1972 (Electronic)
+IS  - 1054-139X (Print)
+IS  - 1054-139X (Linking)
+VI  - 69
+IP  - 1
+DP  - 2021 Jul
+TI  - Adolescent Shared Decision-Making: Where We Have Been and Where We are Going.
+PG  - 6-7
+LID - S1054-139X(21)00202-0 [pii]
+LID - 10.1016/j.jadohealth.2021.04.009 [doi]
+FAU - Marron, Jonathan M
+AU  - Marron JM
+AD  - Department of Pediatric Oncology, Dana-Farber Cancer Institute, Boston, 
+      Massachusetts; Division of Pediatric Hematology/Oncology, Boston Children's 
+      Hospital, Boston, Massachusetts; Center for Bioethics, Harvard Medical School, 
+      Boston, Massachusetts; Department of Pediatrics, Harvard Medical School, Boston, 
+      Massachusetts. Electronic address: jonathan_marron@dfci.harvard.edu.
+LA  - eng
+GR  - L30 CA209755/CA/NCI NIH HHS/United States
+PT  - Editorial
+PL  - United States
+TA  - J Adolesc Health
+JT  - The Journal of adolescent health : official publication of the Society for 
+      Adolescent Medicine
+JID - 9102136
+SB  - IM
+MH  - Adolescent
+MH  - Decision Making
+MH  - *Decision Making, Shared
+MH  - Humans
+MH  - *Patient Participation
+PMC - PMC8366073
+MID - NIHMS1732606
+EDAT- 2021/06/27 06:00
+MHDA- 2021/08/05 06:00
+CRDT- 2021/06/26 05:30
+PHST- 2021/04/08 00:00 [received]
+PHST- 2021/04/09 00:00 [accepted]
+PHST- 2021/06/26 05:30 [entrez]
+PHST- 2021/06/27 06:00 [pubmed]
+PHST- 2021/08/05 06:00 [medline]
+AID - S1054-139X(21)00202-0 [pii]
+AID - 10.1016/j.jadohealth.2021.04.009 [doi]
+PST - ppublish
+SO  - J Adolesc Health. 2021 Jul;69(1):6-7. doi: 10.1016/j.jadohealth.2021.04.009.

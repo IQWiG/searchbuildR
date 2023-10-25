@@ -1,4 +1,5 @@
 return_pmids <- function(testset_ref, random_references = NULL, validation_set = FALSE){
+  if(any(grepl("accession", testset_ref))){
 
   testset_pmids<- testset_ref %>%
     map(pluck, "accession") %>%
@@ -15,6 +16,9 @@ return_pmids <- function(testset_ref, random_references = NULL, validation_set =
     result <- list("testset" = testset_pmids)
   }
   return(result)
+  }else {
+    return("No accession numbers provided")
+  }
 }
 
 calculate_z_scores <- function (testset, popset_norms, key_testset = "MeSH", key_popset) {
@@ -39,6 +43,16 @@ calculate_z_scores <- function (testset, popset_norms, key_testset = "MeSH", key
 raw_ris_data <- function(x){
   temp <- readLines(x)
   temp <- temp[temp != ""]
-  start_ref <- grep("ER  -", temp)+1
-  result <- split(temp, cumsum(seq_along(temp) %in% start_ref)+1)
+  if ( any(grepl ("^(PMID- )", temp))) {
+    start_ref <- grep("PMID- ", temp)
+    result <- split(temp, cumsum(seq_along(temp) %in% start_ref[-1])+1)
+  }else if(any(grepl("ER  -", temp))){
+    start_ref <- grep("ER  -", temp)+1
+    result <- split(temp, cumsum(seq_along(temp) %in% start_ref)+1)
+  }else{
+    stop("Wrong file format. Raw data cannot be processed to return subset of original data.")
+  }
+  return(result)
 }
+
+# create tokens

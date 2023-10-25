@@ -63,7 +63,7 @@ tag_lookup <-function (type = "ris")
          investigator_full = "FIR", isbn = "ISBN", issn = "IS",
          issue = "IP", journal_abbreviated = "TA", journal = "JT",
          language = "LA", location_id = "LID", manuscript_id = "MID",
-         mesh_date = "MHDA", mesh_terms = "MH", nlm_id = "JID",
+         mesh_date = "MHDA", keywords = "MH", nlm_id = "JID", # change tag "mesh_terms" in revtools to "keywords" in searchbuildR
          references_n = "RF", abstract_other = "OAB", copyright_info_other = "OCI",
          id_other = "OID", term_other = "OT", term_owner_other = "OTO",
          owner = "OWN", pages = "PG", personal_name_as_subject = "PS",
@@ -71,7 +71,7 @@ tag_lookup <-function (type = "ris")
          publication_history_status = "PHST", publication_status = "PST",
          publication_type = "PT", publishing_model = "PUBM",
          pubmed_central_identitfier = "PMC", pubmed_central_release = "PMCR",
-         pubmed_id = "PMID", registry_number = "RN", substance_name = "NM",
+         accession = "PMID", registry_number = "RN", substance_name = "NM", # change tag "pubmed_id" in revtools to "accession" in searchbuildR
          secondary_source_id = "SI", source = "SO", space_flight_mission = "SFM",
          status = "STAT", subset = "SB", title = "TI", title_transliterated = "TT",
          volume = "VI", volume_title = "VTI")

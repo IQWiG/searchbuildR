@@ -45,8 +45,19 @@ app_server <- function(input, output, session) {
     switch(ext,
            txt = create_testset(input$upload$datapath),
            ris = create_testset(input$upload$datapath),
-           validate("Invalid file: Please upload a risfile exported from Endnote")
+           validate("Invalid file: Please upload a risfile exported from Endnote or PubMed")
     )
+  })
+  allRefsTable <- reactive({
+    columns <- c("accession", "author", "year", "title")
+    table <- purrr::set_names(rep(list(NA_real_),length(columns)), columns) %>% as.data.frame()
+    result <- rawdata()$reference.list %>%
+      as.data.frame() %>%
+      tibble::add_column(table[setdiff(columns, names(.data))])
+
+    result$first_author <- stringr::str_split_i(result$author, " and ", 1)  #only choose first author
+    result <- result %>% select("accession", "first_author", "year", "title")
+    return(result)
   })
     zScoreData <- bindEvent(reactive({
     req(input$upload)
@@ -168,13 +179,11 @@ app_server <- function(input, output, session) {
   )
 
   output$allRefs <- renderReactable({
-     reactable(as.data.frame(rawdata()$reference.list)[c("accession",
-                                             "year",
-                                             "title",
-                                             "author")],
+     reactable(allRefsTable(),
               columns = list ("accession" = colDef(name = "PMID",
-                                                   maxWidth = 100),
-                            "author" = colDef(name ="Author"),
+                                              maxWidth = 100),
+                            "first_author" = colDef(name ="First Author",
+                                                    maxWidth = 150),
                             "year" = colDef(name = "Year",
                                             maxWidth = 100),
                             "title"= colDef(name = "Title")),
@@ -239,7 +248,7 @@ app_server <- function(input, output, session) {
   })
   output$downloadFreetext <- downloadHandler(
     filename = function(){
-      paste0(input$upload,"-freetext.csv")
+      paste0(tools::file_path_sans_ext(input$upload),"-freetext.csv")
     },
     content = function(file) {
       output <- zScoreData()$z_score_tables$freetext %>%
@@ -247,11 +256,11 @@ app_server <- function(input, output, session) {
         mutate(across(where(is.double), ~ round(.x, digits = 2))) %>%
         arrange(desc(.data$z)) %>%
         rename(`Candidate Terms` = "feature",
-               `Absolute Document Frequency` = "docfreq",
-               `% Document Frequency` = "coverage",
+               `Documents` = "docfreq",
+               `Documents in %` = "coverage",
                `Term frequency` = "frequency",
                `Z-Score` = "z",
-               `Absolute Norm Set Document Frequency` = "Norm.docfreq")
+               `Population set documents` = "Norm.docfreq")
       write.csv2(output,
                  file = file, row.names = FALSE,
                  )
@@ -296,7 +305,7 @@ app_server <- function(input, output, session) {
   })
   output$downloadMeSH <- downloadHandler(
     filename = function(){
-      paste0(input$upload,"-MeSH.csv")
+      paste0(tools::file_path_sans_ext(input$upload),"-MeSH.csv")
     },
     content = function(file) {
       output <- zScoreData()$z_score_tables$MeSH %>%
@@ -304,10 +313,10 @@ app_server <- function(input, output, session) {
         mutate(across(where(is.double), ~ round(.x, digits = 2))) %>%
         arrange(desc(.data$z)) %>%
         rename(`MeSH Heading` = "MeSH",
-               `Absolute Document Frequency` = "docfreq",
-               `% Document Frequency` = "coverage",
+               `Documents` = "docfreq",
+               `Documents in %` = "coverage",
                `Z-Score` = "z",
-               `Absolute Norm Set Document Frequency` = "Norm.docfreq")
+               `Population set documents` = "Norm.docfreq")
        write.csv2(output,
                  file = file, row.names = FALSE)
     }
@@ -352,7 +361,7 @@ app_server <- function(input, output, session) {
 
   output$downloadQualifier <- downloadHandler(
     filename = function(){
-      paste0(input$upload,"-qualifier.csv")
+      paste0(tools::file_path_sans_ext(input$upload),"-qualifier.csv")
     },
     content = function(file) {
       output <- zScoreData()$z_score_tables$qualifier %>%
@@ -360,11 +369,11 @@ app_server <- function(input, output, session) {
         mutate(across(where(is.double), ~ round(.x, digits = 2))) %>%
         arrange(desc(.data$z)) %>%
         rename(`Candidate Terms` = "MeSH",
-               `Absolute Document Frequency` = "docfreq",
-               `% Document Frequency` = "coverage",
-               `Absolute Qualifier Frequency` = "frequency",
+               `Documents` = "docfreq",
+               `Documents in %` = "coverage",
+               `Qualifier frequency` = "frequency",
                `Z-Score` = "z",
-               `Absolute Norm Set Document Frequency` = "Norm.docfreq")
+               `Population set documents` = "Norm.docfreq")
       write.csv2(output,
                  file = file, row.names = FALSE,
       )
@@ -402,32 +411,43 @@ app_server <- function(input, output, session) {
   # raw data or development set?
 
   # extract tokens from text data
-  kwicTokens <- reactive({
+  kwicCorpus <- reactive({
     req(input$upload)
-    rawdata()$text_corpus %>%
-    tokens()
+    rawdata()$text_corpus
   })
 
   # mark term of interest
   kwicTokensMarked <- reactive({
-    selected_reference <- kwicTokens()[[selection()]]
-    index <- which(tolower(selected_reference) == tolower(input$kwicInput))
-    selected_reference[index] <- paste0("<mark>", selected_reference[index], "</mark>")
-    return(selected_reference)
+    kwicInput_hyphen <-  stringr::str_replace_all(input$kwicInput," ", "-")
+    stringr::str_replace_all(kwicCorpus()[[selection()]], stringr::regex(paste0("(\\b)(",input$kwicInput,"|",kwicInput_hyphen,")(\\b)"), ignore_case = T), paste0("<mark>\\2</mark>"))
   })
 
   #create the raw "keywords-in-context" table
   kwicRawTable <- reactive({
     req(input$kwicInput)
-      result <- kwicTokens()  %>%
+    if(grepl("(\\.)|(\\*)", input$kwicInput)){
+      validate("* and . cannot be used in search term entered.")
+    }
+    if(grepl("-", input$kwicInput)) {
+      kwicInput_hyphen <- gsub("-", " - ", input$kwicInput)
+      result <- kwicCorpus() %>%
+        tokens(split_hyphens = TRUE) %>%
+        kwic(phrase(kwicInput_hyphen),
+             case_insensitive = TRUE,
+             window = input$kwicSlider)
+    } else {
+      result <- kwicCorpus() %>%
+        tokens(split_hyphens = TRUE, remove_punct = TRUE) %>%
         kwic(phrase(input$kwicInput),
              case_insensitive = TRUE,
              window = input$kwicSlider)
-      if(nrow(result) == 0){
-        validate("Please select a term listed in table `Freetext`")
-      }
-      return(result)
-    })
+    }
+
+    if(nrow(result) == 0){
+      validate("Please select a term listed in tab `Freetext`")
+    }
+    return(result)
+  })
 
 
   # calculate number of occurrences and number of documents
@@ -491,7 +511,7 @@ app_server <- function(input, output, session) {
             )})
 
     output$kwicSelectedRef <- renderText({
-      paste(kwicTokensMarked(), collapse = " ")
+      kwicTokensMarked()
       })
 
   # Tab 7 Phrases
@@ -499,14 +519,23 @@ app_server <- function(input, output, session) {
   output$phraseTable <- renderReactable({
     req(input$upload)
     reactable(summarise_adjacency(rawdata()$text_corpus, ngrams = input$phraseSlider+2),
-              columns = list( "feature" = colDef(name = "N-grams",
+              columns = list( "feature" = colDef(name = "Skip-Grams",
                                                  minWidth = 150,
-                                                 filterable = TRUE
+                                                 filterable = TRUE),
+                              "frequency" = colDef(name = "Overall frequency",
+                                                   format = colFormat(digits = 0))
               ),
-              "frequency" = colDef(name = "Frequency",
-                                   format = colFormat(digits = 0))
-              ),
-              )
+              showSortable = TRUE,
+              sortable = TRUE,
+              striped = TRUE,
+              compact = TRUE,
+              highlight = TRUE,
+              resizable = TRUE,
+              fullWidth = FALSE,
+              paginationType= "jump",
+              defaultPageSize = 10,
+              showPageSizeOptions = TRUE, pageSizeOptions = c(10, 20, 50, 100)
+    )
   })
 }
 
