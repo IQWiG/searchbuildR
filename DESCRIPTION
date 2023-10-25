@@ -1,12 +1,12 @@
 Package: searchbuildR
 Title: Identify Search Terms in Evidence Synthesis 
-Version: 0.0.12
+Version: 0.0.13
 Authors@R: 
   c(
   person(
     given = "Claudia",
     family = "Kapp",
-    email = "claudia.kapp@iqwig.de",
+    email = "recherche@iqwig.de",
     role = c("aut", "cre"),
     comment = c(ORCID = "0000-0002-7111-1897")),
   person(
@@ -29,6 +29,7 @@ Imports:
     bslib,
     dplyr,
     htmlwidgets,
+    httr2,
     magrittr,
     purrr,
     quanteda,
