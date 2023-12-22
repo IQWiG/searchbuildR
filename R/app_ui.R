@@ -106,16 +106,18 @@ app_ui <- fluidPage( title = "searchbuildR",
                      ),
                      fluidRow(
                      column(12,
-                            HTML("<p>The table shows all freetext terms in the chosen analysis set (either all uploaded or random development set).
-                            <br> Freetext terms are defined as all words in the title and abstract.</p>
+                            HTML("<p>The table shows all freetext terms in title and abstract of the chosen analysis set. </p>
+                                 <p><br>*Rare terms are defined as occurring in less than 2 or less than 10% of references.</p>
                             <p> Details:
-                            <br> All numbers, Unicode symbols and Unicode punctuation hase been removed. Hyphenated words have been separated (i.e. 'self-aware' is analyzed as 'self' and 'aware').
-                            <br> The z-ccore of a binomial test against a random representative set of PubMed references is calculated.
+                            <br> The chosen analysis set is either all uploaded references or a development set.
+                            <br> All numbers, Unicode symbols and Unicode punctuation have been removed. Hyphenated words have been separated, i.e. 'self-aware' is analyzed as 'self' and 'aware'.</p>
+                            <p> Statistical analysis:
+                            <br>The z-score of a binomial test against a random representative set of PubMed references is calculated.
                               A positive z-score indicates, that the freetext term occurs more often in the analysis set,
                               than would be expected based on the representative sample of PubMed references.
                               A z-score of 10000 is given to all candidate terms,
-                              which did not occurr in the representative sample of PubMed references.</p>
-                            *Rare terms are defined as occurring in less than 2 or less than 10% of references")
+                              which did not occurr in the representative sample of PubMed references.</p>"
+                            )
                      )
                    )
                    ),
@@ -263,21 +265,20 @@ app_ui <- fluidPage( title = "searchbuildR",
                  fluidRow(
                    column(12,
                           align = "center",
-                          sliderInput("phraseSlider", "Select maximum number of words between 2-word combinations:", 0, 4, 1)
+                          sliderInput("phraseSlider", "Select maximum number of words to be skipped between 2-word combinations:", 0, 4, 1)
                    )
                  ),
                  fluidRow(
                    column(12,
-                          HTML("<p>The table analyzes all 2-word combinations that occur in the uploaded references.
-                          The frequency of a 2-word combination is calculated for the selected n-grams.
-                          <br>Example: 'benign lung tumour' appear in the table as 2-gram 'benign lung' and 2-gram 'lung tumour' and as 3-gram 'benign tumour' </p>
-                          <p>Details:<br>
-                          The word entered is analyzed in all uploaded references and not only in the development set.<br>
-                          English stopwords are not analyzed as 2-word combinations; i.e. the phrase 'quality of life' would appear as 'quality life' and as 3-gram in the table.<br>
-                          The filter function applies automatic right-handside truncation.</p>
+                          HTML("<p> The frequency of all 2-word combinations is displayed in the table for each unique skip-gram.
+                          <p>Example: &lt&ltbenign lung tumor&gt&gt would be counted for three unique skip-grams: benign lung, lung tumor &amp benign tumor. </p>
                           <p>Definition:<br>
-                          An n-gram is a phrase consisting of a specific number of words.
-                          A 2-gram contains 2 words (e.g. 'clinical trial'), a 3-gram contains 3 words (e.g. 'quality of life') etc.</p>")
+                          A skip-gram consists of a specific number of words, with a specific number of skipped words in between.
+                          A skip-0-gram skips no words (clinical trial &rarr; clinical trial), a skip-1-gram skips 1 one word (quality of life &rarr; quality life ) etc.</p>
+                          <p>Details:<br>
+                          All uploaded references are analyzed and not only the development set.<br>
+                          English stopwords are not analyzed as 2-word combinations; i.e. the phrase &lt&ltquality of life&gt&gt occurs only in the table as skip-1-gram quality life.<br>
+                          The filter function applies automatic right-hand side truncation.</p>")
                    )
                  )
                  ),

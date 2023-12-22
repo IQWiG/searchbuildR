@@ -3,7 +3,7 @@ adjacency <- function(corpus_data, skip = 0) {
     quanteda::tokens(split_hyphens = TRUE, remove_punct = T, remove_symbols = T, remove_numbers = T, padding = F) %>%
     quanteda::tokens_remove(quanteda::stopwords("en"), padding = T) %>%
     quanteda::tokens_ngrams(n = 2, skip = skip, concatenator = " ") %>%
-    dfm %>%
+    dfm() %>%
     textstat_frequency()%>%
     select("feature", "frequency") %>%
     mutate(gram = skip + 2)
