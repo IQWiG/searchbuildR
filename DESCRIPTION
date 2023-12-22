@@ -4,7 +4,7 @@ Version: 1.0.0
 Authors@R: 
   c(
   person("Institut für Qualität und Wirtschaftlichkeit im Gesundheitswesen(IQWiG)", 
-  email= "recherche@iqwig.de"
+  email= "recherche@iqwig.de",
   role = c("cre","aut","cph")
     ))
 Description: R Package to identify search terms in evidence synthesis with quantitative textual analysis.
