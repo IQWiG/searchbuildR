@@ -40,13 +40,22 @@ app_server <- function(input, output, session) {
   # reactive variables
 
   rawdata <- reactive({
-    req(input$upload)
+    req(input$upload)  # Ensure the file is uploaded
+
     ext <- tools::file_ext(input$upload$name)
-    switch(ext,
-           txt = create_testset(input$upload$datapath),
-           ris = create_testset(input$upload$datapath),
-           validate("Invalid file: Please upload a risfile exported from Endnote or PubMed")
+
+    # Ensure ext is a single value and handle invalid file extensions
+    if (length(ext) != 1 || ext == "") {
+      validate("Please upload a file")
+    }
+
+    result <- switch(ext,
+                     txt = create_testset(input$upload$datapath),
+                     ris = create_testset(input$upload$datapath),
+                     validate("Invalid file: Please upload a ris file exported from Endnote or PubMed")
     )
+
+    result
   })
   allRefsTable <- reactive({
     columns <- c("accession", "author", "year", "title")
