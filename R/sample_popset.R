@@ -7,6 +7,7 @@
 #' in the format "YYYY:YYYY" (e.g. "2000:2024")
 #' @param max_pmid the highest PMID to be considered
 #' @param email a valid e-mail address, which will be sent with the API request to identify the API user (required by NLM)
+#' @param seed an integer value to control the random seed used for sampling
 #'
 #' @returns an object with a list of random PubMed
 #'  references. A histogram is produced showing the distribution of publication years
@@ -17,10 +18,11 @@
 #'
 
 sample_popset <- function(sample_size, filters = "none",
-                          year_range, max_pmid = NULL,
-                          email){
+                          year_range, max_pmid = 40000000,
+                          email,
+                          seed = NULL){
   stopifnot("Please provide an e-mail address for the API request to PubMed" = grepl("^([\\w\\-\\.])+@([\\w\\-]+\\.)+[\\w\\-]{2,4}$", email, perl = TRUE))
-  stopifnot("Choose a sample_size below 100,000" = sample_size < 10000)
+  stopifnot("Choose a sample_size below 100,000" = sample_size < 100000)
 
   filterSyntax <- switch(filters,
          none = NULL,
@@ -39,7 +41,7 @@ sample_popset <- function(sample_size, filters = "none",
   queryKey_init <- initialSearch$esearchresult$querykey
 
   #loop queries until finished
-  UIDSearchTermList <- create_UID_esearch_terms( sample_size = sample_size) # maximum search query length is 200000 characters for one request
+  UIDSearchTermList <- create_UID_esearch_terms( sample_size = sample_size, seed = seed, max_pmid = max_pmid) # maximum search query length is 200000 characters for one request
 
   retrievedPMIDs <- post_random_PMIDs(UIDSearchTermList, sample_size = sample_size, webEnv = webEnv_init,
                                           email = email)
@@ -227,20 +229,15 @@ post_random_PMIDs <- function (UIDSearchTermList, sample_size, webEnv, email){
   ))
 }
 
-#clean_efetch_result <- function(recs){
-#
-#  recs <- gsub("The following PMID is not available","", recs) # legacy: delete unavailable PMIDS
-#  if(recs[1] == ""){ # the response usually starts with an empty line which should be trimmed
-#    recs <- recs[-1]
-#  }
-#  # Some PubMed references contain false carriage returns in the MeSH terms which creates errors, when parsing MeSH terms
-#  before_white_lines <- grep("^\\s{6}", recs) - 1 # grep lines with not tag and return line above
-#  MH_lines <- grep("^MH\\s", recs)
-#  incomplete_lines <-  intersect(MH_lines, before_white_lines)
-#
-#  if(length(incomplete_lines) > 0){
-#    recs[incomplete_lines] <- paste0(recs[incomplete_lines], trimws(recs[incomplete_lines + 1], whitespace = "^\\s{6}"))
-#    recs <- recs[-(incomplete_lines +1)]
-#  }
-#  return(recs)
-#}
+clean_efetch_result <- function(recs){
+  # Some PubMed references contain false carriage returns in the MeSH terms which creates errors, when parsing MeSH terms
+  before_white_lines <- grep("^\\s{6}", recs) - 1 # grep lines with no tag and return line above
+  MH_lines <- grep("^MH\\s", recs)
+  incomplete_lines <-  intersect(MH_lines, before_white_lines)
+
+  if(length(incomplete_lines) > 0){
+    recs[incomplete_lines] <- paste0(recs[incomplete_lines], trimws(recs[incomplete_lines + 1], whitespace = "^\\s{6}"))
+    recs <- recs[-(incomplete_lines +1)]
+  }
+  return(recs)
+}

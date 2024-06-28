@@ -46,23 +46,23 @@ if (length(resp$body) == 0){
 }
 
 
-clean_efetch_result <- function(recs){
-
-  recs <- gsub("The following PMID is not available","", recs) # legacy: delete unavailable PMIDS
-  if(recs[1] == ""){ # the response usually starts with an empty line which should be trimmed
-    recs <- recs[-1]
-  }
-  # Some PubMed references contain false carriage returns in the MeSH terms which creates errors, when parsing MeSH terms
-  before_white_lines <- grep("^\\s{6}", recs) - 1 # grep lines with not tag and return line above
-  MH_lines <- grep("^MH\\s", recs)
-  incomplete_lines <-  intersect(MH_lines, before_white_lines)
-
-  if(length(incomplete_lines) > 0){
-    recs[incomplete_lines] <- paste0(recs[incomplete_lines], trimws(recs[incomplete_lines + 1], whitespace = "^\\s{6}"))
-    recs <- recs[-(incomplete_lines +1)]
-  }
-  return(recs)
-}
+#clean_efetch_result <- function(recs){
+#
+#  recs <- gsub("The following PMID is not available","", recs) # legacy: delete unavailable PMIDS
+#  if(recs[1] == ""){ # the response usually starts with an empty line which should be trimmed
+#    recs <- recs[-1]
+#  }
+#  # Some PubMed references contain false carriage returns in the MeSH terms which creates errors, when parsing MeSH terms
+#  before_white_lines <- grep("^\\s{6}", recs) - 1 # grep lines with not tag and return line above
+#  MH_lines <- grep("^MH\\s", recs)
+#  incomplete_lines <-  intersect(MH_lines, before_white_lines)
+#
+#  if(length(incomplete_lines) > 0){
+#    recs[incomplete_lines] <- paste0(recs[incomplete_lines], trimws(recs[incomplete_lines + 1], whitespace = "^\\s{6}"))
+#    recs <- recs[-(incomplete_lines +1)]
+#  }
+#  return(recs)
+#}
 #
 ## plot PMID disribution
 #options(scipen=999)

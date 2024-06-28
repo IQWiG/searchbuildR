@@ -8,8 +8,9 @@ sample_popset(
   sample_size,
   filters = "none",
   year_range,
-  max_pmid = NULL,
-  email
+  max_pmid = 4e+07,
+  email,
+  seed = NULL
 )
 }
 \arguments{
@@ -24,6 +25,8 @@ in the format "YYYY:YYYY" (e.g. "2000:2024")}
 \item{max_pmid}{the highest PMID to be considered}
 
 \item{email}{a valid e-mail address, which will be sent with the API request to identify the API user (required by NLM)}
+
+\item{seed}{an integer value to control the random seed used for sampling}
 }
 \value{
 an object with a list of random PubMed
