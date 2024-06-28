@@ -4,10 +4,12 @@
 \alias{get_mesh_entry_terms}
 \title{Retrieve MeSH entry terms for MeSH Headings}
 \usage{
-get_mesh_entry_terms(meshTerm)
+get_mesh_entry_terms(meshTerm, email)
 }
 \arguments{
 \item{meshTerm}{a character vector with MeSH headings}
+
+\item{email}{a valid e-mail address, which will be sent with the API request to identify the API user (required by NLM)}
 }
 \value{
 a list of entry terms
@@ -17,6 +19,6 @@ Retrieve MeSH entry terms for MeSH Headings
 }
 \examples{
 \dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
-get_mesh_entry_terms(c("Breast Neoplasms", "Gingivitis"))
+get_mesh_entry_terms(c("Breast Neoplasms", "Gingivitis"), email = "xx@xx.xxxx")
 \dontshow{\}) # examplesIf}
 }

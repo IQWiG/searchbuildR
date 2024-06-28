@@ -18,5 +18,5 @@ a list with two elements `seed´ (the random seed applied) and ´result´ (retri
 Fetch random sample of pubmed references
 }
 \examples{
-random_pubmed_fetch(size = 2, maxUID = 37000000)
+searchbuildR:::random_pubmed_fetch(size = 2, maxUID = 37000000)
 }

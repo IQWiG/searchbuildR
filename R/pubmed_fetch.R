@@ -5,10 +5,10 @@
 #' @param maxUID biggest UID to be considered for random sample
 #'
 #' @returns a list with two elements `seed´ (the random seed applied) and ´result´ (retrieved references in PubMed format)
-#' @export
+#'
 #'
 #' @examples
-#' random_pubmed_fetch(size = 2, maxUID = 37000000)
+#' searchbuildR:::random_pubmed_fetch(size = 2, maxUID = 37000000)
 random_pubmed_fetch <- function(size, maxUID){
   random_uids <- sample_uids(size = size, maxUID = maxUID)
   # Efetch request to entrez direct (Pubmed API) and write retrieved references into a text-file in Pubmed-Format
