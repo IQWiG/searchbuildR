@@ -20,6 +20,7 @@
 #' @importFrom dplyr select
 #' @importFrom dplyr summarise
 #' @importFrom dplyr ungroup
+#' @importFrom graphics hist
 #' @importFrom htmlwidgets JS
 #' @importFrom httr2 req_body_form
 #' @importFrom httr2 req_perform
