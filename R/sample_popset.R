@@ -40,7 +40,9 @@ sample_popset <- function(sample_size, filters = "none",
   webEnv_init <- initialSearch$esearchresult$webenv
   queryKey_init <- initialSearch$esearchresult$querykey
 
-  #loop queries until finished
+  if(is.null(seed)){
+    seed <- sample.int(.Machine$integer.max, 1L)
+  }
   UIDSearchTermList <- create_UID_esearch_terms( sample_size = sample_size, seed = seed, max_pmid = max_pmid) # maximum search query length is 200000 characters for one request
 
   retrievedPMIDs <- post_random_PMIDs(UIDSearchTermList, sample_size = sample_size, webEnv = webEnv_init,
@@ -93,17 +95,9 @@ sample_popset <- function(sample_size, filters = "none",
     purrr::flatten_chr()
   result_last_hits <- efetch_with_idlist(last_hits, email = email)
   result <- c(result_all_but_last, result_last_hits)
+  plot_data(result, retrievedPMIDs$counter, seed)
 
-  plotData <- stringr::str_extract_all(result, "(?<=DP\\s\\s\\-\\s)(\\d{4})") |>
-    as.numeric()
 
-  hist(plotData,
-       freq = FALSE,
-       breaks = length(unique(plotData)),
-       col = "blue",
-       main = "Distribution of Publication Years",
-       xlab = "Year"
-  )
   message(paste(stringr::str_count(result, "PMID- ") |> sum(),
             "random PubMed references retrieved"))
 
@@ -240,4 +234,19 @@ clean_efetch_result <- function(recs){
     recs <- recs[-(incomplete_lines +1)]
   }
   return(recs)
+}
+
+plot_data <- function(result, counter, seed){
+
+  plotData <- stringr::str_extract_all(result, "(?<=DP\\s\\s\\-\\s)(\\d{4})") |>
+    as.numeric()
+
+  hist(plotData,
+       freq = FALSE,
+       breaks = length(unique(plotData)),
+       col = "blue",
+       main = paste("Distribution of Publication Years for", counter ,"Retrieved References"),
+       xlab = "Year",
+       sub = paste("created ", format(Sys.Date(), "%d/%m/%y"), "with random seed:", seed)
+  )
 }
