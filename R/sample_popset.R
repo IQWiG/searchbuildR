@@ -48,23 +48,6 @@ sample_popset <- function(sample_size, filters = "none",
   retrievedPMIDs <- post_random_PMIDs(UIDSearchTermList, sample_size = sample_size, webEnv = webEnv_init,
                                           email = email)
 
-#  index <- 1
-#  counter <- 0
-#  queryKeys <- character(length = 0)
-#
-#  while (as.numeric(counter) < sample_size) {
-#    if(index > length(UIDSearchTermList)) {
-#      break
-#    }
-#    countHits <- esearch_post_req(term = paste0("#1 AND (", UIDSearchTermList[[index]],")"), #
-#                         webEnv = webEnv_init) |>
-#      httr2::req_perform() |>
-#      httr2::resp_body_json()
-#    counter <- counter + as.numeric(countHits$esearchresult$count)
-#    index <- index + 1
-#    queryKeys <- append(queryKeys, countHits$esearchresult$querykey)
-#    Sys.sleep(0.3)
-#  }
   if(retrievedPMIDs$counter < sample_size){
     if(retrievedPMIDs$counter == 0){
       stop("Error: request retrieved no results,
