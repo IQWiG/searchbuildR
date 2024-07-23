@@ -28,7 +28,7 @@
 #' create_popset(tmp)
 
 
-create_popset <- function(risfile){
+create_popset <- function(risfile, update_MeSH = FALSE, mesh_xml =  NULL){
   popset_ref <- read_bibliography(risfile, return_df = F)
   popset_df <- create_corpus(popset_ref)
   popset_df <- prepare_freq_table(popset_df)

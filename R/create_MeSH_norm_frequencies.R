@@ -1,7 +1,10 @@
-create_MeSH_norm_frequencies <- function (reference_set) {
-#  MeSH_Dictionary <- utils::read.csv2(paste0(here::here(),"/Data/mesh2022.csv"), header = F, col.names = c("MeSH"))
-#  Qualifier_Dictionary <- data.frame(qualifier = readLines(paste0(
-#   here::here(),"/Data/qualifier.txt")))
+create_MeSH_norm_frequencies <- function (reference_set, update_mesh = FALSE, mesh_xml = NULL) {
+  if(update_mesh){
+    newMeSH <- update_mesh(mesh_xml)
+    currentMeSHDictionary <- newMeSH$MeSHTerm
+  } else{
+      # currentMeSHDictionary <- searchbuildR::MeSH_Dictionary
+    }
 
   population_MeSH <- prepare_MeSH_table(reference_set)
 
@@ -20,6 +23,30 @@ create_MeSH_norm_frequencies <- function (reference_set) {
            p = .data$Norm.frequency/.data$N)
 
   result <- list("headings" = population_headings, "qualifier" = population_qualifier)
+
+  return(result)
+}
+
+update_mesh <- function(mesh_xml){
+  MeSHXML <-  xml2::read_xml(mesh_xml) |>
+    xml2::as_list()
+  MeSHTibble <- tibble::tibble(mesh = MeSHXML$DescriptorRecordSet)
+
+  MeSHTerms <- MeSHTibble |>
+    tidyr::unnest_wider(mesh)|>
+    dplyr::select("DescriptorUI", "DescriptorName") |>
+    dplyr::mutate(across(everything(), unlist)) |>
+    dplyr::rename(MeSH = DescriptorName)
+
+  MeSHTree <- MeSHTibble |>
+    tidyr::unnest_wider(mesh)|>
+    dplyr::select("DescriptorUI", "TreeNumberList") |>
+    dplyr::mutate("DescriptorUI" = unlist(DescriptorUI)) |>
+    tidyr::unnest_longer("TreeNumberList", indices_include = FALSE) |>
+    tidyr::hoist(TreeNumberList,
+                 TreeNumber = list(1))
+  result <- list("MeSHTerms" = MeSHTerms,
+                 "MeSHTree" = MeSHTree)
 
   return(result)
 }
