@@ -2,6 +2,7 @@
 
 export(app_server)
 export(app_ui)
+export(create_MeSH_norm_frequencies)
 export(create_UID_esearch_terms)
 export(create_popset)
 export(create_testset)

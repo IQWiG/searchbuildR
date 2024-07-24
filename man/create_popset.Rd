@@ -4,7 +4,7 @@
 \alias{create_popset}
 \title{Process raw Endnote ris file with PubMed data into population norm set}
 \usage{
-create_popset(risfile)
+create_popset(risfile, update_MeSH = FALSE, mesh_xml = NULL, qual_xml = NULL)
 }
 \arguments{
 \item{risfile}{a ris-format file to be imported}
