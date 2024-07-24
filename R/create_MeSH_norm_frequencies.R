@@ -30,6 +30,7 @@ create_MeSH_norm_frequencies <- function (reference_set, mesh_xml = NULL, qual_x
     message("MeSH updated")
   } else {
     currentMeSHDict <- searchbuildR::MeSH_Dictionary
+    newMeSH <- NA
     message("Using default MeSH dictionary")
   }
   if(!is.null(qual_xml)){
@@ -38,6 +39,7 @@ create_MeSH_norm_frequencies <- function (reference_set, mesh_xml = NULL, qual_x
     message("Qualifier updated")
   } else{
     currentQualDict <- searchbuildR::Qualifier_Dictionary
+    newQual <- NA
     message("Using default qualifier dictionary")
   }
   MeSHNorms <- calculate_mesh_norms(currentMeSHDict, populationMeSHTable)

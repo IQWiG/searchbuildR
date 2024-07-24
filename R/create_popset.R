@@ -43,11 +43,14 @@ create_popset <- function(risfile, update_MeSH = FALSE, mesh_xml =  NULL, qual_x
     mutate(p = .data$Norm.frequency/.data$N)
   message("Term probabilities calculated.")
   popset_MeSH <- create_MeSH_norm_frequencies(popset_ref, mesh_xml, qual_xml)
+  newMeSH <- popset_MeSH$newMeSH
+  newQual <- popset_MeSH$newQual
+
   message("MeSH probabilities calculated.")
   result <- list(
     "popset" = list("freetext" = popset_df, "MeSH.Terms" = popset_MeSH[["headings"]], "qualifier" = popset_MeSH[["qualifier"]]),
-    "newMeSH" = popset_MeSH$newMeSH,
-    "newQual" = popset_MeSH$newQual)
+    "newMeSH" = newMeSH,
+    "newQual" = newQual)
 
   return(result)
 }
