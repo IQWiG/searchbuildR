@@ -40,7 +40,8 @@ Imports:
     tidyselect (>= 1.2.0),
     tools,
     utils,
-    withr
+    withr,
+    xml2
 Depends: 
     R (>= 3.5.0)
 LazyData: true

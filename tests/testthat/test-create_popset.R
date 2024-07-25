@@ -1,7 +1,7 @@
 # test formal correctness of population set object
 test_that("population set was created successfully", {
   path <- testthat::test_path(pattern = "fixtures", "testset_ris.txt")
-  expect_silent(create_popset(path))
+  expect_message(create_popset(path), "Term probabilities calculated.")
   # test range of expected z-scores for stopwords (the, of, and)
   # test probablities(p) of study words e.g. (randomized)
   # test distribution of probabilities (p)

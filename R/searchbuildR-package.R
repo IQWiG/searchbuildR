@@ -5,10 +5,12 @@
 #' @import shiny
 #' @importFrom bslib bs_theme
 #' @importFrom dplyr across
+#' @importFrom dplyr all_of
 #' @importFrom dplyr arrange
 #' @importFrom dplyr bind_rows
 #' @importFrom dplyr count
 #' @importFrom dplyr desc
+#' @importFrom dplyr everything
 #' @importFrom dplyr filter
 #' @importFrom dplyr full_join
 #' @importFrom dplyr group_by
@@ -70,5 +72,7 @@
 #' @importFrom utils tail
 #' @importFrom utils write.csv2
 #' @importFrom withr with_seed
+#' @importFrom xml2 as_list
+#' @importFrom xml2 read_xml
 ## usethis namespace: end
 NULL

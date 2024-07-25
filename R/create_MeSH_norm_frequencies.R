@@ -1,24 +1,23 @@
 #' Calculate new probabilities for MeSH and qualifier for a given population set
 #'
-#' @param reference_set character vector with the path to a RIS format file containing a population set
-#' @param mesh_xml optional argument, character vector with the path to an xml file containing MeSH descriptors in the NLM format
-#' @param qualifier_xml optional argument, character vector with the path to an xml file containing MeSH descriptors in the NLM format
-#'
+#' @inheritParams create_popset
+#' @param reference_set a reference_set in RIS or PubMed format created with read_bibliography()
 #' @returns a list of 2 data frames with MeSH ("headings") and "qualifier" norms and two list with raw MeSH headings and MeSH qualifiers
 #' @export
 #'
 #' @examples
-#' #' ris <- c("TY  - JOUR",
-#'          "AU  - Kapp",
-#'          "TI  - Titles",
-#'          "PY  - 2023",
-#'          "JOUR  - IQWiG Journal",
-#'          "KW  - Systematic Reviews as Topic",
-#'          "ER  -")
+#'ris <- c("TY  - JOUR",
+#'         "AU  - Kapp",
+#'         "TI  - Titles",
+#'         "PY  - 2023",
+#'         "JOUR  - IQWiG Journal",
+#'         "KW  - Systematic Reviews as Topic",
+#'         "ER  -")
 #'
 #' tmp <- tempfile(fileext = ".txt")
 #' writeLines(ris, tmp)
-#' create_MeSH_norm_frequencies(ris)
+#' reference_set <- read_bibliography(tmp, return_df = FALSE)
+#' create_MeSH_norm_frequencies(reference_set)
 
 create_MeSH_norm_frequencies <- function (reference_set, mesh_xml = NULL, qual_xml = NULL) {
   populationMeSHTable <- prepare_MeSH_table(reference_set)
@@ -29,7 +28,7 @@ create_MeSH_norm_frequencies <- function (reference_set, mesh_xml = NULL, qual_x
     currentMeSHDict <- newMeSH$Terms
     message("MeSH updated")
   } else {
-    currentMeSHDict <- searchbuildR::MeSH_Dictionary
+    currentMeSHDict <- MeSH_Dictionary
     newMeSH <- NA
     message("Using default MeSH dictionary")
   }
@@ -38,7 +37,7 @@ create_MeSH_norm_frequencies <- function (reference_set, mesh_xml = NULL, qual_x
     currentQualDict <- newQual$Terms
     message("Qualifier updated")
   } else{
-    currentQualDict <- searchbuildR::Qualifier_Dictionary
+    currentQualDict <- Qualifier_Dictionary
     newQual <- NA
     message("Using default qualifier dictionary")
   }
@@ -65,14 +64,14 @@ update_mesh <- function(mesh_xml){
     dplyr::select(tidyselect::all_of(ui_name)) |>
     dplyr::mutate(across(everything(), unlist)) |>
     dplyr::rename(tidyselect::all_of(lookup_name))
-
+message("Creating MeSH Tree...")
   MeSHTree <- MeSHTibble |>
     tidyr::hoist(tidyselect::all_of(MeSHType),
                  "UI" = list(ui_name[1], 1L),
                  "TreeNumberList",
                  .remove = FALSE) |>
     tidyr::unnest_longer("TreeNumberList", indices_include = FALSE) |>
-    tidyr::hoist(TreeNumberList,
+    tidyr::hoist("TreeNumberList",
                  TreeNumber = list(1)) |>
     dplyr::select(!all_of(MeSHType))
 

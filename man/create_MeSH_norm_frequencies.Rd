@@ -7,11 +7,11 @@
 create_MeSH_norm_frequencies(reference_set, mesh_xml = NULL, qual_xml = NULL)
 }
 \arguments{
-\item{reference_set}{character vector with the path to a RIS format file containing a population set}
+\item{reference_set}{a reference_set in RIS or PubMed format created with read_bibliography()}
 
 \item{mesh_xml}{optional argument, character vector with the path to an xml file containing MeSH descriptors in the NLM format}
 
-\item{qualifier_xml}{optional argument, character vector with the path to an xml file containing MeSH descriptors in the NLM format}
+\item{qual_xml}{optional argument, character vector with the path to an xml file containing MeSH descriptors in the NLM format}
 }
 \value{
 a list of 2 data frames with MeSH ("headings") and "qualifier" norms and two list with raw MeSH headings and MeSH qualifiers
@@ -20,15 +20,16 @@ a list of 2 data frames with MeSH ("headings") and "qualifier" norms and two lis
 Calculate new probabilities for MeSH and qualifier for a given population set
 }
 \examples{
-#' ris <- c("TY  - JOUR",
-         "AU  - Kapp",
-         "TI  - Titles",
-         "PY  - 2023",
-         "JOUR  - IQWiG Journal",
-         "KW  - Systematic Reviews as Topic",
-         "ER  -")
+ris <- c("TY  - JOUR",
+        "AU  - Kapp",
+        "TI  - Titles",
+        "PY  - 2023",
+        "JOUR  - IQWiG Journal",
+        "KW  - Systematic Reviews as Topic",
+        "ER  -")
 
 tmp <- tempfile(fileext = ".txt")
 writeLines(ris, tmp)
-create_MeSH_norm_frequencies(ris)
+reference_set <- read_bibliography(tmp, return_df = FALSE)
+create_MeSH_norm_frequencies(reference_set)
 }
