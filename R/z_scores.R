@@ -39,7 +39,7 @@ z_scores <- function(risfile = NULL, references = NULL, risfile_population, load
 
   zscore_freetext <- calculate_z_scores(testset[["freetext"]], popset[["freetext"]], key_testset = "feature", key_popset = "feature")
   zscore_MeSH <- calculate_z_scores(testset[["MeSH.Terms"]][["MeSH"]], popset[["MeSH.Terms"]], key_popset = "MeSH")
-  zscore_qualifier <- calculate_z_scores(testset[["MeSH.Terms"]][["qualifier"]], popset[["qualifier"]], key_popset = "qualifier")
+  zscore_qualifier <- calculate_z_scores(testset[["MeSH.Terms"]][["qualifier"]], popset[["qualifier"]], key_popset = "MeSH")
 
   #revtools::write_bibliography(testset[["validation_set"]],
   #                             filename = paste0(here::here(),
