@@ -28,7 +28,7 @@ MeSH.Terms:'data.frame':	30194 obs. of  5 variables:
 }
 qualifier :'data.frame':	76 obs. of  5 variables:
 \describe{
-\item{qualifier}{character, MeSH qualifier all lower case}
+\item{MeSH}{character, MeSH qualifier all lower case}
 \item{Norm.docfreq}{numeric, absolute document frequency of each MeSH qualifier in population set}
 \item{Norm.frequency}{numeric, absolute frequency of each MeSH qualifier in population set}
 \item{N}{numeric, total frequency of all MeSH qualifiers in population set}
@@ -46,5 +46,7 @@ popset2022
 \description{
 A random sample of 19383 PubMed references drawn from random PMIDs (range 1000 - 36000000),
 search date: April 1st 2022. Source: National Library of Medicine.
+Compared to searchbuildR version 1.0 in the data frame popset2022$qualifer
+the column "qualifier" was renamed "MeSH" for compatibility with version 2.0.
 }
 \keyword{datasets}
