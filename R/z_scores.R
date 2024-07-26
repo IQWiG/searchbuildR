@@ -2,8 +2,7 @@
 #'
 #' @inheritParams create_testset
 #' @param references an object created with create_testset() to be used fo analysis instead of a raw ris file
-#' @param risfile_population a risfile from Endnote containing a population set
-#' @param load_popset logical, should internal population set be applied (default) or should a customized population set be calculated
+#' @param custom_popset a population set created with create_popset()
 #'
 #' @returns a list
 #' @export
@@ -20,11 +19,11 @@
 #' writeLines(ris, tmp)
 #' z_scores(tmp)
 #'
-z_scores <- function(risfile = NULL, references = NULL, risfile_population, load_popset = TRUE,dev_set = FALSE, seed = NULL){
+z_scores <- function(risfile = NULL, references = NULL, custom_popset = NULL, dev_set = FALSE, seed = NULL){
 
   #load population set
-  if(load_popset == F){
-    popset <- create_popset(risfile_population)
+  if(!is.null(custom_popset)){
+    popset <- custom_popset
   }
   if(!is.null(risfile)){
   # calculate frequency table for testset
