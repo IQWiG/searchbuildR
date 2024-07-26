@@ -7,8 +7,7 @@
 z_scores(
   risfile = NULL,
   references = NULL,
-  risfile_population,
-  load_popset = TRUE,
+  custom_popset = NULL,
   dev_set = FALSE,
   seed = NULL
 )
@@ -18,9 +17,7 @@ z_scores(
 
 \item{references}{an object created with create_testset() to be used fo analysis instead of a raw ris file}
 
-\item{risfile_population}{a risfile from Endnote containing a population set}
-
-\item{load_popset}{logical, should internal population set be applied (default) or should a customized population set be calculated}
+\item{custom_popset}{a population set created with create_popset()}
 
 \item{dev_set}{logical, if TRUE a random development set (2/3 imported references) will be created}
 
@@ -30,7 +27,7 @@ z_scores(
 a list
 }
 \description{
-Create z-scores for every token in the testset provided
+See \code{vignette("z_scores", package = "searchbuildR")} for more details.
 }
 \examples{
 ris <- c("TY  - JOUR",

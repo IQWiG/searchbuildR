@@ -2,7 +2,7 @@
 % Please edit documentation in R/sample_popset.R
 \name{esearch_post_req}
 \alias{esearch_post_req}
-\title{Creating an esearch POST request via E-Utilities using the history server}
+\title{Creating an esearch POST request for the EUtils API using the history server}
 \usage{
 esearch_post_req(
   term,
@@ -27,7 +27,7 @@ esearch_post_req(
 an HTTP POST request which can be sent to the E-Utilities API
 }
 \description{
-Creating an esearch POST request via E-Utilities using the history server
+Creating an esearch POST request for the EUtils API using the history server
 }
 \examples{
 searchbuildR:::esearch_post_req(term="20204[pdat]",email="xx@xx.xxxx")

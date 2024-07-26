@@ -20,6 +20,7 @@ a list of 2 data frames with MeSH ("headings") and "qualifier" norms and two lis
 Calculate new probabilities for MeSH and qualifier for a given population set
 }
 \examples{
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
 ris <- c("TY  - JOUR",
         "AU  - Kapp",
         "TI  - Titles",
@@ -32,4 +33,5 @@ tmp <- tempfile(fileext = ".txt")
 writeLines(ris, tmp)
 reference_set <- read_bibliography(tmp, return_df = FALSE)
 create_MeSH_norm_frequencies(reference_set)
+\dontshow{\}) # examplesIf}
 }

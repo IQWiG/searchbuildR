@@ -5,7 +5,7 @@
 #' @returns a list of 2 data frames with MeSH ("headings") and "qualifier" norms and two list with raw MeSH headings and MeSH qualifiers
 #' @export
 #'
-#' @examples
+#' @examplesIf interactive()
 #'ris <- c("TY  - JOUR",
 #'         "AU  - Kapp",
 #'         "TI  - Titles",
@@ -48,6 +48,17 @@ create_MeSH_norm_frequencies <- function (reference_set, mesh_xml = NULL, qual_x
   return(result)
 }
 
+#' Parsing a MeSH xml
+#'
+#' `update_mesh` parses an NLM provided XML MeSH file and extracts Names, UIs and Tree Numbers into data frames.
+#'
+#' @inheritParams create_MeSH_norm_frequencies
+#'
+#' @returns a list object containing two data frames with the MeSH specific Names, UIs and Tree Numbers
+#' @examples
+#' \dontrun{
+#' update_mesh("path/to/mesh.xml")}
+
 update_mesh <- function(mesh_xml){
   MeSHTibble <-  xml2::read_xml(mesh_xml) |>
     xml2::as_list() |>
@@ -80,6 +91,17 @@ message("Creating MeSH Tree...")
   return(result)
 }
 
+#' Calculate the MeSH norms for a preprocessed population set
+#'
+#' `calculate_mesh_norms` calculates the probabilities of MeSH terms.
+#' @param dictionary a MeSH dictionary created with `update_mesh`
+#' @param population_mesh a population set preprocessed with `prepare_MeSH_table`
+#'
+#' @returns A data frame with the norm frequencies.
+#'
+#' @examples
+#' \dontrun{
+#' calculate_mesh_norms (MeSH_dictionary, populationSet)}
 calculate_mesh_norms <- function(dictionary, population_mesh) {
   dictionary |>
   left_join(population_mesh[["all_keywords"]], by = "MeSH") |>

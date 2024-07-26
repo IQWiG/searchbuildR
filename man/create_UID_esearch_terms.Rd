@@ -9,7 +9,7 @@ create_UID_esearch_terms(sample_size = 20000, max_pmid = 4e+07, seed = NULL)
 \arguments{
 \item{sample_size}{positive integer value < 100,000 defining the size of references to be retrieved}
 
-\item{max_pmid}{the highest PMID to be considered}
+\item{max_pmid}{the highest PMID to be considered, defaults to 40000000.}
 
 \item{seed}{an integer value to control the random seed used for sampling}
 }

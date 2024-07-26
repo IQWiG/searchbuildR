@@ -2,7 +2,7 @@
 % Please edit documentation in R/sample_popset.R
 \name{efetch_with_queryKey}
 \alias{efetch_with_queryKey}
-\title{Creating an Efetch GET request via E-Utilities using the history server}
+\title{Creating an Efetch GET request via E-Utils API from data on the history server}
 \usage{
 efetch_with_queryKey(queryKey, webEnv, email)
 }
@@ -17,7 +17,7 @@ efetch_with_queryKey(queryKey, webEnv, email)
 a character vector containing the requested PubMed reference metadata in MEDLINE format
 }
 \description{
-Creating an Efetch GET request via E-Utilities using the history server
+Creating an Efetch GET request via E-Utils API from data on the history server
 }
 \examples{
 \dontrun{

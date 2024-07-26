@@ -1,3 +1,12 @@
+#' Extract and count the keywords from a RIS file
+#'
+#' @inheritParams create_corpus
+#'
+#' @returns a list of 3 lists of unique keywords containing `all keywords`, MeSH/qualifier combinations (`MeSH_with_qualifier`) or major headings (`MeSH_starred`)
+#' @examples
+#' \dontrun{
+#' references <- create_testset(ris)
+#' prepare_MeSH_table(references)}
 prepare_MeSH_table <- function (reference_set) {
 # Select all keywords and flatten lists for data wrangling
   list_MeSH_complete <- reference_set  |>
