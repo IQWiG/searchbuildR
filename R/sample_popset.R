@@ -31,7 +31,7 @@ sample_popset <- function(sample_size, filters = "none",
         # specNonRCT = paste0("(", filter[["specNonRCT"]],")"),
         # nonRCT = paste0(paste0("(", filter, ")"), collapse = " OR ")
   )
-
+message("Sending initial search request...")
   initialSearchTerm <- ifelse(is.null(filterSyntax), paste0(year_range,"[pdat]"), paste(filterSyntax, paste0(year_range,"[pdat]"), sep = " AND "))
 
   # initial search
@@ -39,12 +39,12 @@ sample_popset <- function(sample_size, filters = "none",
   #get webenv
   webEnv_init <- initialSearch$esearchresult$webenv
   queryKey_init <- initialSearch$esearchresult$querykey
-
+message("Sampling random PMIDs...")
   if(is.null(seed)){
     seed <- sample.int(.Machine$integer.max, 1L)
   }
   UIDSearchTermList <- create_UID_esearch_terms( sample_size = sample_size, seed = seed, max_pmid = max_pmid) # maximum search query length is 200000 characters for one request
-
+message("Posting random PMIDs to PubMed...")
   retrievedPMIDs <- post_random_PMIDs(UIDSearchTermList, sample_size = sample_size, webEnv = webEnv_init,
                                           email = email)
 
@@ -69,7 +69,7 @@ sample_popset <- function(sample_size, filters = "none",
     httr2::req_perform() |>
     httr2::resp_body_json()|>
     purrr::chuck("esearchresult", "idlist")
-
+message("Fetching Titles and abstracts...")
   #fetch MEDLINE format records
   result_all_but_last <- purrr::map(head(retrievedPMIDs$queryKeys,-1),
                                     \(x) {efetch_with_queryKey(queryKey = as.numeric(x),
@@ -78,7 +78,7 @@ sample_popset <- function(sample_size, filters = "none",
     purrr::flatten_chr()
   result_last_hits <- efetch_with_idlist(last_hits, email = email)
   result <- c(result_all_but_last, result_last_hits)
-  plot_data(result, retrievedPMIDs$counter, seed)
+  plot_data(result, seed)
 
 
   message(paste(stringr::str_count(result, "PMID- ") |> sum(),
@@ -219,10 +219,12 @@ clean_efetch_result <- function(recs){
   return(recs)
 }
 
-plot_data <- function(result, counter, seed){
+plot_data <- function(result, seed){
 
   plotData <- stringr::str_extract_all(result, "(?<=DP\\s\\s\\-\\s)(\\d{4})") |>
     as.numeric()
+  counter <- stringr::str_count(result, "PMID- ") |>
+    sum()
 
   hist(plotData,
        freq = FALSE,

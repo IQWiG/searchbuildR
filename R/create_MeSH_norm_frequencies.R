@@ -21,7 +21,7 @@
 
 create_MeSH_norm_frequencies <- function (reference_set, mesh_xml = NULL, qual_xml = NULL) {
   populationMeSHTable <- prepare_MeSH_table(reference_set)
-  message("Population set prepared")
+  message("Population set prepared for creating MeSH norms.")
 
   if(!is.null(mesh_xml)){
     newMeSH <- update_mesh(mesh_xml)
