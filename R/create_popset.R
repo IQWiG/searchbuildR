@@ -1,6 +1,7 @@
 #' Process raw Endnote ris file with PubMed data into population norm set
 #'
 #' @inheritParams create_testset
+#' @param refChars a character vector of a RIS or PubMed format input
 #' @param mesh_xml optional argument, character vector with the path to an xml file containing MeSH descriptors in the NLM format
 #' @param qual_xml optional argument, character vector with the path to an xml file containing MeSH descriptors in the NLM format
 #'
@@ -31,9 +32,9 @@
 #' create_popset(tmp)
 
 
-create_popset <- function(risfile, mesh_xml =  NULL, qual_xml = NULL){
-  popset_ref <- read_bibliography(risfile, return_df = F)
-  message("Population set imported.")
+create_popset <- function(risfile = NULL, mesh_xml =  NULL, qual_xml = NULL, refChars = NULL){
+  popset_ref <- read_bibliography(filename = risfile, return_df = F, refChars = refChars)
+  message("... bibliography created")
   popset_df <- create_corpus(popset_ref)
   message("Titles and abstracts corpus created.")
   popset_df <- prepare_freq_table(popset_df)
