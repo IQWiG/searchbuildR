@@ -26,9 +26,9 @@ testsetPubMed <- create_testset("inst/extdata/testset_pubmed.txt")
 ```
 
 You can either use the default population set integrated in searchbuildR: 
-```{r import references, include = TRUE}
+```{r import references, include = TRUE, eval = FALSE}
 
-testset <- z_scores(references = testsetPubMed)
+zScores <- z_scores(references = testset)
 ```
 
 Or you can create your own population set based on a RIS or PubMed format file:
@@ -39,15 +39,15 @@ popset2022 <- create_popset("path/to/populationSet.txt")
 And calculate the z-scores based on your custom population set:
 ```{r calculate custom zscores, include = TRUE}
 
-custom_z_scores <- z_scores(references = testsetPubMed, custom_popset = popset2022)
+custom_z_scores <- z_scores(references = testset, custom_popset = popset2022)
 
 ```
 
 
 ```{r show tables, include=TRUE,}
 
-head(testset$freetext)
-head(testset$MeSH)
-head(testset$qualifier)
+head(zScores$freetext)
+head(zScores$MeSH)
+head(zScores$qualifier)
 ```
 

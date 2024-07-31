@@ -3,7 +3,7 @@
 #' example result of function "create_testset"
 #'
 #'
-#' @format ## `testsetPubMed`
+#' @format ## `testset`
 #' a list of 5 objects
 #'  \describe{
 #'   freetext  S3: ‘frequency’, ‘textstat’ and 'data.frame':	172 rows of  16 columns:
@@ -57,14 +57,14 @@
 #'    \item{Hausner_2022}{corpus object}
 #'    }
 #' }
-"testsetPubMed"
+"testset"
 
 #' Testset example
 #'
 #' example result of function "z_scores"
 #'
 #'
-#' @format ## `testset`
+#' @format ## `zScores`
 #' a list of 4 data frames
 #'  \describe{
 #'   freetext  S3: ‘frequency’, ‘textstat’ and 'data.frame':	172 rows of  16 columns:
@@ -128,7 +128,7 @@
 #'    leftover_keywords: an empty list
 #'    }
 #' }
-"testset"
+"zScores"
 
 #' PubMed random population set (default in searchbuildR version 1.0.0)
 #'
@@ -168,4 +168,14 @@
 #' }
 #' @source <https://www.pubmed.com>
 "popset2022"
+
+#' PubMed random population set with PuBMed RCT filter
+#'
+#' A random sample of 100 PubMed references that match a search : 2000:2024\[pdat\] AND therapy/broad\[filter\],
+#' search date: July 31st 2024. Source: National Library of Medicine.
+#'
+#' @format ## `popsetRCT`
+#' A character vector of length 10092
+#' @source <https://www.pubmed.com>
+"popsetRCT"
 

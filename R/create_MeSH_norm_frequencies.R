@@ -26,7 +26,7 @@ create_MeSH_norm_frequencies <- function (reference_set, mesh_xml = NULL, qual_x
   if(!is.null(mesh_xml)){
     newMeSH <- update_mesh(mesh_xml)
     currentMeSHDict <- newMeSH$Terms
-    message("MeSH updated")
+    message("MeSH dictionary updated")
   } else {
     currentMeSHDict <- MeSH_Dictionary
     newMeSH <- NA
@@ -35,7 +35,7 @@ create_MeSH_norm_frequencies <- function (reference_set, mesh_xml = NULL, qual_x
   if(!is.null(qual_xml)){
     newQual <- update_mesh(qual_xml)
     currentQualDict <- newQual$Terms
-    message("Qualifier updated")
+    message("Qualifier dictionary updated")
   } else{
     currentQualDict <- Qualifier_Dictionary
     newQual <- NA
@@ -44,7 +44,7 @@ create_MeSH_norm_frequencies <- function (reference_set, mesh_xml = NULL, qual_x
   MeSHNorms <- calculate_mesh_norms(currentMeSHDict, populationMeSHTable)
   QualNorms <- calculate_mesh_norms(currentQualDict, populationMeSHTable)
   result <- list("headings" = MeSHNorms, "qualifier" = QualNorms, "newMeSH" = newMeSH, "newQual" = newQual)
-  message("New norms have been calculated.")
+  message("New MeSH norms have been calculated.")
   return(result)
 }
 

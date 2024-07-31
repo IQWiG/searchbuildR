@@ -1,0 +1,61 @@
+---
+title: "Custom Population Set"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Custom Population Set}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+The following workflow describes a workflow on how to develop a custom population set and use it to create z-scores 
+in a text analysis of a testset.
+
+```{r setup, message= FALSE}
+library(searchbuildR)
+library(dplyr)
+library(tibble)
+```
+
+# 1 Sample a Population Set
+```{r, eval = FALSE}
+popsetRCT <- sample_popset(100,
+                           filters = "RCT",
+                           year_range = "2000:2024",
+                           max_pmid = 38900000,
+                           email= "claudia.kapp@iqwig.de")
+# writeLines(popsetRCT, "inst/extdata/custom_rct_popset.txt")
+
+```
+
+
+# 2 Calculate the norms
+```{r}
+newPopset <- create_popset(refChars = popsetRCT)
+popsetNorms <- newPopset$popset
+```
+
+# 3 Calculate the z-scores
+```{r}
+result <- z_scores(references = testset,
+                   custom_popset = popsetNorms)
+head(result$freetext) |> 
+  dplyr::select("feature", "frequency", "z", "Norm.coverage") |> 
+  tibble::tibble()
+```
+
+
+# Compare result to default population set
+```{r}
+defaultResult <- z_scores(references = testset)
+head(defaultResult$freetext) |> 
+  dplyr::select("feature", "frequency", "z", "Norm.coverage") |> 
+  tibble::tibble()
+```
+

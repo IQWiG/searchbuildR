@@ -7,7 +7,7 @@
 \format{
 \subsection{\code{testset}}{
 
-a list of 4 data frames
+a list of 5 objects
 \describe{
 freetext  S3: ‘frequency’, ‘textstat’ and 'data.frame':	172 rows of  16 columns:
 \describe{
@@ -43,31 +43,21 @@ MeSH.Terms:S3:tbl_df, tbl, data.frame :	8 rows and 13 columns:
 \item{z}{z-score of bionomial test}
 \item{approx_criteria}{}
 }
-qualifier :S3:tbl_df, tbl, data.frame :	4 rows and 13 columns:
+PMIDS : a list with one character vector
 \describe{
-\item{qualifier}{character, MeSH qualifier all lower case}
-\item{frequency}{integer, observed frequency of MeSH term}
-\item{docfreq}{integer, observed frequency of the MeSH term}
-\item{project}{name of the import file}
-\item{n}{sum of all MeSH-terms included in analysis}
-\item{Norm.docfreq}{numeric, absolute document frequency of each MeSH heading in population set}
-\item{Norm.frequency}{numeric, absolute frequency of each MeSH heading in population set}
-\item{N}{numeric, total frequency of all MeSH headings in population set}
-\item{p}{numeric, p-value of binomial test of Norm.frequency}
-\item{E}{expected value}
-\item{var}{estimated variance}
-\item{z}{z-score of bionomial test}
-\item{approx_criteria}{}
+\item{testset}{character, 3 PMIDS}
 }
+reference.list : an S3 object of class bibliography
 \describe{
-all_keywords:S3:tbl_df, tbl, data.frame :	12 rows and 4 columns:
-\item{MeSH}{character, MeSH heading title style case}
-\item{frequency}{integer, observed frequency of MeSH term}
-\item{docfreq}{integer, observed frequency of the MeSH term}
-\item{project}{name of the import file}
+\item{Hausner_2015_JCE}{list, reference entry}
+\item{Hausner_2016_JCE}{list, reference entry}
+\item{Hausner_2022_JCE}{list, reference entry}
 }
+test_corpus : a corpus object with 3 entries
 \describe{
-leftover_keywords: an empty list
+\item{Hausner_2015}{corpus object}
+\item{Hausner_2016}{corpus object}
+\item{Hausner_2022}{corpus object}
 }
 }
 }
@@ -76,6 +66,6 @@ leftover_keywords: an empty list
 testset
 }
 \description{
-example result of function "z_scores"
+example result of function "create_testset"
 }
 \keyword{datasets}
