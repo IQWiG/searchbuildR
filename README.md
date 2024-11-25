@@ -63,6 +63,9 @@ using the golem framework for production-grade shiny apps ([Fay,
 2022](https://engineering-shiny.org/index.html)). We used git for
 version control, as suggested by Jennifer Bryan ([Bryan,
 2023](https://happygitwithr.com/index.html)).  
-\# \## Questions, suggestions and bugs Ideas and suggestions for new
-functionalities or hints towards any bugs are welcome. Simply open an
-issue at <https://github.com/IQWiG/searchbuildR>.
+
+## Questions, suggestions and bugs
+
+Ideas and suggestions for new functionalities or hints towards any bugs
+are welcome. Simply open an issue at
+<https://github.com/IQWiG/searchbuildR>.
