@@ -44,20 +44,25 @@ The interface looks roughly like this (version 0.0.11):
 
 ## Development
 
-For basic R functions, we used the tidyverse framework {Wickham, 2022
-\#118}, a well-maintained and well-documented data science framework in
-R. For text mining and quantitative text analysis, we used the quanteda
-packages {Benoit, 2018 \#109}. In addition, we used revtools {Westgate,
-2019 \#120;Westgate, 2019 \#119} for handling bibliographic data and
-interactive data tables for R (“reactable” {Lin, 2023 \#123} ) for
-displaying user-friendly tables in the shiny app. The full list of R
+For basic R functions, we used the tidyverse framework ([Wickham,
+2022](https://CRAN.R-project.org/package=tidyverse)), a well-maintained
+and well-documented data science framework in R. For text mining and
+quantitative text analysis, we used the quanteda packages ([Benoit,
+2018](https://doi.org/10.21105/joss.00774)). In addition, we used
+revtools ([Westgate, 2019a](https://doi.org/10.1002/jrsm.1374)) for
+handling bibliographic data and interactive data tables for R
+(“reactable” [Lin, 2023](https://CRAN.R-project.org/package=reactable))
+for displaying user-friendly tables in the shiny app. The full list of R
 packages that need to be installed to run searchbuildR is included in
 the metadata of the package (see the code availability statement for
 more details). For the development process of the package, we followed
-the standards of Hadley Wickham (chief scientist at Posit PBC) {Wickham,
-2023 \#96;Wickham, 2021 \#93}, using the golem framework for
-production-grade shiny apps {Fay, 2022 \#97}. We used git for version
-control, as suggested by Jennifer Bryan {Bryan, 2023 \#95}.  
-\### Questions, suggestions and bugs Ideas and suggestions for new
+the standards of Hadley Wickham (chief scientist at Posit PBC)
+([Wickham,
+2023](https://r-pkgs.org/,%20%5BWickham,%202021%5D(https://mastering-shiny.org/)),
+using the golem framework for production-grade shiny apps ([Fay,
+2022](https://engineering-shiny.org/index.html)). We used git for
+version control, as suggested by Jennifer Bryan ([Bryan,
+2023](https://happygitwithr.com/index.html)).  
+\# \## Questions, suggestions and bugs Ideas and suggestions for new
 functionalities or hints towards any bugs are welcome. Simply open an
 issue at <https://github.com/IQWiG/searchbuildR>.
