@@ -1,5 +1,8 @@
 .Rproj.user
 inst/doc
-
+/data-raw/PopulationSet2024.txt
+/data-raw/references.txt
+/data-raw/histo-popset.png
 /doc/
 /Meta/
+/dev

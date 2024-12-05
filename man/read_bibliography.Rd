@@ -4,12 +4,14 @@
 \alias{read_bibliography}
 \title{import a ris file as class bibliography}
 \usage{
-read_bibliography(filename, return_df = TRUE)
+read_bibliography(filename = NULL, return_df = TRUE, refChars = NULL)
 }
 \arguments{
 \item{filename}{a risfile to import}
 
 \item{return_df}{if TRUE a dataframe will be returned, if FALSE a list will be returned}
+
+\item{refChars}{a character vector of a RIS or PubMed format input}
 }
 \value{
 an object of class bibliography from the revtools package

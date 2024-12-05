@@ -2,6 +2,7 @@
 #'
 #' @param filename a risfile to import
 #' @param return_df if TRUE a dataframe will be returned, if FALSE a list will be returned
+#' @param refChars a character vector of a RIS or PubMed format input
 #'
 #' @return an object of class bibliography from the revtools package
 #' @export
@@ -18,8 +19,9 @@
 #'tmp <- tempfile(fileext = ".txt")
 #'writeLines(ris, tmp)
 #'read_bibliography(tmp)
-read_bibliography<- function (filename, return_df = TRUE)
+read_bibliography<- function (filename = NULL, return_df = TRUE,refChars = NULL)
 {
+  if(!is.null(filename)){
   z <- tryCatch({
     scan(filename, sep = "\t", what = "character", quote = "",
          quiet = TRUE, blank.lines.skip = FALSE)
@@ -31,6 +33,11 @@ read_bibliography<- function (filename, return_df = TRUE)
          call. = FALSE)
   })
   Encoding(z) <- "UTF-8"
+  } else if(!is.null(refChars)){
+    z <- refChars
+  } else{
+    stop("Please provide a valid file path 'filename' or character vector 'refChars' to be converted to a bibliography.")
+  }
   nrows <- min(c(200, length(z)))
   zsub <- z[seq_len(nrows)]
   tag_type <- "ris"

@@ -1,3 +1,16 @@
+#' Extract the Accession Numbers from a bibliography class object
+#'
+#' @param testset_ref a list of class bibliography
+#' @param random_references a vector of indices of testset_ref which will be the development set
+#' @param validation_set should the accession numbers of the validation set be returned as well
+#'
+#' @returns A list with all accession numbers `testset` and optionally the accession numbers for `development_set` and `validation_set`
+#'
+#' @examples
+#' \dontrun{
+#' references <- read_bibliography(ris, return_df = FALSE)
+#' return_pmids(references)
+#' }
 return_pmids <- function(testset_ref, random_references = NULL, validation_set = FALSE){
   if(any(grepl("accession", testset_ref))){
 
@@ -21,6 +34,22 @@ return_pmids <- function(testset_ref, random_references = NULL, validation_set =
   }
 }
 
+#' Calculate the z-scores as a binomial distribution
+#'
+#' @param testset a data frame containing a quanteda.textstats document feature matrix
+#' @param popset_norms a data frame containing a quanteda.textstats document feature matrix which is to be assumed the basic population
+#' @param key_testset the column name containing the terms which should be analyzed
+#' @param key_popset the corresponding column name in the popset_norms
+#'
+#' @returns a data frame containing the z-scores
+#' @examples
+#' \dontrun{
+#' calculate_z_scores(testset[["freetext"]],
+#' popset[["freetext"]],
+#' key_testset = "feature",
+#' key_popset = "feature")
+#' }
+
 calculate_z_scores <- function (testset, popset_norms, key_testset = "MeSH", key_popset) {
   key <- eval(key_popset)
   names(key) <- eval(key_testset)
@@ -40,6 +69,26 @@ calculate_z_scores <- function (testset, popset_norms, key_testset = "MeSH", key
   return(z_table)
 }
 
+#' Parse a RIS or PubMed format text file into a list
+#'
+#' @param x path to a RIS or PubMed format file
+#'
+#' @returns a list with each reference as a character vector
+#' @export
+#'
+#' @examples
+#' ris <- c("TY  - JOUR",
+#'         "AU  - Kapp",
+#'         "TI  - Titles",
+#'         "PY  - 2023",
+#'         "JOUR  - IQWiG Journal",
+#'         "KW  - Systematic Reviews as Topic",
+#'         "ER  -")
+#'
+#'tmp <- tempfile(fileext = ".txt")
+#'writeLines(ris, tmp)
+#'raw_ris_data(tmp)
+#'
 raw_ris_data <- function(x){
   temp <- readLines(x)
   temp <- temp[temp != ""]
@@ -55,4 +104,3 @@ raw_ris_data <- function(x){
   return(result)
 }
 
-# create tokens

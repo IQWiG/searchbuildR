@@ -1,4 +1,11 @@
-#searchbuildR 0.0.7
+# searchbuildR 2.0
+* update the default population set for the z-score calculation
+* update the MeSH terminology to MeSH 2024
+
+# searchbuildR 1.0
+* first production version
+
+# searchbuildR 0.0.7
 correct name spelling
 
 # searchbuildR 0.0.6

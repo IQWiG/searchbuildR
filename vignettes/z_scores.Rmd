@@ -19,16 +19,35 @@ library(searchbuildR)
 ```
 This package provides an easy-to use wrapper for a textual analysis of potential search terms for scientific publications including an analysis of MeSH-Terms following the methodolgy of Hausner, et al. (2011)
 
-Import a set of references, that serve as a testset of potentially relevant studies of the review as a risfile:
+Import a set of references, that serve as a testset of potentially relevant studies of the review as a risfile. The argument `"dev_set"` let's you control, whether your testset should be split up in a 2:1 ratio into a development set (used for calculating the z-scores) and a validation set.
 
-```{r import references, include = TRUE, eval = FALSE}
-testset <- z_scores(testset.ris)
+```{r create testset, include = TRUE, eval = FALSE}
+testsetPubMed <- create_testset("inst/extdata/testset_pubmed.txt")
 ```
+
+You can either use the default population set integrated in searchbuildR: 
+```{r import references, include = TRUE, eval = FALSE}
+
+zScores <- z_scores(references = testset)
+```
+
+Or you can create your own population set based on a RIS or PubMed format file:
+```{r create custom population set, inlcude = TRUE, eval = FALSE}
+popset2022 <- create_popset("path/to/populationSet.txt")
+```
+
+And calculate the z-scores based on your custom population set:
+```{r calculate custom zscores, include = TRUE}
+
+custom_z_scores <- z_scores(references = testset, custom_popset = popset2022)
+
+```
+
 
 ```{r show tables, include=TRUE,}
 
-head(testset$freetext)
-head(testset$MeSH)
-head(testset$qualifier)
+head(zScores$freetext)
+head(zScores$MeSH)
+head(zScores$qualifier)
 ```
 

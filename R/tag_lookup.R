@@ -51,7 +51,7 @@ tag_lookup <-function (type = "ris")
          pubplace = "PP", address = "AD", editor = "ED", edition = "ET",
          language = "LA", eppi_id = "U1", end = "ER")
   }, medline = {
-    list(abstract = "AB", copyright_info = "CI", affiliation = "AD",
+    list(abstract = c("AB", "OAB"), copyright_info = "CI", affiliation = "AD",
          investigator_affiliation = "IRAD", article_id = "AID",
          author = "AU", author_id = "AUID", author_full = "FAU",
          book_title = "BTI", collection_title = "CTI", conflict_of_interest = "COI",

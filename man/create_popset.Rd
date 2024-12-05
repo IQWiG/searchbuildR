@@ -4,10 +4,21 @@
 \alias{create_popset}
 \title{Process raw Endnote ris file with PubMed data into population norm set}
 \usage{
-create_popset(risfile)
+create_popset(
+  risfile = NULL,
+  mesh_xml = NULL,
+  qual_xml = NULL,
+  refChars = NULL
+)
 }
 \arguments{
 \item{risfile}{a ris-format file to be imported}
+
+\item{mesh_xml}{optional argument, character vector with the path to an xml file containing MeSH descriptors in the NLM format}
+
+\item{qual_xml}{optional argument, character vector with the path to an xml file containing MeSH descriptors in the NLM format}
+
+\item{refChars}{a character vector of a RIS or PubMed format input}
 }
 \value{
 popset a list of objects

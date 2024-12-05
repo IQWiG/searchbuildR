@@ -1,6 +1,10 @@
 #' Process raw Endnote ris file with PubMed data into population norm set
 #'
 #' @inheritParams create_testset
+#' @param refChars a character vector of a RIS or PubMed format input
+#' @param mesh_xml optional argument, character vector with the path to an xml file containing MeSH descriptors in the NLM format
+#' @param qual_xml optional argument, character vector with the path to an xml file containing MeSH descriptors in the NLM format
+#'
 #'
 #' @returns popset a list of objects
 #' popset
@@ -28,20 +32,30 @@
 #' create_popset(tmp)
 
 
-create_popset <- function(risfile){
-  popset_ref <- read_bibliography(risfile, return_df = F)
+create_popset <- function(risfile = NULL, mesh_xml =  NULL, qual_xml = NULL, refChars = NULL){
+  popset_ref <- read_bibliography(filename = risfile, return_df = F, refChars = refChars)
+  message("... bibliography created")
   popset_df <- create_corpus(popset_ref)
+  message("Titles and abstracts corpus created.")
   popset_df <- prepare_freq_table(popset_df)
-  popset_df <- popset_df %>%
-    select(!("group")) %>%
+  popset_df <- popset_df  |>
+    select(!("group")) |>
     rename(Norm.frequency = "frequency",
            Norm.docfreq = "docfreq",
            Norm.rank = "rank",
-           N = "n") %>%
+           N = "n",
+           Norm.coverage = "coverage") |>
     mutate(p = .data$Norm.frequency/.data$N)
+  message("Term probabilities calculated.")
+  popset_MeSH <- create_MeSH_norm_frequencies(popset_ref, mesh_xml, qual_xml)
+  newMeSH <- popset_MeSH$newMeSH
+  newQual <- popset_MeSH$newQual
 
-  popset_MeSH <- create_MeSH_norm_frequencies(popset_ref)
-  popset <- list("freetext" = popset_df, "MeSH.Terms" = popset_MeSH[["headings"]], "qualifier" = popset_MeSH[["qualifier"]])
+  message("MeSH probabilities calculated.")
+  result <- list(
+    "popset" = list("freetext" = popset_df, "MeSH.Terms" = popset_MeSH[["headings"]], "qualifier" = popset_MeSH[["qualifier"]]),
+    "newMeSH" = newMeSH,
+    "newQual" = newQual)
 
-  return(popset)
+  return(result)
 }
