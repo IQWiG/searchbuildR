@@ -9,11 +9,11 @@ dev.off()
 references <- clean_efetch_result(references)
 
 writeLines(references, "dev/references1950-2024.txt")
-download.file("https://nlmpubs.nlm.nih.gov/projects/mesh/MESH_FILES/xmlmesh/desc2024.xml", "dev/desc2024.xml")
-mesh_xml <- "dev/desc2024.xml"
+download.file("https://nlmpubs.nlm.nih.gov/projects/mesh/MESH_FILES/xmlmesh/desc2025.xml", "dev/desc2025.xml")
+mesh_xml <- "dev/desc2025.xml"
 
-download.file("https://nlmpubs.nlm.nih.gov/projects/mesh/MESH_FILES/xmlmesh/qual2024.xml", "dev/qual2024.xml")
-qual_xml <- "dev/qual2024.xml"
+download.file("https://nlmpubs.nlm.nih.gov/projects/mesh/MESH_FILES/xmlmesh/qual2025.xml", "dev/qual2025.xml")
+qual_xml <- "dev/qual2025.xml"
 
 newNorms <- create_popset("dev/references1950-2024.txt", mesh_xml = mesh_xml, qual_xml = qual_xml)
 popset <- newNorms$popset
