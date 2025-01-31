@@ -1,6 +1,6 @@
 Package: searchbuildR
 Title: Identify Search Terms in Evidence Synthesis 
-Version: 2.0
+Version: 2.1
 Authors@R: 
   c(
   person("Institut für Qualität und Wirtschaftlichkeit im Gesundheitswesen(IQWiG)", 

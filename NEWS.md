@@ -1,3 +1,6 @@
+# searchbuildR 2.1
+*updated the MeSH terms to MeSH2025
+*minor fix in creating MeSH term benchmark z-scores
 # searchbuildR 2.0
 * update the default population set for the z-score calculation
 * update the MeSH terminology to MeSH 2024
