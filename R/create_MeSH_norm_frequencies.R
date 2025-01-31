@@ -28,7 +28,7 @@ create_MeSH_norm_frequencies <- function (reference_set, mesh_xml = NULL, qual_x
     currentMeSHDict <- newMeSH$Terms
     message("MeSH dictionary updated")
   } else {
-    currentMeSHDict <- MeSH_Dictionary
+    currentMeSHDict <- MeSH_Dictionary$Terms
     newMeSH <- NA
     message("Using default MeSH dictionary")
   }
@@ -37,7 +37,7 @@ create_MeSH_norm_frequencies <- function (reference_set, mesh_xml = NULL, qual_x
     currentQualDict <- newQual$Terms
     message("Qualifier dictionary updated")
   } else{
-    currentQualDict <- Qualifier_Dictionary
+    currentQualDict <- Qualifier_Dictionary$Terms
     newQual <- NA
     message("Using default qualifier dictionary")
   }
