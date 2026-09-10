@@ -1,0 +1,770 @@
+PMID- 32355269
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20210202
+LR  - 20220418
+IS  - 2056-676X (Electronic)
+IS  - 2056-676X (Linking)
+VI  - 6
+IP  - 1
+DP  - 2020 Apr 30
+TI  - Vulvodynia.
+PG  - 36
+LID - 10.1038/s41572-020-0164-2 [doi]
+AB  - Vulvodynia is a condition that occurs in 8-10% of women of all ages and is 
+      characterized by pain at the vulva that is present during sexual and/or 
+      non-sexual situations. Diagnosis is established through careful medical history 
+      and pelvic examination, including the cotton-swab test. The onset and maintenance 
+      of vulvodynia involves a complex interplay of peripheral and central pain 
+      mechanisms, pelvic floor muscle and autonomic dysfunction, anxiety, depression 
+      and childhood maltreatment as well as cognitive-affective, behavioural and 
+      interpersonal factors. Given the absence of empirically supported treatment 
+      guidelines, a stepwise approach of pelvic floor physical therapy and cognitive 
+      behavioural therapy as well as medical management is suggested, with surgery as 
+      the last option. Vulvodynia has a negative effect on the quality of life of women 
+      and their partners, and imposes a profound personal and societal economic burden. 
+      In addition, women with vulvodynia are more likely to report other chronic pain 
+      conditions, which further alters their quality of life. Future efforts should aim 
+      to increase girls', women's and healthcare professionals' education and awareness 
+      of vulvodynia, phenotype different subgroups of women based on biopsychosocial 
+      characteristics among more diverse samples, conduct longitudinal studies and 
+      improve clinical trial designs.
+FAU - Bergeron, Sophie
+AU  - Bergeron S
+AD  - Sexual Health Laboratory, Department of Psychology, Université de Montréal, 
+      Montréal, Québec, Canada. sophie.bergeron.2@umontreal.ca.
+FAU - Reed, Barbara D
+AU  - Reed BD
+AD  - Department of Family Medicine, University of Michigan Medical School, Ann Arbor, 
+      MI, USA.
+FAU - Wesselmann, Ursula
+AU  - Wesselmann U
+AD  - Departments of Anesthesiology and Perioperative Medicine/Division of Pain 
+      Medicine, Neurology and Psychology, University of Alabama at Birmingham, 
+      Birmingham, AL, USA.
+FAU - Bohm-Starke, Nina
+AU  - Bohm-Starke N
+AD  - Department of Clinical Sciences, Division of Obstetrics and Gynecology, 
+      Karolinska Institutet, Danderyd Hospital, Stockholm, Sweden.
+LA  - eng
+GR  - R01 HD039699/HD/NICHD NIH HHS/United States
+PT  - Journal Article
+PT  - Review
+DEP - 20200430
+PL  - England
+TA  - Nat Rev Dis Primers
+JT  - Nature reviews. Disease primers
+JID - 101672103
+SB  - IM
+MH  - Humans
+MH  - Pain/etiology/physiopathology
+MH  - Sexual Behavior/physiology
+MH  - Vulvodynia/epidemiology/physiopathology/*therapy
+EDAT- 2020/05/02 06:00
+MHDA- 2021/02/03 06:00
+CRDT- 2020/05/02 06:00
+PHST- 2020/03/19 00:00 [accepted]
+PHST- 2020/05/02 06:00 [entrez]
+PHST- 2020/05/02 06:00 [pubmed]
+PHST- 2021/02/03 06:00 [medline]
+AID - 10.1038/s41572-020-0164-2 [pii]
+AID - 10.1038/s41572-020-0164-2 [doi]
+PST - epublish
+SO  - Nat Rev Dis Primers. 2020 Apr 30;6(1):36. doi: 10.1038/s41572-020-0164-2.
+
+PMID- 33074981
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20211015
+LR  - 20211015
+IS  - 1532-5520 (Electronic)
+IS  - 0009-9201 (Linking)
+VI  - 63
+IP  - 4
+DP  - 2020 Dec
+TI  - Vulvodynia.
+PG  - 752-769
+LID - 10.1097/GRF.0000000000000576 [doi]
+AB  - Vulvodynia is a heterogenous, chronic pain condition of unknown etiology that 
+      affects 7% to 15% of women. It affects sexual function and quality of life. 
+      Vulvodynia can be primary or secondary, localized or generalized, and spontaneous 
+      or provoked. Contributing factors for provoked vulvodynia might include 
+      vulvovaginal infections, low estrogen states, and underlying anxiety disorder. 
+      Generalized vulvodynia likely arises from underlying connective tissue or 
+      neurological dysfunction. Vulvodynia treatment must be individualized on the 
+      basis of the patient's presentation and physical examination findings. Surgical 
+      excision of the vulvar vestibule has high success rates but other modalities 
+      showing success include pelvic floor physical therapy and cognitive-behavioral 
+      therapy.
+FAU - Barnabei, Vanessa M
+AU  - Barnabei VM
+AD  - Jacobs School of Medicine and Biomedical Sciences, Buffalo, New York.
+LA  - eng
+PT  - Journal Article
+PL  - United States
+TA  - Clin Obstet Gynecol
+JT  - Clinical obstetrics and gynecology
+JID - 0070014
+SB  - IM
+MH  - Female
+MH  - Humans
+MH  - Pain
+MH  - Pain Measurement
+MH  - Pelvic Floor
+MH  - Quality of Life
+MH  - *Vulvodynia/diagnosis/etiology/therapy
+EDAT- 2020/10/20 06:00
+MHDA- 2021/10/16 06:00
+CRDT- 2020/10/19 17:12
+PHST- 2020/10/20 06:00 [pubmed]
+PHST- 2021/10/16 06:00 [medline]
+PHST- 2020/10/19 17:12 [entrez]
+AID - 00003081-202012000-00007 [pii]
+AID - 10.1097/GRF.0000000000000576 [doi]
+PST - ppublish
+SO  - Clin Obstet Gynecol. 2020 Dec;63(4):752-769. doi: 10.1097/GRF.0000000000000576.
+
+PMID- 27045258
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20160919
+LR  - 20220331
+IS  - 1743-6109 (Electronic)
+IS  - 1743-6095 (Linking)
+VI  - 13
+IP  - 4
+DP  - 2016 Apr
+TI  - Vulvodynia: Assessment and Treatment.
+PG  - 572-90
+LID - S1743-6095(16)00306-4 [pii]
+LID - 10.1016/j.jsxm.2016.01.020 [doi]
+AB  - INTRODUCTION: Vulvodynia constitutes a highly prevalent form of sexual pain in 
+      women, and current information regarding its assessment and treatment is needed. 
+      AIM: To update the scientific evidence published in 2010, from the Third 
+      International Consultation on Sexual Medicine, pertaining to the assessment and 
+      treatment of women's sexual pain. METHODS: An expert committee, as part of the 
+      Fourth International Consultation on Sexual Medicine, was comprised of 
+      researchers and clinicians from biological and social science disciplines for the 
+      review of the scientific evidence on the assessment and treatment of women's 
+      genital pain. MAIN OUTCOME MEASURES: A review of assessment and treatment 
+      strategies involved in vulvodynia. RESULTS: We recommend the following treatments 
+      for the management of vulvodynia: psychological interventions, pelvic floor 
+      physical therapy, and vestibulectomy (for provoked vestibulodynia). We also 
+      support the use of multidisciplinary treatment approaches for the management of 
+      vulvodynia; however, more studies are needed to determine which components are 
+      most important. We recommend waiting for more empirical evidence before 
+      recommending alternative treatment options, anti-inflammatory agents, hormonal 
+      agents, and anticonvulsant medications. Although we do not recommend lidocaine, 
+      topical corticosteroids, or antidepressant medication for the management of 
+      vulvodynia, we suggest that capsaicin, botulinum toxin, and interferon be 
+      considered second-line avenues and that their recommendation be revisited once 
+      further research is conducted. CONCLUSION: A comprehensive assessment is needed 
+      to understand the pain experience of women presenting with vulvodynia. In 
+      addition, treatment typically progresses from less invasive to more invasive, and 
+      several treatment options are worth pursuing.
+CI  - Copyright © 2016 International Society for Sexual Medicine. Published by Elsevier 
+      Inc. All rights reserved.
+FAU - Goldstein, Andrew T
+AU  - Goldstein AT
+AD  - Department of Obstetrics and Gynecology, The George Washington University School 
+      of Medicine and Health Sciences, Washington, DC, USA. Electronic address: 
+      obstetrics@yahoo.com.
+FAU - Pukall, Caroline F
+AU  - Pukall CF
+AD  - Department of Psychology, Queen's University, Kingston, ON, Canada.
+FAU - Brown, Candace
+AU  - Brown C
+AD  - Department of Clinical Pharmacy, University of Tennessee Health Science Center, 
+      Memphis, TN, USA.
+FAU - Bergeron, Sophie
+AU  - Bergeron S
+AD  - Department of Psychology, Université de Montréal, Montréal, QC, Canada.
+FAU - Stein, Amy
+AU  - Stein A
+AD  - Beyond Basics Physical Therapy, LLC, New York, NY, USA.
+FAU - Kellogg-Spadt, Susan
+AU  - Kellogg-Spadt S
+AD  - Department of Obstetrics and Gynecology, Drexel University College of Medicine, 
+      Philadelphia, PA, USA.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+DEP - 20160325
+PL  - Netherlands
+TA  - J Sex Med
+JT  - The journal of sexual medicine
+JID - 101230693
+RN  - 0 (Acetylcholine Release Inhibitors)
+RN  - 0 (Sensory System Agents)
+RN  - 9008-11-1 (Interferons)
+RN  - EC 3.4.24.69 (Botulinum Toxins)
+RN  - S07O44R1ZM (Capsaicin)
+SB  - IM
+MH  - Acetylcholine Release Inhibitors/administration & dosage
+MH  - Adult
+MH  - Botulinum Toxins/administration & dosage
+MH  - Capsaicin/administration & dosage
+MH  - Cognitive Behavioral Therapy
+MH  - Combined Modality Therapy
+MH  - Dyspareunia/*diagnosis/physiopathology/psychology/*therapy
+MH  - Female
+MH  - Humans
+MH  - Interdisciplinary Communication
+MH  - Interferons/administration & dosage
+MH  - Pelvic Floor/*physiopathology
+MH  - Physical Therapy Modalities
+MH  - Sensory System Agents/administration & dosage
+MH  - Sexual Behavior/*psychology
+MH  - Vulvodynia/*diagnosis/physiopathology/psychology/*therapy
+OTO - NOTNLM
+OT  - Assessment
+OT  - Diagnosis
+OT  - Sexual Pain
+OT  - Treatment
+OT  - Vestibulodynia
+OT  - Vulvodynia
+EDAT- 2016/04/06 06:00
+MHDA- 2016/09/20 06:00
+CRDT- 2016/04/06 06:00
+PHST- 2015/09/15 00:00 [received]
+PHST- 2015/12/17 00:00 [revised]
+PHST- 2016/01/08 00:00 [accepted]
+PHST- 2016/04/06 06:00 [entrez]
+PHST- 2016/04/06 06:00 [pubmed]
+PHST- 2016/09/20 06:00 [medline]
+AID - S1743-6095(16)00306-4 [pii]
+AID - 10.1016/j.jsxm.2016.01.020 [doi]
+PST - ppublish
+SO  - J Sex Med. 2016 Apr;13(4):572-90. doi: 10.1016/j.jsxm.2016.01.020. Epub 2016 Mar 
+      25.
+
+PMID- 34205495
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20210723
+LR  - 20210724
+IS  - 1660-4601 (Electronic)
+IS  - 1661-7827 (Print)
+IS  - 1660-4601 (Linking)
+VI  - 18
+IP  - 12
+DP  - 2021 Jun 21
+TI  - Vulvodynia-It Is Time to Accept a New Understanding from a Neurobiological 
+      Perspective.
+LID - 10.3390/ijerph18126639 [doi]
+LID - 6639
+AB  - Vulvodynia is one the most common causes of pain during sexual intercourse in 
+      premenopausal women. The burden of vulvodynia in a woman's life can be 
+      devastating due to its consequences in the couple's sexuality and intimacy, in 
+      activities of daily living, and psychological well-being. In recent decades, 
+      there has been considerable progress in the understanding of vulvar pain. The 
+      most significant change has been the differentiation of vulvar pain secondary to 
+      pathology or disease from vulvodynia. However, although it is currently proposed 
+      that vulvodynia should be considered as a primary chronic pain condition and, 
+      therefore, without an obvious identifiable cause, it is still believed that 
+      different inflammatory, genetic, hormonal, muscular factors, etc. may be involved 
+      in its development. Advances in pain neuroscience and the central sensitization 
+      paradigm have led to a new approach to vulvodynia from a neurobiological 
+      perspective. It is proposed that vulvodynia should be understood as complex pain 
+      without relevant nociception. Different clinical identifiers of vulvodynia are 
+      presented from a neurobiological and psychosocial perspective. In this case, 
+      strategies to modulate altered central pain processing is necessary, changing the 
+      patient's erroneous cognitions about their pain, and also reducing fear 
+      avoidance-behaviors and the disability of the patient.
+FAU - Torres-Cueco, Rafael
+AU  - Torres-Cueco R
+AUID- ORCID: 0000-0002-3897-4367
+AD  - Department of Physiotherapy, University of Valencia, 46010 Valencia, Spain.
+FAU - Nohales-Alfonso, Francisco
+AU  - Nohales-Alfonso F
+AUID- ORCID: 0000-0001-6626-5472
+AD  - Gynecology Section, Clinical Area of Women's Diseases, La Fe University Hospital, 
+      46010 Valencia, Spain.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+DEP - 20210621
+PL  - Switzerland
+TA  - Int J Environ Res Public Health
+JT  - International journal of environmental research and public health
+JID - 101238455
+SB  - IM
+MH  - Activities of Daily Living
+MH  - Coitus
+MH  - Female
+MH  - Humans
+MH  - Sexual Behavior
+MH  - Sexual Partners
+MH  - *Vulvodynia/epidemiology/etiology
+PMC - PMC8296499
+OTO - NOTNLM
+OT  - central sensitization pain
+OT  - cognitive-behavioral therapy
+OT  - complex pain
+OT  - vulvodynia
+COIS- The authors declare no conflict of interest.
+EDAT- 2021/07/03 06:00
+MHDA- 2021/07/24 06:00
+CRDT- 2021/07/02 01:24
+PHST- 2021/05/13 00:00 [received]
+PHST- 2021/06/13 00:00 [revised]
+PHST- 2021/06/16 00:00 [accepted]
+PHST- 2021/07/02 01:24 [entrez]
+PHST- 2021/07/03 06:00 [pubmed]
+PHST- 2021/07/24 06:00 [medline]
+AID - ijerph18126639 [pii]
+AID - ijerph-18-06639 [pii]
+AID - 10.3390/ijerph18126639 [doi]
+PST - epublish
+SO  - Int J Environ Res Public Health. 2021 Jun 21;18(12):6639. doi: 
+      10.3390/ijerph18126639.
+
+PMID- 36533637
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20230210
+LR  - 20230718
+IS  - 1542-2011 (Electronic)
+IS  - 1526-9523 (Print)
+IS  - 1526-9523 (Linking)
+VI  - 68
+IP  - 1
+DP  - 2023 Jan
+TI  - Evaluation and Treatment of Vulvodynia: State of the Science.
+PG  - 9-34
+LID - 10.1111/jmwh.13456 [doi]
+AB  - Vulvodynia affects 7% of American women, yet clinicians often lack awareness of 
+      its presentation. It is underdiagnosed and often misdiagnosed as vaginitis. The 
+      etiology of vulvodynia remains unknown, making it difficult to identify or 
+      develop effective treatment methods. The purpose of this article is to (1) review 
+      the presentation and evaluation of vulvodynia, (2) review the research on 
+      vulvodynia treatments, and (3) aid the clinician in the selection of vulvodynia 
+      treatment methods. The level of evidence to support vulvodynia treatment varies 
+      from case series to randomized controlled trials (RCTs). Oral desipramine with 5% 
+      lidocaine cream, intravaginal diazepam tablets with intravaginal transcutaneous 
+      electric nerve stimulation (TENS), botulinum toxin type A 50 units, enoxaparin 
+      sodium subcutaneous injections, intravaginal TENS (as a single therapy), 
+      multimodal physical therapy, overnight 5% lidocaine ointment, and acupuncture had 
+      the highest level of evidence with at least one RCT or comparative effectiveness 
+      trial. Pre to posttest reduction in vulvar pain and/or dyspareunia in non-RCT 
+      studies included studies of gabapentin cream, amitriptyline cream, amitriptyline 
+      with baclofen cream, up to 6 weeks' oral itraconazole therapy, multimodal 
+      physical therapy, vaginal dilators, electromyography biofeedback, hypnotherapy, 
+      cognitive behavioral therapy, cold knife vestibulectomy, and laser therapy. There 
+      is a lack of rigorous RCTs with large sample sizes for the treatment of 
+      vulvodynia, rendering it difficult to determine efficacy of most treatment 
+      methods. Clinicians will be guided in the selection of best treatments for 
+      vulvodynia that have the highest level of evidence and are least invasive.
+CI  - © 2022 The Authors. Journal of Midwifery & Women's Health published by Wiley 
+      Periodicals LLC on behalf of American College of Nurse Midwives (ACNM).
+FAU - Schlaeger, Judith M
+AU  - Schlaeger JM
+AUID- ORCID: 0000-0002-3754-6176
+AD  - Department of Human Development Nursing Science, University of Illinois Chicago 
+      College of Nursing, Chicago, Illinois, USA.
+FAU - Glayzer, Jennifer E
+AU  - Glayzer JE
+AUID- ORCID: 0000-0001-9708-0526
+AD  - Department of Human Development Nursing Science, University of Illinois Chicago 
+      College of Nursing, Chicago, Illinois, USA.
+FAU - Villegas-Downs, Michelle
+AU  - Villegas-Downs M
+AD  - Department of Human Development Nursing Science, University of Illinois Chicago 
+      College of Nursing, Chicago, Illinois, USA.
+FAU - Li, Hongjin
+AU  - Li H
+AD  - Department of Human Development Nursing Science, University of Illinois Chicago 
+      College of Nursing, Chicago, Illinois, USA.
+FAU - Glayzer, Edward J
+AU  - Glayzer EJ
+AD  - Department of Sociology, Anthropology, and Social Work, University of Dayton 
+      College of Arts and Sciences, Dayton, Ohio, USA.
+FAU - He, Ying
+AU  - He Y
+AD  - Department of Pharmaceutical Sciences, Oklahoma State University, Stillwater, 
+      Oklahoma, USA.
+FAU - Takayama, Miho
+AU  - Takayama M
+AD  - Department of Acupuncture and Moxibustion, Tokyo Ariake University of Medical and 
+      Health Sciences, Tokyo, Japan.
+FAU - Yajima, Hiroyoshi
+AU  - Yajima H
+AD  - Department of Acupuncture and Moxibustion, Tokyo Ariake University of Medical and 
+      Health Sciences, Tokyo, Japan.
+FAU - Takakura, Nobuari
+AU  - Takakura N
+AD  - Department of Acupuncture and Moxibustion, Tokyo Ariake University of Medical and 
+      Health Sciences, Tokyo, Japan.
+FAU - Kobak, William H
+AU  - Kobak WH
+AD  - Department of Obstetrics and Gynecology, University of Illinois Chicago College 
+      of Medicine, Chicago, Illinois, USA.
+FAU - McFarlin, Barbara L
+AU  - McFarlin BL
+AD  - Department of Human Development Nursing Science, University of Illinois Chicago 
+      College of Nursing, Chicago, Illinois, USA.
+LA  - eng
+GR  - R01 HD091210/HD/NICHD NIH HHS/United States
+GR  - UL1 TR001866/TR/NCATS NIH HHS/United States
+GR  - F31 NR019716/NR/NINR NIH HHS/United States
+GR  - R01 HD089935/HD/NICHD NIH HHS/United States
+GR  - R01 HL133590/HL/NHLBI NIH HHS/United States
+PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Review
+DEP - 20221219
+PL  - United States
+TA  - J Midwifery Womens Health
+JT  - Journal of midwifery & women's health
+JID - 100909407
+RN  - 1806D8D52K (Amitriptyline)
+RN  - 98PI200987 (Lidocaine)
+SB  - IM
+MH  - Female
+MH  - Humans
+MH  - *Vulvodynia/diagnosis/therapy/psychology
+MH  - Amitriptyline
+MH  - Treatment Outcome
+MH  - Lidocaine
+MH  - *Transcutaneous Electric Nerve Stimulation
+PMC - PMC10107324
+OTO - NOTNLM
+OT  - pain management
+OT  - patient education
+OT  - pharmacology
+COIS- The authors have no conflicts of interest to disclose.
+EDAT- 2022/12/20 06:00
+MHDA- 2023/02/11 06:00
+CRDT- 2022/12/19 06:12
+PHST- 2022/09/03 00:00 [revised]
+PHST- 2021/12/31 00:00 [received]
+PHST- 2022/09/07 00:00 [accepted]
+PHST- 2022/12/20 06:00 [pubmed]
+PHST- 2023/02/11 06:00 [medline]
+PHST- 2022/12/19 06:12 [entrez]
+AID - JMWH13456 [pii]
+AID - 10.1111/jmwh.13456 [doi]
+PST - ppublish
+SO  - J Midwifery Womens Health. 2023 Jan;68(1):9-34. doi: 10.1111/jmwh.13456. Epub 
+      2022 Dec 19.
+
+PMID- 28778646
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20180503
+LR  - 20180503
+IS  - 1558-0474 (Electronic)
+IS  - 0889-8545 (Linking)
+VI  - 44
+IP  - 3
+DP  - 2017 Sep
+TI  - Pelvic Floor Physical Therapy for Vulvodynia: A Clinician's Guide.
+PG  - 509-522
+LID - S0889-8545(17)30081-5 [pii]
+LID - 10.1016/j.ogc.2017.05.006 [doi]
+AB  - Vulvar pain affects up to 20% of women at some point in their lives, and most 
+      women with vulvar pain have associated pelvic floor impairments. Pelvic floor 
+      dysfunction is associated with significant functional limitations in women by 
+      causing painful intercourse and urinary, bowel, and sexual dysfunction. A quick 
+      screening of the pelvic floor muscles can be performed in the gynecology office 
+      and should be used when patients report symptoms of pelvic pain. It is now known 
+      the vulvar pain syndromes are heterogeneous in origin; therefore, successful 
+      treatment plans are multimodal and include physical therapy.
+CI  - Copyright © 2017 Elsevier Inc. All rights reserved.
+FAU - Prendergast, Stephanie A
+AU  - Prendergast SA
+AD  - Pelvic Health and Rehabilitation Center, 11500 West Olympic Boulevard, Suite 440, 
+      Los Angeles, CA 90064, USA. Electronic address: stephanie@pelvicpainrehab.com.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+PL  - United States
+TA  - Obstet Gynecol Clin North Am
+JT  - Obstetrics and gynecology clinics of North America
+JID - 8709551
+SB  - IM
+MH  - Female
+MH  - Humans
+MH  - *Pelvic Floor/anatomy & histology/physiology/physiopathology
+MH  - Pelvic Pain/*therapy
+MH  - *Physical Therapy Modalities
+MH  - Vulvodynia/*therapy
+OTO - NOTNLM
+OT  - Dyspareunia
+OT  - Pelvic floor dysfunction
+OT  - Pelvic floor physical therapy
+OT  - Vestibulodynia
+OT  - Vulvodynia
+EDAT- 2017/08/06 06:00
+MHDA- 2018/05/04 06:00
+CRDT- 2017/08/06 06:00
+PHST- 2017/08/06 06:00 [entrez]
+PHST- 2017/08/06 06:00 [pubmed]
+PHST- 2018/05/04 06:00 [medline]
+AID - S0889-8545(17)30081-5 [pii]
+AID - 10.1016/j.ogc.2017.05.006 [doi]
+PST - ppublish
+SO  - Obstet Gynecol Clin North Am. 2017 Sep;44(3):509-522. doi: 
+      10.1016/j.ogc.2017.05.006.
+
+PMID- 26125963
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20160504
+LR  - 20150803
+IS  - 1532-5520 (Electronic)
+IS  - 0009-9201 (Linking)
+VI  - 58
+IP  - 3
+DP  - 2015 Sep
+TI  - Vulvodynia.
+PG  - 536-45
+LID - 10.1097/GRF.0000000000000134 [doi]
+AB  - Vulvodynia, a chronic pain disorder, affects women throughout the lifespan. 
+      Appropriate evaluation and diagnosis is necessary to enable effective management. 
+      The etiology is considered multifactorial. Therapies include self-management, 
+      nonpharmacologic, pharmacologic, and surgical. Vulvodynia can have a significant 
+      impact upon a patient's quality of life. Emotional and psychological support is 
+      invaluable. This article serves to give the primary gynecologist and practitioner 
+      a basic framework with which to identify, diagnose, and begin treatment for such 
+      patients as well as understanding for referral if necessary. The initial 
+      evaluation and physical examination will be discussed in detail.
+FAU - Hoffstetter, Susan
+AU  - Hoffstetter S
+AD  - Saint Louis University, Saint Louis, Missouri.
+FAU - Shah, Mitul
+AU  - Shah M
+LA  - eng
+PT  - Journal Article
+PT  - Review
+PL  - United States
+TA  - Clin Obstet Gynecol
+JT  - Clinical obstetrics and gynecology
+JID - 0070014
+SB  - IM
+MH  - Chronic Pain/epidemiology
+MH  - Comorbidity
+MH  - Female
+MH  - Gynecological Examination
+MH  - Humans
+MH  - Mental Disorders/epidemiology/psychology
+MH  - Neuralgia/*diagnosis/epidemiology/psychology/therapy
+MH  - Quality of Life
+MH  - Vulvodynia/*diagnosis/epidemiology/psychology/therapy
+EDAT- 2015/07/01 06:00
+MHDA- 2016/05/05 06:00
+CRDT- 2015/07/01 06:00
+PHST- 2015/07/01 06:00 [entrez]
+PHST- 2015/07/01 06:00 [pubmed]
+PHST- 2016/05/05 06:00 [medline]
+AID - 10.1097/GRF.0000000000000134 [doi]
+PST - ppublish
+SO  - Clin Obstet Gynecol. 2015 Sep;58(3):536-45. doi: 10.1097/GRF.0000000000000134.
+
+PMID- 26650698
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20160218
+LR  - 20160115
+IS  - 1085-5629 (Print)
+IS  - 1085-5629 (Linking)
+VI  - 34
+IP  - 4
+DP  - 2015 Dec
+TI  - Vulvodynia.
+PG  - 192-8
+LID - 10.12788/j.sder.2015.0181 [doi]
+AB  - Vulvodynia is a pain syndrome affecting the vulva. It occurs in about 16% of 
+      women at some time of their lives. The etiology of vulvodynia is still enigmatic 
+      and is probably multifactorial-including physiological concerns (eg, pelvic floor 
+      muscle dysfunction, neuropathic pain, and psychosocial) and sexual issues (eg, 
+      anxiety and sexual dysfunction). Although it is a common syndrome, most patients 
+      are neither correctly diagnosed nor treated. A diagnosis of vulvodynia is based 
+      upon patient history and lack of physical findings upon careful examination. No 
+      clinical or histological findings are present to aid in diagnosis. Most treatment 
+      options for vulvodynia are neither well studied nor have an evidence base, 
+      relying instead upon expert opinion, care provider experience, and use of data 
+      from other pain syndromes. However, many patients show marked improvement after 
+      physical therapy for the pelvic floor, medications for neuropathic pain, and 
+      psychosexual therapy.
+CI  - ©2015 Frontline Medical Communications.
+FAU - Ben-Aroya, Zahi
+AU  - Ben-Aroya Z
+AD  - Vulva & Cervix Clinic, Maccabi Health Services, Rehovot, Israel.
+FAU - Edwards, Libby
+AU  - Edwards L
+AD  - Mid-Charlotte Dermatology and Research, Charlotte, North Carolina, USA. 
+      ledwardsmd@aol.com.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+PL  - United States
+TA  - Semin Cutan Med Surg
+JT  - Seminars in cutaneous medicine and surgery
+JID - 9617260
+SB  - IM
+MH  - Diagnosis, Differential
+MH  - *Disease Management
+MH  - Female
+MH  - Global Health
+MH  - Humans
+MH  - Incidence
+MH  - *Vulvodynia/diagnosis/epidemiology/therapy
+OTO - NOTNLM
+OT  - vestibulitis
+OT  - vulvar pain
+OT  - vulvar vestibulitis syndrome
+OT  - vulvodynia
+EDAT- 2015/12/10 06:00
+MHDA- 2016/02/19 06:00
+CRDT- 2015/12/10 06:00
+PHST- 2015/12/10 06:00 [entrez]
+PHST- 2015/12/10 06:00 [pubmed]
+PHST- 2016/02/19 06:00 [medline]
+AID - 10.12788/j.sder.2015.0181 [doi]
+PST - ppublish
+SO  - Semin Cutan Med Surg. 2015 Dec;34(4):192-8. doi: 10.12788/j.sder.2015.0181.
+
+PMID- 25155125
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20150512
+LR  - 20140826
+IS  - 1558-0474 (Electronic)
+IS  - 0889-8545 (Linking)
+VI  - 41
+IP  - 3
+DP  - 2014 Sep
+TI  - Vulvodynia.
+PG  - 453-64
+LID - S0889-8545(14)00043-6 [pii]
+LID - 10.1016/j.ogc.2014.05.005 [doi]
+AB  - Vulvar pain and discomfort (vulvodynia) are common conditions that can have a 
+      significant impact on a patient's quality of life. Vulvodynia is a difficult 
+      condition to evaluate and treat. This article gives the primary gynecologist a 
+      basic framework with which to identify, diagnose, and begin treatment for these 
+      patients and refer if necessary. Initial evaluation and physical examination are 
+      discussed in detail. Treatments ranging from self-management strategies to 
+      nonpharmacologic and pharmacologic therapies will be explored. Because vulvodynia 
+      is a chronic pain disorder, diagnosis is the key to beginning treatment and 
+      support for this patient population.
+CI  - Copyright © 2014 Elsevier Inc. All rights reserved.
+FAU - Shah, Mitul
+AU  - Shah M
+AD  - Department of Obstetrics Gynecology & Women's Health, Saint Louis University 
+      School of Medicine, 6420 Clayton Road, St Louis, MO 63117, USA.
+FAU - Hoffstetter, Susan
+AU  - Hoffstetter S
+AD  - Department of Obstetrics Gynecology & Women's Health, Saint Louis University 
+      School of Medicine, 6420 Clayton Road, St Louis, MO 63117, USA. Electronic 
+      address: hoffstes@slu.edu.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+DEP - 20140709
+PL  - United States
+TA  - Obstet Gynecol Clin North Am
+JT  - Obstetrics and gynecology clinics of North America
+JID - 8709551
+RN  - 0 (Anesthetics, Local)
+RN  - 0 (Anticonvulsants)
+SB  - IM
+MH  - Anesthetics, Local/*therapeutic use
+MH  - Anticonvulsants/therapeutic use
+MH  - Female
+MH  - Humans
+MH  - Pain/*etiology/prevention & control/psychology
+MH  - Physical Examination/methods
+MH  - Physical Therapy Modalities
+MH  - Quality of Life/*psychology
+MH  - Sexual Behavior
+MH  - Social Support
+MH  - Stress, Psychological
+MH  - Treatment Outcome
+MH  - *Vaginismus/diagnosis/psychology/therapy
+MH  - Vulva/*physiopathology
+MH  - *Vulvodynia/diagnosis/psychology/therapy
+OTO - NOTNLM
+OT  - Vaginismus
+OT  - Vulvar pain
+OT  - Vulvodynia
+EDAT- 2014/08/27 06:00
+MHDA- 2015/05/13 06:00
+CRDT- 2014/08/27 06:00
+PHST- 2014/08/27 06:00 [entrez]
+PHST- 2014/08/27 06:00 [pubmed]
+PHST- 2015/05/13 06:00 [medline]
+AID - S0889-8545(14)00043-6 [pii]
+AID - 10.1016/j.ogc.2014.05.005 [doi]
+PST - ppublish
+SO  - Obstet Gynecol Clin North Am. 2014 Sep;41(3):453-64. doi: 
+      10.1016/j.ogc.2014.05.005. Epub 2014 Jul 9.
+
+PMID- 25608256
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20150921
+LR  - 20181202
+IS  - 1532-5520 (Electronic)
+IS  - 0009-9201 (Linking)
+VI  - 58
+IP  - 1
+DP  - 2015 Mar
+TI  - Vulvodynia.
+PG  - 143-52
+LID - 10.1097/GRF.0000000000000093 [doi]
+AB  - Vulvodynia is a genital pain syndrome occurring in 7% to 8% of women. Although 
+      common, most practitioners are uncomfortable with the diagnosis and management of 
+      these women's pain, and many believe this is psychologically based. 
+      Multifactorial in origin, ubiquitous factors include pelvic floor muscle 
+      abnormalities, neuropathic pain, anxiety, and primary or secondary sexual 
+      dysfunction. Although there are many published studies on vulvodynia, quality 
+      trials that evaluate therapy are lacking. However, experience suggests that most 
+      patients are significantly improved with pelvic floor physical therapy, 
+      medication for neuropathic pain, psychological support, and attention to sexual 
+      function.
+FAU - Edwards, Libby
+AU  - Edwards L
+AD  - Carolinas Medical Center, Charlotte, North Carolina.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+PL  - United States
+TA  - Clin Obstet Gynecol
+JT  - Clinical obstetrics and gynecology
+JID - 0070014
+RN  - 0 (Amines)
+RN  - 0 (Analgesics)
+RN  - 0 (Anesthetics, Local)
+RN  - 0 (Antidepressive Agents)
+RN  - 0 (Cyclohexanecarboxylic Acids)
+RN  - 55JG375S6M (Pregabalin)
+RN  - 56-12-2 (gamma-Aminobutyric Acid)
+RN  - 6CW7F3G59X (Gabapentin)
+SB  - IM
+MH  - Administration, Cutaneous
+MH  - Amines/therapeutic use
+MH  - Analgesics/*therapeutic use
+MH  - Anesthetics, Local/*therapeutic use
+MH  - Antidepressive Agents/*therapeutic use
+MH  - Cyclohexanecarboxylic Acids/therapeutic use
+MH  - Dyspareunia/complications
+MH  - Female
+MH  - Gabapentin
+MH  - Humans
+MH  - Nerve Block
+MH  - *Patient Education as Topic
+MH  - *Physical Therapy Modalities
+MH  - Pregabalin
+MH  - Vulvodynia/complications/diagnosis/*therapy
+MH  - gamma-Aminobutyric Acid/analogs & derivatives/therapeutic use
+EDAT- 2015/01/22 06:00
+MHDA- 2015/09/22 06:00
+CRDT- 2015/01/22 06:00
+PHST- 2015/01/22 06:00 [entrez]
+PHST- 2015/01/22 06:00 [pubmed]
+PHST- 2015/09/22 06:00 [medline]
+AID - 00003081-201503000-00016 [pii]
+AID - 10.1097/GRF.0000000000000093 [doi]
+PST - ppublish
+SO  - Clin Obstet Gynecol. 2015 Mar;58(1):143-52. doi: 10.1097/GRF.0000000000000093.
